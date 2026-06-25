@@ -163,19 +163,5 @@ FedGKT is built on 20 core papers across:
 - **FL in Education:** Liu et al. 2025, Chu et al. 2022 (CIKM, arXiv)
 - **FL + GNN:** FedStar (Tan et al., AAAI 2023)
 
-A comprehensive literature survey (20 papers, full summaries) is included in [FedGKT_Literature_Survey_and_Project.pdf](paper/FedGKT_Literature_Survey_and_Project.pdf).
-
 ---
-
-## 📝 Citing This Work
-
-If you use FedGKT in your research, please cite:
-
-```bibtex
-@article{fedgkt2026,
-  title={FedGKT: Federated Graph-based Knowledge Tracing with Personalised Prerequisite-aware Graph Attention Networks},
-  author={[Your Name] and [Co-author Names]},
-  journal={[Conference/Journal]},
-  year={2026}
-}
 
