@@ -1,0 +1,838 @@
+﻿name,live,prerequisites,h_position,v_position,creation_date,seconds_per_fast_problem,pretty_display_name,short_display_name,topic,area
+parabola_intuition_1,TRUE,recognizing_conic_sections,47,2,2012-10-11 17:55:24.8056 UTC,13,?物線直覺 1,?物線直覺1,conic-sections,algebra
+circles_and_arcs,TRUE,,40,-20,2012-10-11 17:55:33.41014 UTC,27,圓與弧,圓與弧,area-perimeter-and-volume,geometry
+inscribed_angles_3,TRUE,inscribed_angles_2,44,-22,2012-10-11 17:55:44.11836 UTC,5,圓周角與圓心角換算 3,圓周角與圓心角換算3,circle-properties,geometry
+solving_quadratics_by_factoring,TRUE,factoring_polynomials_1,50,-2,2012-10-11 17:54:59.28029 UTC,7,因式分解法,因式分解法,quadtratics,algebra
+graphing_parabolas_1,TRUE,graphing_parabolas_0.5,52,0,2012-10-11 17:55:00.48268 UTC,24,畫拋物線 1,畫拋物線1,quadtratics,algebra
+inverses_of_functions,TRUE,"domain_of_a_function,range_of_a_function",37,-1,2012-10-11 17:55:19.19361 UTC,7,反函數,反函數,algebra-functions,algebra
+one_step_equations,TRUE,evaluating_expressions_1,28,12,2012-10-11 17:54:52.2115 UTC,7,單步驟方程式,單步驟方程式,solving-linear-equations-and-inequalities,algebra
+one_step_inequalities,TRUE,inequalities_on_a_number_line,30,13,2012-10-11 17:54:53.84347 UTC,10,單步驟不等式,單步驟不等式,solving-linear-equations-and-inequalities,algebra
+number_properties_terminology_1,TRUE,multiplying_and_dividing_negative_numbers,14,-4,2012-10-11 17:54:24.36253 UTC,5,數字概念用語 1,數字概念用語1,order-of-operations,arithmetic
+angles_2,TRUE,angles_1,32,-20,2012-10-11 17:55:36.24101 UTC,9,角度 2,角度2,triangle-properties,geometry
+angle_types,TRUE,"recognizing_rays_lines_and_line_segments,angle_rotation",25,-19,2012-10-11 17:55:39.92254 UTC,4,角的種類,角的種類,segments-and-angles,analytic-geometry
+addition_3,FALSE,addition_2,5,4,2012-10-11 17:54:14.65655 UTC,6,二位數的加法(有進位),二位數加法有進位,addition-subtraction,arithmetic
+compound_inequalities,TRUE,"one_step_inequalities,inequalities_and_expressions",31,14,2012-10-11 17:54:54.26358 UTC,12,不等式組,不等式組,solving-linear-equations-and-inequalities,algebra
+distributive_property_with_variables,FALSE,,-12,-18,2012-10-11 17:54:55.23619 UTC,14,變數分配律,變數分配律,solving-linear-equations-and-inequalities,algebra
+equation_of_a_circle_1,TRUE,recognizing_conic_sections,47,4,2012-10-11 17:55:24.38657 UTC,6,圓的方程式 1,圓的方程式1,conic-sections,algebra
+distance_between_point_and_line,TRUE,"line_relationships,graphing_systems_of_equations",47,7,2012-10-11 17:55:07.7284 UTC,22.5,點跟線的距離,點跟線的距離,systems-of-eq-and-ineq,algebra
+midpoint_formula,TRUE,distance_formula,43,-11,2012-10-11 17:54:50.7049 UTC,12,中點公式,中點公式,pythagorean-theorem,algebra
+properties_of_numbers_2,TRUE,properties_of_numbers_1,14,-5,2012-10-11 17:54:24.9028 UTC,5,數字概念 2,數字概念2,order-of-operations,arithmetic
+properties_of_incenters,TRUE,quadrilateral_types,34,-15,2014-07-08 07:10:08.27071 UTC,32.25,內心的基本概念,內心的基本概念,quadrilaterals-and-polygons,geometry
+measuring_lengths_1,TRUE,,22,-16,2015-01-19 10:03:57.24387 UTC,5,量量看1,量量看1,basic-geometry,geometry
+fractional_division_life_problem,TRUE,dividing_fractions_0.5,26,-13,2014-09-03 09:48:21.0571 UTC,15,用分數除法解決生活問題,用分數除法解決生活問題,fractions,arithmetic
+volume_container_hight,TRUE,"volume_box,volume_space",38,-14,2014-02-06 04:25:43.39198 UTC,11,水面有多高,水面有多高,area-perimeter-and-volume,geometry
+polynomial_concept_and_proper_noun,TRUE,,44,-6,2014-08-31 17:32:24.5423 UTC,7,多項式及相關名詞,多項式及相關名詞,polynomials,algebra
+understanding_square_rectangular,TRUE,"sides_and_angles_of_simple_shapes,composing_shapes",17,-19,2014-09-04 07:03:14.60996 UTC,8,由邊長和角的特性認識正方形和長方形,邊角認識正方形長方形,basic-geometry,geometry
+baseline_compareline_application,TRUE,baseline_compareline,28,-9,2014-08-31 05:13:37.58789 UTC,8,基準量與比較量的應用,基準量與比較量的應用,rates-and-ratios,arithmetic
+vertical_and_parallel,TRUE,parallel_and_perpendicular,27,-23,2014-09-04 07:04:55.18117 UTC,6,"理解平面上直角,垂直與平行的意義","理解直角,垂直與平行",basic-geometry,geometry
+decimal_multiplier_calculation,FALSE,integers_multiply_decimals2,11,0,2014-08-31 05:33:47.09686 UTC,10,用直式處理乘數是小數的計算並解決生活中的問題,直式處理乘數是小數計算,decimals,arithmetic
+calculations_using_similar_shapes,TRUE,solving_similar_triangles_2,41,-33,2014-07-15 03:18:03.20954 UTC,15.75,運用三角形相似性質來計算,運用三角形相似性質計算,similar-triangle,geometry
+quadratics_word_problems,TRUE,"cross_multiplication_advanced,quadratic_polynomial_word_problem",54,-6,2014-07-15 03:23:15.33281 UTC,9,二次函數文字應用問題,二次函數文字應用問題,quadtratics,algebra
+represent_by_symbol_dividend,TRUE,represent_by_symbol_multiplier,24,10,2014-08-31 06:52:15.37436 UTC,7,用符號代表數-解決被除數或除數未知的問題,解決被除數除數未知問題,solving-linear-equations-and-inequalities,algebra
+quadratic_polynomial_word_problem,TRUE,cross_multiplication_advanced,53,-5,2014-08-31 17:37:23.45339 UTC,10,一元二次方程式文字應用題,一元二次方程文字應用題,quadtratics,algebra
+estimation_three-digit_add_sub,TRUE,addition_2,4,4,2014-09-03 09:35:50.5879 UTC,6,簡單的三位數加減估算,簡單的三位數加減估算,addition-subtraction,arithmetic
+arithmetic_means,TRUE,arithmetic_sequences_3,31,2,2014-06-26 02:43:50.02414 UTC,5,等差中項,等差中項,sequence_and_series,arithmetic
+recording_life _problem_by_expressions,FALSE,,-11,-17,2014-08-31 17:39:49.17294 UTC,10,以符號算式紀錄生活問題,以符號算式紀錄生活問題,solving-linear-equations-and-inequalities,algebra
+seq_understanding_sequence_2,TRUE,seq_understanding_sequence_1,29,3,2015-01-20 09:48:16.8756 UTC,6,認識數列2,認識數列2,sequence_and_series,arithmetic
+place_value_big_number,TRUE,place_value,12,3,2014-08-31 07:50:38.5343 UTC,10,位值3,位值3,decimals,arithmetic
+matrix_basic_product,TRUE,matrix_basic_percentage,49,17,2014-04-09 04:50:57.31362 UTC,12,定義矩陣：商店產品,定義矩陣：商店產品,vectors-matrix,algebra
+speed_applying,TRUE,speed_equal_to_distance_divide_time,31,-10,2014-06-27 07:20:18.34391 UTC,17,速率的應用問題,速率的應用問題,rates-and-ratios,arithmetic
+completing_the_square_1_new,TRUE,solving_quadratics_by_taking_the_square_root,51,-1,2014-12-30 16:21:14.37794 UTC,17,配方法解一元二次式1,配方法解一元二次式1,quadtratics,algebra
+basic_graph_and_composite_graph_area,TRUE,area_of_parallelograms,37,-20,2014-08-31 16:17:02.52731 UTC,5,簡單圖形與複合圖形的面積,簡單圖形與複合圖形面積,area-perimeter-and-volume,geometry
+side_length_cube_and_relationship_with_volume_cuboid,FALSE,,2,-11,2015-03-02 22:10:21.30196 UTC,0,正方體及長方體邊長與體積的關係,正方體長方體邊長體積,N/A,N/A
+judging_axis_of_symmetry,TRUE,axis_of_symmetry,44,-30,2014-02-14 08:00:25.33637 UTC,4,判斷出對稱軸,判斷出對稱軸,transformations,geometry
+realizing_inequalities,TRUE,linear_equations_1,29,10,2014-08-31 17:40:36.73864 UTC,8,理解不等式的意義,理解不等式的意義,solving-linear-equations-and-inequalities,algebra
+perimeter_1,TRUE,"order_of_operations,understand_range_of_graphie",18,-18,2012-10-11 17:55:32.2914 UTC,5,周長 1,周長1,basic-geometry,geometry
+graphing_systems_of_equations,TRUE,graphing_linear_equations,46,10,2012-10-11 17:55:10.26726 UTC,50,畫聯立方程式,畫聯立方程式,systems-of-eq-and-ineq,algebra
+exponents_3,TRUE,exponents_2,20,4,2012-10-11 17:55:16.22245 UTC,6,指數 3,指數3,exponents-radicals,algebra
+reading_pictographs_2,TRUE,reading_pictographs_1,16,-23,2012-10-11 17:55:58.38871 UTC,8,象形圖 2,象形圖2,statistics,probability-statistics
+lhopitals_rule,TRUE,"power_rule,special_derivatives",60,-23,2012-10-11 17:56:01.81149 UTC,6,羅必達法則,羅必達法則,calculus,calculus
+multiplying_polynomials,TRUE,multiplying_expressions_0.5,47,-6,2012-10-11 17:54:58.62256 UTC,7,多項式的乘法,* 多項式,polynomials,algebra
+kinematic_equations,FALSE,quadratic_equation,54,-3,2012-10-11 17:54:59.65494 UTC,56,,Kinem. Eq.,N/A,N/A
+creating_bar_charts_1,FALSE,reading_bar_charts_1,17,-25,2012-10-11 17:55:57.8334 UTC,23,製作長條圖 1,製作長條圖1,statistics,probability-statistics
+telling_time,TRUE,telling_time_0.5,5,11,2012-10-11 17:54:11.28693 UTC,7,看時鐘,看時鐘,telling-time,arithmetic
+proportions_1,TRUE,proportions_1,29,-9,2012-10-11 17:54:12.86277 UTC,5,比值 1,比值1,rates-and-ratios,arithmetic
+linear_equations_2,TRUE,linear_equations_1,29,9,2012-10-11 17:54:52.78793 UTC,6,線性方程式 2,線性方程式2,solving-linear-equations-and-inequalities,algebra
+converting_repeating_decimals_to_fractions_1,TRUE,linear_equations_4,32,11,2012-10-11 17:55:08.79991 UTC,6,循環小數轉換成分數 1,循環小數轉分數1,solving-linear-equations-and-inequalities,algebra
+exponents_2,TRUE,applications_of_index,19,5,2012-10-11 17:55:16.58121 UTC,6,指數 2,指數2,exponents-radicals,algebra
+solving_similar_triangles_2,TRUE,solving_similar_triangles_1,40,-33,2012-10-11 17:55:47.84343 UTC,17,解出相似三角形 2,解出相似三角形2,similar-triangle,geometry
+creating_box_and_whisker_plots,TRUE,"mean_median_and_mode,range_quarter_case_chart",18,-21,2012-10-11 17:55:57.02228 UTC,39,繪製盒狀圖,盒狀圖,statistics,probability-statistics
+subtraction_within_20,TRUE,addition_within_20,1,2,2014-12-29 15:44:11.77112 UTC,4,20以內的減法,20以內的減法,addition-subtraction,arithmetic
+quadratic_function_word_problem,TRUE,quadratic_function_maximum_and_minimum,35,-4,2014-08-31 17:11:16.24076 UTC,28.5,二次函數的文字應用題,二次函數的文字應用題,algebra-functions,algebra
+parallelogram_concept_and_application,TRUE,concepts_related_to_kite,37,-13,2014-08-31 17:24:48.51011 UTC,5,平行四邊形的性質與應用,平行四邊形的性質與應用,quadrilaterals-and-polygons,geometry
+radical_multiplication_and_division,TRUE,adding_and_subtracting_radicals,25,6,2014-09-04 07:14:40.00448 UTC,15,根式的乘除運算,根式的乘除運算,exponents-radicals,algebra
+arithmetic_sequences_3,TRUE,"counting_2,seq_understanding_sequence_2",30,3,2014-03-05 03:39:19.64809 UTC,26,等差數列3,等差數列3,sequence_and_series,arithmetic
+vector_add_sub_two,TRUE,matrix_add_sub_3,52,17,2014-04-30 07:30:02.41412 UTC,14,兩個向量的加法,兩個向量的加法,vectors-matrix,algebra
+concepts_related_to_diamond,TRUE,quadrilateral_angles,35,-13,2014-07-15 03:19:34.83962 UTC,14,與菱形相關的概念,與菱形相關的概念,quadrilaterals-and-polygons,geometry
+fractions_cut_and_copy,FALSE,,2,-9,2015-03-02 22:05:13.21944 UTC,0,利用圖形判斷分數的增與減,利用圖形判斷分數的增減,N/A,N/A
+cross_multiplication_advanced,TRUE,"solving_quadratics_by_factoring,factorization_quadratic_polynomial",52,-4,2014-06-26 02:53:28.78086 UTC,24,十字交乘法(進階),十字交乘法進階,systems-of-eq-and-ineq,algebra
+radius_diameter_and_circumference_1,FALSE,"parts_of_circles,radius_and_diameter,radius_diameter_and_circumference_314_1",22,-18,2013-12-25 08:31:18.3468 UTC,5,半徑、直徑與圓周1,半徑、直徑與圓周1,basic-geometry,geometry
+matrix_basic_percentage,TRUE,"identifying_points_2,graphing_points_fraction_1",48,16,2014-04-09 04:49:53.42989 UTC,11,定義矩陣：使用習慣比例,定義矩陣：使用習慣比例,vectors-matrix,algebra
+time_terminology,TRUE,"subtraction_2,telling_time",4,9,2013-11-29 09:38:08.54572 UTC,5,時間用語,時間用語,telling-time,arithmetic
+cone_surface_arc,TRUE,surface_area_of_cylinders,39,-22,2014-09-03 10:15:08.88832 UTC,8,圓柱與圓錐的表面積概念,圓柱與圓錐的表面積概念,area-perimeter-and-volume,geometry
+multiplication_formula_minus,TRUE,multiplying_polynomials,47,-4,2014-08-31 07:12:32.46957 UTC,12,乘法公式-差平方公式,乘法公式-差平方公式,polynomials,algebra
+environment_bctest_cap,TRUE,,-6,-9,2015-01-19 07:14:23.93006 UTC,5,環境基測題,環境基測題,biology,biology
+areas_of_kites,TRUE,angles_2,36,-19,2013-12-24 07:26:28.90769 UTC,5,風箏形的面積,風箏形的面積,area-perimeter-and-volume,geometry
+arithmetic_reasoning,TRUE,order_of_operations,16,-5,2014-06-09 09:41:29.78893 UTC,15,和差問題,和差問題,order-of-operations,arithmetic
+adding_and_subtracting_centimeter_and_millimeter,TRUE,l_ml_time_div,19,9,2014-08-31 03:35:07.33811 UTC,10,公分與毫米的加減法應用,公分與毫米的加減法應用,decimals,arithmetic
+rate_problems_0.5,TRUE,units,29,-11,2012-10-11 17:54:13.96483 UTC,7,速率問題 0.5,速率0.5,rates-and-ratios,arithmetic
+evaluating_expressions_2,TRUE,evaluating_expressions_1,26,9,2012-10-11 17:54:55.99569 UTC,14,求代數的值2,算式計算2,solving-linear-equations-and-inequalities,algebra
+graphing_inequalities,TRUE,graphing_linear_equations,43,8,2012-10-11 17:55:06.20361 UTC,22,畫不等式,畫不等式,linear-equations-and-inequalitie,algebra
+radical_equations,TRUE,simplifying_radicals,24,7,2012-10-11 17:55:14.23025 UTC,9,根號等式,根號等式1,exponents-radicals,algebra
+empirical_rule,TRUE,"exploring_standard_deviation_1,standard_deviation",21,-21,2012-10-11 17:55:56.13569 UTC,18,經驗法則,經驗法則,statistics,probability-statistics
+multiplying_fractions_0.5,TRUE,simplifying_fractions,22,-12,2012-10-11 17:54:29.3789 UTC,9,分數乘法 0.5,乘分數0.5,fractions,arithmetic
+exploring_angle_pairs_1,TRUE,"angle_types,measuring_angles",27,-20,2012-10-11 17:55:42.993 UTC,10,兩角關係名稱,兩角關係,segments-and-angles,analytic-geometry
+adding_subtracting_mixed_numbers_0.5,TRUE,"adding_and_subtracting_fractions,converting_mixed_numbers_and_improper_fractions",24,-7,2012-10-11 17:54:34.70484 UTC,10,帶分數的加法與減法 0.5,加減帶分數0.5,fractions,arithmetic
+equation_of_an_ellipse,TRUE,equation_of_a_circle_1,48,3,2012-10-11 17:55:23.94801 UTC,7,橢圓形的方程式,橢圓形的方程式,conic-sections,algebra
+solid_geometry,TRUE,"areas_of_kites,areas_of_rhombi,areas_of_trapezoids,area_of_parallelograms,areas_of_circles_and_sectors,simple_hologram_concept,basic_graph_and_composite_graph_area",40,-19,2012-10-11 17:55:27.65443 UTC,10,實心物體幾何問題,實心物體,area-perimeter-and-volume,geometry
+z_scores_1,TRUE,"exploring_standard_deviation_1,standard_deviation",21,-22,2012-10-11 17:55:56.33996 UTC,10,標準分數 1,標準分數1,statistics,probability-statistics
+division_1.5,TRUE,division_1,8,-7,2012-10-11 17:54:20.26665 UTC,5,三位數的整除1,除法 1.5,multiplication-division,arithmetic
+dividing_fractions,TRUE,"multiplying_fractions,dividing_fractions_0.5",24,-12,2012-10-11 17:54:32.53256 UTC,10,分數的除法,除分數,fractions,arithmetic
+graphing_linear_equations,TRUE,equation_of_a_line,42,8,2012-10-11 17:55:06.8703 UTC,15,畫出線性方程式,畫線性方程式,linear-equations-and-inequalitie,algebra
+prime_numbers,TRUE,"divisibility_0.5,divisibility_tests",12,-12,2012-10-11 17:54:27.25839 UTC,5,質數,質數,factors-multiples,arithmetic
+converting_decimals_to_fractions_1,TRUE,"converting_fractions_to_decimals,adding_and_subtracting_fractions",24,-4,2012-10-11 17:54:31.5114 UTC,5,小數轉換成分數 1,小數轉分數1,fractions,arithmetic
+solving_for_the_y-intercept,TRUE,interpreting_linear_equations,37,10,2012-10-11 17:54:47.6493 UTC,15,解 y-截點,y-截點,linear-equations-and-inequalitie,algebra
+addition_4,TRUE,"addition_2,estimation_three-digit_add_sub",7,4,2012-10-11 17:54:18.11003 UTC,10,四位數的加法(有進位),四位數加法有進位,addition-subtraction,arithmetic
+the_complex_plane,TRUE,imaginary_unit_powers,46,-12,2012-10-11 17:55:26.55204 UTC,5,虛數平面,虛數平面,complex-numbers,algebra
+geometry_1,FALSE,,-13,-17,2012-10-11 17:55:27.31571 UTC,6,幾何 1,幾何 1,basic-geometry,geometry
+divisibility_0.5,TRUE,divisibility_intuition,11,-12,2012-10-11 17:54:26.45981 UTC,6,整除性 0.5,整除性0.5,factors-multiples,arithmetic
+linear_equations_4,TRUE,linear_equations_3,31,11,2012-10-11 17:54:53.23277 UTC,22,線性方程式 4,線性方程式4,solving-linear-equations-and-inequalities,algebra
+least_common_multiple,TRUE,"prime_factorization,get_gcd_and_lcm",14,-11,2012-10-11 17:54:26.80692 UTC,8,最小公倍數,最小公倍數,factors-multiples,arithmetic
+factoring_polynomials_with_two_variables,TRUE,factoring_polynomials_2,50,-6,2012-10-11 17:55:02.48612 UTC,14,因式分解二元多項式,分解二元多項式,polynomials,algebra
+absolute_value,TRUE,adding_and_subtracting_negative_numbers,19,12,2012-10-11 17:55:11.94352 UTC,4,絕對值,絕對值,absolute-value,algebra
+multiplying_complex_numbers,TRUE,"multiplying_expressions_1,adding_and_subtracting_complex_numbers",48,-12,2012-10-11 17:55:25.97669 UTC,9,虛數的乘法,虛數的乘法,complex-numbers,algebra
+area_of_triangles_1,TRUE,area_of_squares_and_rectangles,21,-17,2012-10-11 17:55:34.08936 UTC,5,三角形的面積 1, 三角面積1,basic-geometry,geometry
+geometry_proofs_intro,FALSE,"congruent_triangles_2,logical_arguments_deductive_reasoning,conditional_statements_and_truth_value",37,-26,2012-10-11 17:55:48.75057 UTC,44,介紹幾何證明,介紹幾何證明,congruent-triangles,geometry
+converse_inverse_and_contrapositive,FALSE,narrative_and_opposite_narrative,31,-33,2012-10-11 17:55:49.33898 UTC,8,逆命題、轉命題、異質位換命題,逆轉異質位換命題,logical-reasoning,logics
+the_fundamental_theorem_of_arithmetic,TRUE,prime_factorization,14,-13,2012-10-11 17:54:28.30306 UTC,6,質因數連乘積基本概念,質因數連乘積基本概念,factors-multiples,arithmetic
+arithmetic_series,TRUE,midpoint_coordinates,32,2,2014-06-26 02:46:57.92168 UTC,38,等差級數應用題,等差級數應用題,sequence_and_series,arithmetic
+perimeter_deduction,TRUE,"perimeter_1,perimeter_of_combined_shapes",19,-19,2013-11-15 10:10:22.65013 UTC,6,邊長的計算,邊長的計算,basic-geometry,geometry
+time_units_transformation_1,TRUE,"division_3,time_word_problem_2,time_word_problem_5",11,10,2013-11-29 09:38:49.14196 UTC,9,時間單位的轉換 1,時間單位轉換1,telling-time,arithmetic
+triangles_congruent_nature_sas,TRUE,congruent_triangles_2,37,-24,2014-07-24 02:14:59.10871 UTC,10,SAS全等性質,SAS全等性質,congruent-triangles,geometry
+metric_weight_unit_conversion,TRUE,rounding_numbers,16,6,2013-12-24 07:38:34.5998 UTC,6,公製重量大單位換算,公製重量大單位換算,unit-conversion,arithmetic
+integers_multiply_decimals,FALSE,adding_decimals,13,3,2014-04-07 09:38:36.71363 UTC,11,整數乘以小數,整數乘以小數,decimals,arithmetic
+dividing_polynomials_2,TRUE,dividing_polynomials_1,49,-8,2014-05-07 05:59:39.9121 UTC,29,多項式除以多項式1,多項式除以多項式1,polynomials,algebra
+interpreting_negative_numbers,TRUE,number_line_3,16,13,2015-01-19 10:21:58.33184 UTC,5,負數概念的文字題,負數概念的文字題,absolute-value,algebra
+understand_equivalent_axiom,TRUE,evaluating_expressions_1,26,10,2014-08-31 06:55:05.25759 UTC,6,理解等量公理,理解等量公理,solving-linear-equations-and-inequalities,algebra
+writing_expressions_w_two_var,TRUE,writing_expressions_2,28,7,2014-06-26 04:27:02.91188 UTC,8,二元一次式列式問題,二元一次式列式問題,solving-linear-equations-and-inequalities,algebra
+comparing_decimals_1,TRUE,,9,5,2015-01-19 10:15:54.71371 UTC,4,小數大小的比較1,小數大小的比較1,decimals,arithmetic
+kg_g_time_div,TRUE,kg_g_arithmatic,19,6,2014-06-27 07:17:02.51204 UTC,7,公斤與公克的乘除運算,公斤與公克的乘除運算,unit-conversion,arithmetic
+absolute_values_meaning,TRUE,"adding_and_subtracting_negative_numbers,interpreting_absolute_value",22,15,2014-05-21 04:35:07.2359 UTC,6,絕對值的意義,絕對值的意義,absolute-value,algebra
+altitude_and_hypotenuse,TRUE,,33,-20,2014-07-08 07:06:47.93339 UTC,16,直角三角形斜邊上的高,直角三角形斜邊上的高,triangle-properties,geometry
+basic_compared_with_the_reference_quantity,TRUE,,27,-9,2014-12-29 15:47:51.15045 UTC,8,基準量與比較量(基礎),基準量與比較量(基礎),rates-and-ratios,arithmetic
+areas_of_rhombi,TRUE,angles_2,36,-17,2013-12-24 07:27:30.98495 UTC,5,鳶形的面積,鳶形的面積,area-perimeter-and-volume,geometry
+integers_multiply_decimals2,TRUE,integers_multiply_decimals,11,1,2014-04-07 09:39:36.85196 UTC,8,整數乘以小數2,整數乘以小數2,decimals,arithmetic
+metric_weight_unit_word_problem,TRUE,metric_weight_unit_conversion,18,6,2013-12-24 07:40:02.95423 UTC,17,重量單位的加減換算,重量單位的加減換算,unit-conversion,arithmetic
+l_ml_transform,TRUE,"understanding_decimals_place_value,millimeter_and_centimeter",16,8,2014-04-30 07:19:22.24156 UTC,6,公升和毫公升的換算,公升和毫公升的換算,unit-conversion,arithmetic
+age_problems,TRUE,writing_expressions_1,27,9,2014-06-09 07:58:41.134 UTC,8,年齡問題 1,年齡問題 1,solving-linear-equations-and-inequalities,algebra
+rate_unit_transform,TRUE,rate_problems_2,32,-11,2014-08-08 00:44:41.36383 UTC,20,速率的單位換算-計算題,速率的單位換算-計算題,rates-and-ratios,arithmetic
+application_of_linear_equations_1,TRUE,linear_equations_3,33,8,2014-06-09 09:39:25.96911 UTC,45,一元一次方程式的應用問題1,一元一次應用問題1,solving-linear-equations-and-inequalities,algebra
+midpoint_coordinates,TRUE,arithmetic_sequences_3,31,3,2014-06-26 03:55:34.39781 UTC,7,中點座標,中點座標,segments-and-angles,analytic-geometry
+number_sense_length_l2,TRUE,number_sense_length_l1,7,15,2015-02-10 12:02:36.26428 UTC,4,長度的量感2,長度的量感2,quantity-sense,arithmetic
+common_form_for_life,TRUE,sort-groups-by-count_1,13,-23,2014-09-04 12:13:09.88372 UTC,8,報讀生活中的常見表格,報讀生活中的常見表格,statistics,probability-statistics
+understand_range_of_graphie,TRUE,,40,-16,2014-09-03 10:19:30.69436 UTC,8,認識平面圖形內外部與周長,認識平面圖形內外部周長,area-perimeter-and-volume,geometry
+combinations_of_polynomials,TRUE,"adding_and_subtracting_polynomials,polynomial_concept_and_proper_noun",46,-6,2014-06-26 02:49:35.27315 UTC,11,多項式的併項與排列,多項式的併項與排列,polynomials,algebra
+ordering_improper_fractions_and_mixed_numbers,TRUE,comparing_improper_fractions_and_mixed_numbers,26,-8,2012-10-11 17:54:29.73578 UTC,16,假分數和帶分數排序,排假貸分數,fractions,arithmetic
+factoring_polynomials_2,TRUE,factoring_polynomials_1,49,-6,2012-10-11 17:55:02.96118 UTC,32,多項式因式分解 2,多項式因式分解2,polynomials,algebra
+rate_problems_1,TRUE,rate_problems_0.5,30,-11,2012-10-11 17:54:13.77213 UTC,42,速率問題 1,速率1,rates-and-ratios,arithmetic
+systems_of_equations_with_elimination_0.5,TRUE,graphing_systems_of_equations,47,10,2012-10-11 17:55:10.51009 UTC,24,加減消去法 0.5,加減消去法 0.5,systems-of-eq-and-ineq,algebra
+similar_triangles_review,TRUE,solving_similar_triangles_1,40,-34,2012-10-11 17:55:45.21067 UTC,7,相似三角形複習,相似三角形複習,similar-triangle,geometry
+arithmetic_word_problems_2,TRUE,"multiplication_2,division_1",8,-4,2012-10-11 17:54:21.36557 UTC,6,乘法除法應用題 2,乘法除法應用題2,multiplication-division,arithmetic
+perimeter_of_squares_and_rectangles,TRUE,perimeter_1,19,-18,2012-10-11 17:55:30.186 UTC,6,正方形與長方形的周長,長方周長,basic-geometry,geometry
+least_common_multiple_and_greatest_common_divisor_word_problems,TRUE,"prime_factorization,application_of_gcd_and_lcm_1",16,-13,2012-10-11 17:54:26.07906 UTC,13,最小公倍數與最大公因數的應用題,因數倍數應用,factors-multiples,arithmetic
+adding_subtracting_mixed_numbers_1,TRUE,adding_subtracting_mixed_numbers_0.5,25,-7,2012-10-11 17:54:34.40893 UTC,27,帶分數的加法與減法 1,加減帶分數1,fractions,arithmetic
+evaluating_expressions_1,TRUE,"multiplying_radicals,adding_and_subtracting_fractions,represent_by_symbol_dividend",25,9,2012-10-11 17:54:56.22249 UTC,5,求代數的值1,算式計算1,solving-linear-equations-and-inequalities,algebra
+constant_function_and_a_fuction,TRUE,functions_1,35,-1,2014-08-31 17:12:22.42805 UTC,7,常數函數與一次函數,常數函數與一次函數,algebra-functions,algebra
+seq-arithmetic-sequences-l2,TRUE,seq-arithmetic-sequences-l1,32,-1,2015-02-12 08:09:03.63465 UTC,23.75,等差數列的計算2,等差數列的計算2,sequence_and_series,arithmetic
+multiplying_and_dividing_negative_numbers_new,TRUE,adding_and_subtracting_negative_numbers,20,10,2015-01-29 09:43:56.98045 UTC,4,含有負數的乘除法基礎運算,含負數的乘除法基礎運算,absolute-value,algebra
+meaning_congruent_planar_graph,TRUE,,34,-29,2014-09-04 07:24:05.22491 UTC,8,平面圖形全等的意義,平面圖形全等的意義,congruent-triangles,geometry
+hundred_million_adding_and_subtracting,TRUE,"place_value,subtracting_decimals,application_add_large_nums,understand_large_numbers_and_conversion",14,5,2014-02-21 08:36:28.55321 UTC,22,大數字的加減,大數字的加減,decimals,arithmetic
+cube_volume_calculation,FALSE,,0,-12,2015-02-17 00:46:10.22895 UTC,0,正方體體積的計算,正方體體積的計算,N/A,N/A
+area_relationship_larger_narrow_num,TRUE,area_relationship_larger_narrow_graph,38,-31,2014-08-31 04:41:10.8006 UTC,19,放大圖與縮小圖的面積關係2,放大圖縮小圖面積關係2,similar-triangle,geometry
+count_number_to_20_2,TRUE,count_number_to_20,-2,4,2014-12-28 16:27:50.54805 UTC,5,數一數-20以內的數2,數一數-20以內的數2,addition-subtraction,arithmetic
+ecology_bctest_cap,TRUE,,-7,-9,2015-01-19 07:13:23.12395 UTC,6,生態基測題,生態基測題,biology,biology
+recognize_num_less_than_10000,TRUE,addition_4,8,4,2014-09-03 09:39:53.10995 UTC,10,認識10000以內的數,認識10000以內的數,addition-subtraction,arithmetic
+metric_area_unit_conversion,TRUE,rounding_numbers,16,7,2013-12-24 07:37:40.19741 UTC,9,公制面積大單位換算,公制面積大單位換算,unit-conversion,arithmetic
+quadratic_function_concept,TRUE,functions_1,33,-2,2014-08-31 17:08:20.57906 UTC,16,二次函數的意義,二次函數的意義,algebra-functions,algebra
+dividing_fractions_0.5,TRUE,multiplying_fractions_0.5,23,-12,2012-10-11 17:54:32.97045 UTC,10,分數的除法 0.5,除分數0.5,fractions,arithmetic
+equation_of_a_line,TRUE,"converting_between_slope_intercept_and_standard_form,converting_between_point_slope_and_slope_intercept",41,7,2012-10-11 17:54:47.90809 UTC,15.75,線的方程式,線的方程式,linear-equations-and-inequalitie,algebra
+factoring_difference_of_squares_2,TRUE,factoring_difference_of_squares_1,49,-7,2012-10-11 17:54:57.39932 UTC,12,因式分解平方差 2,平方差2,polynomials,algebra
+trig_identities_1,TRUE,trigonometry_2,52,-27,2012-10-11 17:55:50.79881 UTC,8,三角函數特性 1,三角函數特性1,trigonometry,analytic-geometry
+greatest_common_divisor,TRUE,"division_3,prime_factorization,get_gcd_and_lcm",14,-10,2012-10-11 17:54:25.79174 UTC,5,最大公因數,最大公因數,factors-multiples,arithmetic
+equation_of_a_circle_2,TRUE,equation_of_a_circle_1,48,4,2012-10-11 17:55:24.17114 UTC,17,圓的方程式 2,圓的方程式2,conic-sections,algebra
+angles_of_a_polygon,TRUE,quadrilateral_types,34,-13,2012-10-11 17:55:40.14387 UTC,6,多邊形的角,多角,quadrilaterals-and-polygons,geometry
+trigonometry_2,TRUE,trigonometry_1.5,51,-25,2012-10-11 17:55:51.43287 UTC,7,三角函數 2,三角函數2,trigonometry,analytic-geometry
+reading_pictographs_1,TRUE,reading_tables_1,15,-23,2012-10-11 17:55:58.71356 UTC,5,象形圖 1,象形圖1,statistics,probability-statistics
+power_rule,TRUE,derivatives_1,59,-26,2012-10-11 17:56:03.40214 UTC,7,乘冪法則,乘冪法則,calculus,calculus
+converting_between_point_slope_and_slope_intercept,TRUE,"point_slope_form,slope_intercept_form",40,8,2012-10-11 17:54:49.03186 UTC,8,點斜式與斜截式的轉換,點斜斜截轉換,linear-equations-and-inequalitie,algebra
+linear_inequalities,TRUE,"linear_equations_3,one_step_inequalities",31,13,2012-10-11 17:54:54.05925 UTC,15,線性不等式,線性不等式,solving-linear-equations-and-inequalities,algebra
+reading_tables_1,TRUE,"multiplication_1.5,common_form_for_life",14,-23,2012-10-11 17:55:55.91261 UTC,6,看表格 1,表格1,statistics,probability-statistics
+converting_fractions_to_decimals,TRUE,"dividing_decimals_0.5,recognizing_fractions_0.5",20,0,2012-10-11 17:54:31.87564 UTC,12,分數轉換成小數,分數轉小數,fractions,arithmetic
+dividing_decimals,TRUE,dividing_decimals_2,17,-1,2012-10-11 17:54:41.37669 UTC,15,小數除以小數,除小數,decimals,arithmetic
+combining_like_terms_1,TRUE,multiplying_radicals,25,7,2012-10-11 17:54:56.50035 UTC,7,簡化式子 1,簡化式子1,solving-linear-equations-and-inequalities,algebra
+imaginary_unit_powers,TRUE,equation_of_a_line,45,-12,2012-10-11 17:55:26.9554 UTC,5,虛數 i 的次方,i 的次方,complex-numbers,algebra
+congruent_angles,TRUE,"same_side_exterior_angles,same_side_interior_angles,alternate_exterior_angles,corresponding_angles,alternate_interior_angles",31,-27,2012-10-11 17:55:43.30396 UTC,4,全等角,全等角,parallel-and-perpendicular-lines,geometry
+radius_diameter_and_circumference,TRUE,"parts_of_circles,understand_circle",22,-21,2012-10-11 17:55:30.80518 UTC,4,半徑、直徑與圓周,圓周,basic-geometry,geometry
+conditional_statements_2,FALSE,,31,-32,2012-10-11 17:55:49.55014 UTC,14,條件命題 2,條件命題 2,logical-reasoning,logics
+vertical_angles_2,TRUE,"complementary_and_supplementary_angles,exploring_angle_pairs_1",28,-19,2012-10-11 17:55:39.01783 UTC,10,對頂角代數計算,對頂角代數計算,segments-and-angles,analytic-geometry
+derivatives_1,TRUE,derivative_intuition,58,-25,2012-10-11 17:56:03.7078 UTC,7,微分 1,微分1,calculus,calculus
+ratio_word_problems,TRUE,,29,-8,2012-10-11 17:54:12.46666 UTC,7,比值應用題,比值應用,rates-and-ratios,arithmetic
+matrix_mul_zero_one,TRUE,matrix_add_zero_negative,51,15,2014-04-30 07:24:26.17387 UTC,6,與零矩陣以及單位矩陣的乘法,零與單位矩陣的乘法,vectors-matrix,algebra
+computing_law_with_power,TRUE,square_roots,21,5,2014-08-31 04:35:52.83013 UTC,7,含有乘方的運算規則,含有乘方的運算規則,exponents-radicals,algebra
+number_sense_length_l3,TRUE,number_sense_length_l2,8,15,2015-02-10 12:03:30.94277 UTC,4,長度的量感3,長度的量感3,quantity-sense,arithmetic
+volume_space,TRUE,area_of_squares_and_rectangles,37,-15,2014-02-06 04:27:08.30335 UTC,7,盒子的內部空間,盒子的內部空間,area-perimeter-and-volume,geometry
+ungroup_median,TRUE,mean_median_and_mode,20,-24,2014-09-04 06:41:39.84341 UTC,17,未分組資料中位數的計算,未分組資料中位數的計算,statistics,probability-statistics
+multiple_brackets,TRUE,simplificate_ractional_formula,29,5,2014-06-26 03:56:22.60886 UTC,57,多重括號的運算,多重括號的運算,solving-linear-equations-and-inequalities,algebra
+completing_the_square_2_new,TRUE,completing_the_square_1_new,52,-1,2014-12-30 16:21:51.97704 UTC,55,配方法解一元二次式2,配方法解一元二次式2,quadtratics,algebra
+understand_large_numbers_and_conversion,TRUE,"place_value,place_value_concept",16,5,2014-08-31 05:40:23.70196 UTC,6,"認識大數並作位值單位換算(含億, 兆)",大數億兆作位值單位換算,decimals,arithmetic
+compare_shapes,TRUE,"naming_shapes_2,naming_shapes",23,-15,2015-01-12 07:12:30.17349 UTC,4,圖形的比較,圖形的比較,basic-geometry,geometry
+time_units_transformation_3,TRUE,time_units_transformation_1,12,11,2014-03-17 05:14:45.4108 UTC,8,時間單位的轉換 3,時間單位的轉換3,telling-time,arithmetic
+application_division_large_nums,TRUE,hundred_million_adding_and_subtracting,15,7,2014-08-31 05:21:38.77407 UTC,13,大數的除法應用,大數的除法應用,addition-subtraction,arithmetic
+addition_two_numbers,TRUE,time_terminology,7,12,2014-09-04 06:44:03.87071 UTC,21,連除兩數相當於除此兩數之積,連除兩數相當於除此兩數,multiplication-division,arithmetic
+absolute_value_add_sub_properties,TRUE,absolute_value_add_sub,24,13,2014-05-07 05:56:21.02683 UTC,8,絕對值加減運算的性質,絕對值加減運算的性質,absolute-value,algebra
+constructing_and_interpreting_absolute_value,TRUE,interpreting_absolute_value,22,12,2015-01-29 09:44:53.64317 UTC,6,絕對值的文字應用題,絕對值的文字應用題,absolute-value,algebra
+dividing_polynomials_6,TRUE,dividing_polynomials_5,51,-9,2014-05-07 06:03:11.46046 UTC,23,多項式的除法3,多項式的除法3,polynomials,algebra
+matrix_mul_two,FALSE,"matrix_add_sub_3,matrix_add_sub_3",51,16,2014-06-20 03:42:01.7206 UTC,10,兩個矩陣的乘法,兩個矩陣的乘法,N/A,N/A
+multiple_proportions_reasoning,TRUE,calculation_of_proportions,32,-7,2014-07-08 07:04:05.90422 UTC,13,連比,連比,rates-and-ratios,arithmetic
+seq_understanding_sequence_1,TRUE,,28,3,2015-01-20 09:47:02.61344 UTC,7,認識數列1,認識數列1,sequence_and_series,arithmetic
+naming_shapes_2,FALSE,naming_shapes,22,-15,2015-01-12 07:11:56.67748 UTC,0,圖形的命名2,圖形的命名2,basic-geometry,geometry
+multiplication_association_word_problems,TRUE,distributive_property,15,-2,2014-08-31 07:05:35.15888 UTC,18,具體情境中理解乘法結合律,具體情境理解乘法結合律,order-of-operations,arithmetic
+comparison_between_numbers_within_ten,TRUE,"number_sequence_within_ten,count_number_to_20,comparison_between_numbers_within_ten_0.5",-3,4,2014-09-04 07:19:04.69388 UTC,7,10以內的數兩兩比較大小,10以內數兩兩比較大小,addition-subtraction,arithmetic
+measuring_lengths_2,TRUE,measuring_lengths_1,23,-16,2015-01-19 10:04:21.7027 UTC,5,量量看2,量量看2,basic-geometry,geometry
+metric_weight_unit_selection,TRUE,metric_weight_unit_conversion,17,6,2013-12-24 07:39:10.70782 UTC,4,填入適當的重量單位,填入適當的重量單位,unit-conversion,arithmetic
+speed_equal_to_distance_divide_time,TRUE,"telling_time_comparing,rounding_numbers,rate_problems_0.5",30,-10,2014-01-24 03:59:58.07813 UTC,14,速度等於距離除以時間,速度距離時間,rates-and-ratios,arithmetic
+pythagorean_thaorem_application,FALSE,pythagorean_theorem_1,40,-13,2014-08-31 17:34:14.97107 UTC,10,畢氏定理及其應用,畢氏定理及其應用,pythagorean-theorem,algebra
+order_by_length,FALSE,,0,0,2015-03-03 10:34:48.92033 UTC,0,,New Ex,N/A,N/A
+gcd_of_life,TRUE,greatest_common_divisor,14,-8,2014-08-01 09:05:55.22494 UTC,26,最大公因數的生活應用問題,最大公因數生活應用問題,factors-multiples,arithmetic
+quadratic_function_graphing,TRUE,quadratic_function_concept,33,-3,2014-08-31 17:09:20.11181 UTC,10,二次函數的圖形,二次函數的圖形,algebra-functions,algebra
+tenfold_and_hundred_fold,TRUE,,1,-10,2015-02-10 11:41:57.41745 UTC,4,整十倍與整百倍,整十倍與整百倍,addition-subtraction,arithmetic
+polygon_geometry_characteristic,TRUE,geometry_proofs_2,40,-26,2014-08-31 15:51:03.75567 UTC,6,正多邊形的幾何性質與應用,正多邊形幾何性質與應用,congruent-triangles,geometry
+seq_understaning_arithmetic_sequence_1,TRUE,seq_understanding_sequence_2,30,2,2015-02-04 15:03:45.28029 UTC,6,認識等差數列1,認識等差數列1,sequence_and_series,arithmetic
+time_word_problem_2,TRUE,"subtraction_3,telling_time_2",7,10,2013-11-29 09:41:31.35107 UTC,9,時間應用題 2,時間應用題2,telling-time,arithmetic
+sectors_as_fraction_of_circles_1,TRUE,circles_and_arcs,42,-21,2014-03-17 06:55:34.07876 UTC,11,扇形與圓心角1,扇形與圓心角1,circle-properties,geometry
+solving_linear_inequalities,TRUE,linear_inequalities,32,13,2014-06-26 04:25:06.49373 UTC,16,解一元一次不等式,解一元一次不等式,solving-linear-equations-and-inequalities,algebra
+multiplying_decimal_integer,TRUE,integers_multiply_decimals2,12,2,2014-08-31 05:39:28.15707 UTC,9,整數乘以小數1,整數乘以小數1,decimals,arithmetic
+compound_numbers_world_problems,TRUE,,1,-9,2015-02-10 11:37:26.26862 UTC,10,以複名數解決量的文字應用題,複名數文字應用題,unit-conversion,arithmetic
+place_value_concept,FALSE,place_value,12,9,2014-09-03 09:14:31.325 UTC,16,"位值概念延伸整數認識大數(含億, 兆)",位值概念整數認識大數,decimals,arithmetic
+ordering_numbers,TRUE,ordering_fractions,25,-14,2012-10-11 17:54:30.77161 UTC,11,數字的排序,排數字,fractions,arithmetic
+converting_between_slope_intercept_and_standard_form,TRUE,slope_intercept_form,40,10,2012-10-11 17:54:49.3911 UTC,12,斜截式與標準式之間的轉換,斜截式標準式轉換,linear-equations-and-inequalitie,algebra
+adding_and_subtracting_polynomials,TRUE,equation_of_a_line,45,-7,2012-10-11 17:55:03.35265 UTC,9,加減多項式,#NAME?,polynomials,algebra
+triangle_inequality_theorem,TRUE,triangle_angles_1,33,-18,2012-10-11 17:55:44.55729 UTC,7,三角不等式定理,三角不等式定理,triangle-properties,geometry
+counting_2,FALSE,counting_1,27,0,2012-10-11 17:55:53.2918 UTC,6,這要怎麼數 2,數東西2,probability,probability-statistics
+multiplying_fractions,TRUE,multiplying_fractions_0.5,23,-11,2012-10-11 17:54:32.75018 UTC,7,分數乘法,乘分數,fractions,arithmetic
+subtracting_decimals,TRUE,subtracting_decimals_0.5,13,6,2012-10-11 17:54:43.91313 UTC,17,小數的減法,減小數,decimals,arithmetic
+alternate_interior_angles_2,TRUE,"parallel_lines_1,congruent_angles",32,-28,2012-10-11 17:55:41.44679 UTC,8,內錯角 2,內錯角2,parallel-and-perpendicular-lines,geometry
+similar_triangles_1,TRUE,"congruent_triangles_2,triangles_similar_nature",37,-33,2012-10-11 17:55:46.1442 UTC,6,相似三角形 1,相似三角形1,similar-triangle,geometry
+simplifying_expressions_with_exponents,TRUE,exponent_rules,21,7,2012-10-11 17:55:13.3079 UTC,13,簡化指數,簡化指數,exponents-radicals,algebra
+addition_1,TRUE,,0,5,2012-10-11 17:54:14.85724 UTC,4,一位數的加法,加法1,addition-subtraction,arithmetic
+supplementary_angles,TRUE,angle_types,26,-18,2012-10-11 17:55:40.41353 UTC,6,補角,補角,segments-and-angles,analytic-geometry
+division_word_problems_2,TRUE,"division_word_problems_1,division_3",11,-6,2013-11-07 12:57:05.93587 UTC,7,除法應用題2,除法應用題2,multiplication-division,arithmetic
+division_2.9,TRUE,division_2,10,-8,2013-11-07 12:54:57.38981 UTC,8,有餘數的除法1,除法2.9,multiplication-division,arithmetic
+matrix_mul_two,FALSE,"matrix_add_sub_3,matrix_add_sub_3",51,16,2014-04-30 07:23:40.23105 UTC,10,兩個矩陣的乘法,兩個矩陣的乘法,N/A,N/A
+matrix_add_sub_2,TRUE,"systems_of_equations_with_elimination,matrix_basic_percentage",49,15,2014-04-09 04:43:55.83236 UTC,9,兩個矩陣的加減,兩個矩陣的加減,vectors-matrix,algebra
+volume_box_cover,TRUE,"volume_box,volume_space",38,-17,2014-02-06 04:22:57.22731 UTC,14,有蓋子的盒子容積計算,有蓋子的盒子容積計算,area-perimeter-and-volume,geometry
+ratio_money,TRUE,ratio_word_problems,30,-8,2014-04-02 06:23:43.83657 UTC,12,金錢的比例加成,金錢的比例加成,rates-and-ratios,arithmetic
+volume_of_rectangular_boxes_3,TRUE,volume_of_rectangular_boxes_2,39,-18,2014-02-14 08:02:10.35465 UTC,7,長方體的體積3,長方體的體積3,area-perimeter-and-volume,geometry
+understanding_comparing_angle,TRUE,recognizing_rays_lines_and_line_segments,24,-20,2014-09-04 07:02:18.58393 UTC,6,認識角並比較角的大小,認識角並比較角的大小,basic-geometry,geometry
+seq-understaning-arithmetic-sequence,FALSE,,-10,-17,2015-01-26 12:35:38.61627 UTC,0,,New Ex,N/A,N/A
+application_of_scientific_notation_2,TRUE,application_of_scientific_notation,25,1,2014-08-31 04:33:40.51641 UTC,18,科學記號的應用問題,科學記號的應用問題,exponents-radicals,algebra
+simple_calculation_of_composite_volume,FALSE,,2,-10,2015-03-02 22:09:55.53136 UTC,0,簡單複合形體的體積計算,簡單複合形體的體積計算,N/A,N/A
+nature_of_isosceles_triangle,TRUE,range_of_triangle_sides_2,35,-22,2014-07-24 02:32:54.94106 UTC,7,等腰三角形的性質,等腰三角形的性質,triangle-properties,geometry
+negative_numbers_multiply_divide,FALSE,"adding_and_subtracting_negative_numbers,multiplying_and_dividing_negative_numbers_new",21,10,2014-05-21 04:36:42.19521 UTC,6,負數的乘除運算,負數的乘除運算,absolute-value,algebra
+matrix_add_zero_negative,TRUE,matrix_add_sub_2,50,15,2014-04-09 04:47:01.14771 UTC,5,與零矩陣或與負矩陣的加減,零矩陣或負矩陣,vectors-matrix,algebra
+planar_graph_resizing,TRUE,congruent_triangles_2,38,-28,2014-08-31 15:49:36.1394 UTC,6,平面圖形的縮放,平面圖形的縮放,congruent-triangles,geometry
+division_4,TRUE,division_3,11,-7,2012-10-11 17:54:19.86159 UTC,10,多位數的除法,除法 4,multiplication-division,arithmetic
+inequalities_on_a_number_line,TRUE,"linear_equations_1,realizing_inequalities",29,11,2012-10-11 17:54:53.59721 UTC,8,數線上的不等式,數線不等,solving-linear-equations-and-inequalities,algebra
+new_definitions_2,TRUE,new_definitions_1,35,3,2012-10-11 17:55:21.66013 UTC,18,定義運算子 2,定義運算子2,algebra-functions,algebra
+areas_of_trapezoids_rhombi_and_kites,FALSE,,35,-17,2012-10-11 17:55:33.04742 UTC,7,梯形、菱形與風箏形,梯形風箏形,area-perimeter-and-volume,geometry
+same_side_exterior_angles_2,TRUE,"parallel_lines_1,congruent_angles",32,-24,2012-10-11 17:55:42.40423 UTC,13,同側外角 2,同側外角2,parallel-and-perpendicular-lines,geometry
+congruency_postulates,TRUE,angles_2,35,-26,2012-10-11 17:55:46.68566 UTC,11,三角形的全等性質,全等性質,congruent-triangles,geometry
+independent_probability,TRUE,probability_1,29,0,2012-10-11 17:55:54.34918 UTC,24.75,獨立事件機率,獨立機率,probability,probability-statistics
+adding_fractions,TRUE,"adding_fractions_with_common_denominators,simplifying_fractions",22,-5,2012-10-11 17:54:35.87116 UTC,23,分數加法,分數加法,fractions,arithmetic
+absolute_value_equations,TRUE,linear_equations_3,31,12,2012-10-11 17:54:55.03445 UTC,10,絕對值方程式,絕對值方程式,solving-linear-equations-and-inequalities,algebra
+range_of_a_function,TRUE,"functions_2,domain_and_range_0.5",36,1,2012-10-11 17:55:19.60651 UTC,8,函數的值域,函數的值域,algebra-functions,algebra
+angles_1,TRUE,triangle_types,31,-20,2012-10-11 17:55:36.60789 UTC,9,角度 1,角度1,triangle-properties,geometry
+logical_arguments_deductive_reasoning,FALSE,converse_inverse_and_contrapositive,32,-33,2012-10-11 17:55:48.9511 UTC,5,邏輯推理,邏輯推理,logical-reasoning,logics
+conditional_statements_and_truth_value,FALSE,"converse_inverse_and_contrapositive,conditional_statements_2",32,-32,2012-10-11 17:55:49.75877 UTC,5,條件命題與真值,條件命題與真值,logical-reasoning,logics
+exponents_1,TRUE,multiplying_and_dividing_negative_numbers,18,3,2012-10-11 17:55:12.46207 UTC,5,指數 1,指數1,exponents-radicals,algebra
+absolute_value_of_complex_numbers,TRUE,"the_complex_plane,distance_formula,complex_number_polar_form_intuition_new",47,-13,2012-10-11 17:55:26.29427 UTC,7,複數的絕對值,複數絕對值,complex-numbers,algebra
+understanding_decimals_place_value,TRUE,place_value,14,4,2012-10-11 17:54:43.09103 UTC,19,小數的位值,小數位值,decimals,arithmetic
+same_side_exterior_angles,TRUE,segment_addition,30,-24,2012-10-11 17:55:37.8201 UTC,6,同側外角,同側外角,parallel-and-perpendicular-lines,geometry
+counting_1,FALSE,"exponents_1,adding_and_subtracting_fractions",26,0,2012-10-11 17:55:54.13207 UTC,5,這要怎麼數 1,數東西1,probability,probability-statistics
+proportions_2,TRUE,proportions_1,30,-9,2012-10-11 17:54:12.67137 UTC,10,比值 2,比值2,rates-and-ratios,arithmetic
+alternate_exterior_angles_2,TRUE,"parallel_lines_1,congruent_angles",32,-26,2012-10-11 17:55:41.93548 UTC,7,外錯角 2,外錯角2,parallel-and-perpendicular-lines,geometry
+adding_and_subtracting_negative_numbers,TRUE,adding_negative_numbers,18,11,2012-10-11 17:54:16.34286 UTC,5,負數的加與減,#NAME?,absolute-value,algebra
+subtraction_4,TRUE,"subtraction_3,adding_subtracting_carry_3,adding_subtracting_no_carry_3",7,6,2012-10-11 17:54:17.45929 UTC,11,三位數與四位數的減法(需借位),四位數的減法借位,addition-subtraction,arithmetic
+perimeter_of_sector,TRUE,sectors_as_fraction_of_circles_2,44,-20,2014-09-04 05:15:39.5194 UTC,23,扇形的周長計算,扇形的周長計算,circle-properties,geometry
+angle_of_osculation,TRUE,inscribed_angles_3,45,-22,2014-07-24 02:11:58.38256 UTC,10,弦切角,弦切角,circle-properties,geometry
+radius_diameter_and_circumference_314_1,TRUE,,21,-18,2014-06-27 07:19:17.61193 UTC,12,圓周長的計算,圓周長的計算,basic-geometry,geometry
+equivalent_fractions_conversion,TRUE,denominator_comparison,22,-7,2014-08-31 06:25:00.57119 UTC,7,能用約分擴分處理等值分數的換算,約分擴分做等值分數換算,fractions,arithmetic
+understand_percentage,TRUE,,0,-11,2015-02-10 11:42:58.91147 UTC,4,認識百分率,認識百分率,ratio-percentage,arithmetic
+radius_and_diameter,TRUE,perimeter_of_squares_and_rectangles,20,-18,2013-12-25 07:52:59.33415 UTC,4,半徑與直徑,半徑與直徑,basic-geometry,geometry
+evolution_bctest_cap,TRUE,,-4,-7,2015-01-19 07:09:18.05027 UTC,5,演化基測題,演化基測題,biology,biology
+l_ml_arithmatic,TRUE,l_ml_transform,17,9,2014-06-27 07:18:29.60418 UTC,21,公升和毫公升的加減運算2,公升和毫公升加減運算2,unit-conversion,arithmetic
+common_factor_advance,FALSE,common_factor,49,-5,2014-06-26 02:51:00.9031 UTC,10,提公因式做因式分解(進階),提公因式做因式分解進階,polynomials,algebra
+multiple_unit_transate,TRUE,metric_area_unit_comparison,19,7,2014-08-31 05:38:13.61037 UTC,15,能以複名數解決量的計算問題,複名數解決量的計算問題,decimals,arithmetic
+subtraction_and_addition,TRUE,subtraction_4,9,6,2014-09-03 09:41:15.4108 UTC,14,具體情境解決兩步驟問題(加減與除不含併式),解決加減除兩步驟問題,addition-subtraction,arithmetic
+special_right_triangles,TRUE,pythagorean_theorem_1,40,-12,2014-07-08 07:07:59.19232 UTC,8,特殊直角三角形,特殊直角三角形,pythagorean-theorem,algebra
+basic_concepts_of_probability_1,TRUE,probability_1,29,1,2014-07-08 07:02:25.0325 UTC,5,機率的基本概念1,機率的基本概念1,probability,probability-statistics
+finding_axis_of_symmetry,TRUE,axis_of_symmetry,44,-31,2014-02-14 07:59:42.9293 UTC,4,找出對稱軸,找出對稱軸,transformations,geometry
+planting_problems,TRUE,"counting_2,regular_number_of_columns",29,2,2014-06-09 09:43:26.73626 UTC,10,植樹問題,植樹問題,probability,probability-statistics
+combining_like_terms_with_two_variables,TRUE,"writing_expressions_w_two_var,simplificate_ractional_formula",29,6,2014-03-17 05:17:09.23519 UTC,20,簡化式子-兩個變數,簡化式子-兩個變數,solving-linear-equations-and-inequalities,algebra
+find_gcd_and_lcm,TRUE,,12,-13,2015-01-21 04:05:56.97706 UTC,7,找出最大公因數與最小公倍數,找最大公因數最小公倍數,factors-multiples,arithmetic
+graphing_scaling,TRUE,area_relationship_larger_narrow_num,39,-31,2014-08-31 04:43:16.02048 UTC,17,繪製放大圖與縮小圖,繪製放大圖與縮小圖,similar-triangle,geometry
+definition_opposite_number,TRUE,number_line_3,16,10,2014-08-01 09:04:48.72879 UTC,6,相反數,相反數,absolute-value,algebra
+scale,TRUE,ratio_and_the_ratio_of,28,-10,2014-09-04 05:20:23.16503 UTC,8,比例尺,比例尺,rates-and-ratios,arithmetic
+pyramidal_prism,TRUE,areas_of_kites,36,-22,2014-09-03 10:18:07.26261 UTC,9.5,"認識球,直圓柱,直角錐,直角柱,正角錐","球,直圓柱,直角錐",area-perimeter-and-volume,geometry
+comparison_between_numbers_within_ten_0.5,TRUE,number_sequence_within_ten,-3,5,2014-12-29 15:26:53.48662 UTC,6,10以內的數兩兩比大小0.5,10以內數比大小0.5,addition-subtraction,arithmetic
+arithmetic_series_1,TRUE,arithmetic_sequences_3,31,4,2014-03-07 09:21:18.22902 UTC,43,等差級數1,等差級數1,sequence_and_series,arithmetic
+kg_g_unit_transform2,TRUE,kg_g_unit_transform,18,4,2014-09-03 09:13:00.74428 UTC,6,公斤與公克的單位換算2,公斤與公克的單位換算2,decimals,arithmetic
+graphing_points_fraction_2,TRUE,graphing_points,34,11,2014-09-04 05:13:16.8374 UTC,13,直角坐標平面-點的繪製2,直角坐標平面點的繪製2,linear-equations-and-inequalitie,algebra
+surface_area_of_cylinders,TRUE,areas_of_circles_and_sectors,38,-22,2014-02-14 08:03:12.56295 UTC,10,圓柱的表面積,圓柱的表面積,area-perimeter-and-volume,geometry
+decimals_on_the_number_line_2_new,TRUE,decimals_on_the_number_line_1,9,2,2015-01-29 09:42:16.01794 UTC,5,在數線上的小數2,在數線上的小數2,decimals,arithmetic
+seq_sequence_pattern_1,TRUE,seq_understanding_sequence_2,29,4,2015-02-26 16:32:48.34448 UTC,7.25,數列的規律1,數列的規律1,sequence_and_series,arithmetic
+percentage_concept,TRUE,creating_box_and_whisker_plots,19,-20,2014-08-31 17:18:33.39798 UTC,5,百分位數,百分位數,statistics,probability-statistics
+proportional_calculation,TRUE,direct_and_inverse_variation,35,4,2014-06-26 04:09:06.03819 UTC,20,正比的計算,正比的計算,rates-and-ratios,arithmetic
+reproduction,FALSE,,-9,-18,2015-02-16 14:15:18.28855 UTC,0,,New Ex,N/A,N/A
+geometry_categorial_proposition,TRUE,quadrilateral_types,34,-12,2014-08-31 17:26:18.15279 UTC,6,從幾何圖形性質判斷包含關係,從幾何圖形性質判斷包含,quadrilaterals-and-polygons,geometry
+arc_length_and_circular_sector_area,TRUE,area_of_fans,45,-21,2014-08-31 17:13:54.27579 UTC,6,弧長與扇形面積2,弧長與扇形面積2,circle-properties,geometry
+count_numbers,TRUE,representing_numbers,-1,2,2014-07-24 02:23:08.21879 UTC,5,數一數2,數一數2,addition-subtraction,arithmetic
+number_sense_weight_l3,TRUE,number_sense_weight_l2,8,16,2015-02-10 12:00:42.46917 UTC,5,重量的量感3,重量的量感3,quantity-sense,arithmetic
+basic_concept_of_congruent_triangles,TRUE,"parallel_lines_2,meaning_congruent_planar_graph,parallel_lines_proportion",34,-27,2014-07-24 02:33:42.43746 UTC,13,全等三角形的基本概念,全等三角形的基本概念,congruent-triangles,geometry
+number_sequence_within_ten,TRUE,separation_and_union,-3,6,2014-09-03 09:38:06.58709 UTC,5,10以內的數序,10以內的數序,addition-subtraction,arithmetic
+solving_for_the_x-intercept,TRUE,solving_for_the_y-intercept,38,10,2012-10-11 17:54:49.76964 UTC,5,解 x-截點,x-截點,linear-equations-and-inequalitie,algebra
+systems_of_equations,TRUE,"systems_of_equations_with_substitution,systems_of_equations_with_elimination",49,11,2012-10-11 17:55:07.92923 UTC,38.25,聯立方程式,聯立方程式,systems-of-eq-and-ineq,algebra
+division_0.5,TRUE,multiplication_1,5,-7,2012-10-11 17:54:22.16111 UTC,4,基礎的除法,除法 0.5,multiplication-division,arithmetic
+line_relationships,TRUE,equation_of_a_line,43,7,2012-10-11 17:55:06.54107 UTC,9,線之間的關係,線之間的關係,linear-equations-and-inequalitie,algebra
+inverse_trig_functions,TRUE,trigonometry_2,52,-25,2012-10-11 17:55:50.59536 UTC,9,反三角函數,反三角函數,trigonometry,analytic-geometry
+converting_decimals_to_fractions_2,TRUE,converting_decimals_to_fractions_1,25,-4,2012-10-11 17:54:29.13964 UTC,10,小數轉換成分數 2,小數轉分數2,fractions,arithmetic
+multiplying_mixed_numbers_1,TRUE,"converting_mixed_numbers_and_improper_fractions,multiplying_fractions",24,-9,2012-10-11 17:54:33.29241 UTC,30,帶分數乘法 1,乘帶分數1,fractions,arithmetic
+recognizing_fractions_0.5,TRUE,"order_of_operations,writing_fractions_1",18,-2,2012-10-11 17:54:38.99996 UTC,7,認得分數0.5,認分數0.5,fractions,arithmetic
+triangle_angles_1,TRUE,"triangle_angles_sum,triangle_types",32,-19,2012-10-11 17:55:47.40131 UTC,9,三角形的角度 1,三角形角度1,triangle-properties,geometry
+derivative_intuition,TRUE,limits_2,57,-25,2012-10-11 17:56:04.21004 UTC,27,微分的概念,微分概念,calculus,calculus
+angle types,FALSE,,-12,-19,2012-10-12 05:16:42.75864 UTC,7,角的種類,角的種類,N/A,N/A
+domain_and_range_0.5,TRUE,functions_1,35,0,2012-10-11 17:55:20.04269 UTC,7,函數的定義域 0.5,函數的定義域0.5,algebra-functions,algebra
+similar_triangles_2,TRUE,similar_triangles_1,38,-33,2012-10-11 17:55:45.76342 UTC,6,相似三角形 2,相似三角形2,similar-triangle,geometry
+product_rule,TRUE,"power_rule,special_derivatives",60,-26,2012-10-11 17:56:03.17456 UTC,8,函數相乘的微分公式,乘法律,calculus,calculus
+place_value,TRUE,"adding_decimals_2,recognize_decimal_percentile_position",13,4,2012-10-11 17:54:40.32625 UTC,5,位值,位值,decimals,arithmetic
+dividing_decimals_0.5,TRUE,division_3,12,0,2012-10-11 17:54:41.96446 UTC,7,小數的除法 0.5,除小數0.5,decimals,arithmetic
+area_of_squares_and_rectangles,TRUE,"area_1,area_unit_cm_square",19,-17,2012-10-11 17:55:30.54338 UTC,4,正方形與長方形的面積,長方面積,basic-geometry,geometry
+division_1.4,TRUE,"division_0.9,division_1",8,-8,2013-11-07 12:53:17.57427 UTC,5,二位數的整除1,除法1.4,multiplication-division,arithmetic
+inequalities_and_expressions,TRUE,marking_inequalities_range_on_a_number_line,31,15,2014-08-31 17:42:02.3526 UTC,9,限定範圍的直線方程式,限定範圍的直線方程式,solving-linear-equations-and-inequalities,algebra
+dividing_polynomials_4,TRUE,dividing_polynomials_3,51,-8,2014-05-07 06:01:34.48665 UTC,28,多項式除以多項式3,多項式除以多項式3,polynomials,algebra
+basic_concepts_of_probability_2,TRUE,basic_concepts_of_probability_1,30,1,2014-07-08 07:02:54.09148 UTC,7,機率的基本概念2,機率的基本概念2,probability,probability-statistics
+composing_shapes,TRUE,,16,-18,2015-01-21 04:30:38.09904 UTC,8,組合圖形,組合圖形,basic-geometry,geometry
+solving_problems_with_picture_graphs_1,TRUE,,15,-22,2015-01-21 03:53:41.14807 UTC,8,看圖解答,看圖解答,statistics,probability-statistics
+number_sense_weight_l2,TRUE,number_sense_weight_l1,7,16,2015-02-10 11:58:31.25416 UTC,4,重量的量感2,重量的量感2,quantity-sense,arithmetic
+geometry_about_circle_concept,TRUE,circles_and_arcs,41,-19,2014-08-31 16:04:32.33136 UTC,16,圓的幾何性質與應用,圓的幾何性質與應用,circle-properties,geometry
+addition_of_vary_denominator_fraction,TRUE,subtract_of_positive_negative_fraction,25,-3,2014-09-03 09:50:15.27923 UTC,24,異分母的正負分數加法,異分母的正負分數加法,fractions,arithmetic
+converting_percents_to_decimals,TRUE,converting_decimals_to_fractions_2,26,-4,2012-10-11 17:54:45.54582 UTC,6,百分比轉換成小數,%轉小數,ratio-percentage,arithmetic
+alternate_exterior_angles,TRUE,segment_addition,30,-26,2012-10-11 17:55:38.16212 UTC,4,外錯角,外錯角,parallel-and-perpendicular-lines,geometry
+fractions_cut_and_copy_2,TRUE,fractions_cut_and_copy_1,26,-12,2012-10-11 17:54:35.03399 UTC,19,分數剪裁複製 2,剪貼分數2,fractions,arithmetic
+graphing_parabolas_0.5,TRUE,parabola_intuition_2,51,0,2012-10-11 17:55:00.71498 UTC,24,畫拋物線 0.5,畫拋物線0.5,quadtratics,algebra
+inscribed_angles_2,TRUE,inscribed_angles_1,43,-22,2012-10-11 17:55:44.32208 UTC,5,圓周角與圓心角換算 2,圓周角與圓心角換算2,circle-properties,geometry
+mean_median_and_mode,TRUE,exploring_mean_and_median,18,-23,2012-10-11 17:55:59.28272 UTC,6,中間值平均值眾數,中間平均眾數,statistics,probability-statistics
+converting_mixed_numbers_and_improper_fractions,TRUE,simplifying_fractions,22,-8,2012-10-11 17:54:36.69314 UTC,14,帶分數與假分數的轉換,轉帶假分數,fractions,arithmetic
+shifting_and_reflecting_functions,TRUE,"domain_of_a_function,functions_3,range_of_a_function",37,1,2012-10-11 17:55:18.85533 UTC,9.25,函數的平移與反射,平移反射函數,algebra-functions,algebra
+multiplying_and_dividing_negative_numbers,TRUE,"adding_and_subtracting_negative_numbers,division_4",12,-4,2012-10-11 17:54:20.93844 UTC,4,負數的乘法與除法,乘除負數,absolute-value,algebra
+fractions_on_the_number_line_1,TRUE,recognizing_fractions_0.5,20,-2,2012-10-11 17:54:38.80395 UTC,4,數線上的分數 1,線上分數 1,fractions,arithmetic
+dividing_decimals_2,TRUE,dividing_decimals_1,16,-1,2012-10-11 17:54:40.06405 UTC,10,小數的除法 2,除小數2,decimals,arithmetic
+variance,TRUE,"mean_median_and_mode,ungroup_median",19,-21,2012-10-11 17:55:56.79467 UTC,36,變異值,變異值,statistics,probability-statistics
+reading_stem_and_leaf_plots,TRUE,reading_tables_2,16,-26,2012-10-11 17:55:59.80441 UTC,6,枝葉圖,枝葉圖,statistics,probability-statistics
+adding_negative_numbers,TRUE,ordering_negative_numbers,18,12,2012-10-11 17:54:16.93618 UTC,4,負數的加法,#NAME?,absolute-value,algebra
+number_line_3,TRUE,number_line_2,15,10,2012-10-11 17:54:18.78826 UTC,7,數線上的加減(含有負數),數線上的加減含負數,absolute-value,algebra
+converting_decimals_to_percents,TRUE,"converting_decimals_to_fractions_2,finding_percentage",26,-5,2012-10-11 17:54:46.71671 UTC,6,小數轉換成百分比,小數轉%,ratio-percentage,arithmetic
+common_factors_of_a_polynomial_1,FALSE,,-15,-17,2012-10-11 17:55:03.57281 UTC,0,多項式的公因式 1,多項式的公因式1,quadtratics,algebra
+area_of_a_circle,TRUE,"area_of_squares_and_rectangles,radius_diameter_and_circumference_314_1",22,-19,2012-10-11 17:55:31.20471 UTC,6,圓形的面積,圓面積,basic-geometry,geometry
+z_scores_2,TRUE,z_scores_1,22,-22,2012-10-11 17:56:00.95367 UTC,17,標準分數 2,標準分數2,statistics,probability-statistics
+expressions_with_unknown_variables,TRUE,linear_equations_4,32,12,2012-10-11 17:54:59.08577 UTC,8,未知變數的式子代入,代入未知變數 1,quadtratics,algebra
+telling_time_comparing,TRUE,telling_time_2,9,11,2013-11-29 09:37:11.53519 UTC,6,時間的比較,時間的比較,telling-time,arithmetic
+sides_and_angles_of_simple_shapes,TRUE,,16,-19,2013-12-04 09:11:17.2245 UTC,4,邊、角與頂點,邊角與頂點,basic-geometry,geometry
+writing_and_interpreting_decimals,TRUE,,4,3,2014-12-29 15:46:28.17242 UTC,9,認識小數,認識小數,decimals,arithmetic
+meaning_of_equal_sign,TRUE,skip_counting_by_10s,1,-1,2015-01-29 09:41:44.22018 UTC,10,等號的意義,等號的意義,addition-subtraction,arithmetic
+common_factor,TRUE,multiplying_polynomials,48,-5,2014-06-26 02:50:24.77407 UTC,9,提公因式做因式分解,提公因式做因式分解,polynomials,algebra
+adding_decimals_1,TRUE,,9,7,2015-01-19 10:14:53.67604 UTC,9,小數的加法1,小數的加法1,decimals,arithmetic
+proportional_or_inverse_proportional,TRUE,"proportional_calculation,inverse_proportional_calculation",36,5,2014-06-26 04:09:54.92221 UTC,5,判斷正比與反比,判斷正比與反比,rates-and-ratios,arithmetic
+graphing_points_fraction_1,TRUE,identifying_points_2,36,12,2014-08-31 06:47:54.77676 UTC,10,直角坐標平面-點的繪製,直角坐標平面-點的繪製,solving-linear-equations-and-inequalities,algebra
+proportional_life_problems,TRUE,proportions_inner_outer_product,31,-6,2014-08-31 05:14:49.42942 UTC,17,理解正比意義解決生活問題,理解正比解決生活問題,rates-and-ratios,arithmetic
+systems_of_equ_substitution_2,TRUE,systems_of_equ_substitution_1,49,12,2014-04-30 07:37:20.75942 UTC,31,代入消去法 2,代入消去法 2,systems-of-eq-and-ineq,algebra
+triangle_central_core_concept,TRUE,basic_concept_of_circumcenter,36,-15,2014-08-31 16:06:10.18604 UTC,7,三角形的重心,三角形的重心,triangle-properties,geometry
+reading_fractions_in_chinese,TRUE,order_of_operations,17,-4,2013-12-20 04:00:42.60056 UTC,4,真分數的念法,真分數的念法,fractions,arithmetic
+dividing_decimals_int_to_int_0.5,TRUE,dividing_decimals_0.5,13,0,2014-12-30 16:15:20.73263 UTC,5,小數除法0.5(整數除以整數）,小數除法0.5,decimals,arithmetic
+applications_of_index,TRUE,exponents_1,19,4,2014-08-31 04:34:43.30407 UTC,6,指數律的應用,指數律的應用,exponents-radicals,algebra
+systems_of_equations_with_elimination_2,TRUE,systems_of_equ_elimination_1,50,10,2014-09-04 07:26:07.4037 UTC,50,加減消去法 2,加減消去法 2,systems-of-eq-and-ineq,algebra
+range_of_triangle_sides_2,TRUE,triangle_inequality_theorem,34,-18,2014-07-08 07:06:06.18537 UTC,6,三角形三邊長的關係2,三角形三邊長的關係2,triangle-properties,geometry
+make_a_line_by_ruler_and_compasses,TRUE,segment_addition,28,-22,2014-08-31 17:23:23.66339 UTC,5,尺規作圖,尺規作圖,segments-and-angles,analytic-geometry
+relationships_linear_equations,TRUE,graphs_of_linear_equations,38,8,2014-06-26 04:16:42.34925 UTC,5,線性方程式圖形的關係,線性方程式圖形的關係,linear-equations-and-inequalitie,algebra
+calculating_averages_advanced,TRUE,average_word_problems,20,-23,2014-07-08 07:05:18.21526 UTC,18,平均數的計算(進階),平均數的計算(進階),statistics,probability-statistics
+variables_word_problems_2,FALSE,writing_expressions_3,29,8,2014-06-09 09:46:47.45707 UTC,5,以符號列式及化簡的文字題2,以符號列式及化簡2,solving-linear-equations-and-inequalities,algebra
+volume_of_triangular_prisms,TRUE,"volume_of_rectangular_boxes,pyramidal_prism",38,-19,2014-02-14 08:04:59.96303 UTC,8,三角柱的體積,三角柱的體積,area-perimeter-and-volume,geometry
+variables_word_problems_1,TRUE,writing_expressions_3,29,7,2014-06-09 09:46:03.17069 UTC,13,以符號列式及化簡的文字題1,以符號列式及化簡1,solving-linear-equations-and-inequalities,algebra
+square_cm_square_m_unit_transform,TRUE,area_of_triangular_shapes,32,-14,2014-09-03 10:15:49.26088 UTC,6,平方公分與平方公尺的單位換算,平方公分公尺單位換算,area-perimeter-and-volume,geometry
+inheritance_bctest_cap,TRUE,,-5,-7,2015-01-19 07:08:03.3781 UTC,5,遺傳基測題,遺傳基測題,biology,biology
+integer_arithmetic,TRUE,"order_of_operations,word_problem_formula_translate,four_operations_and_decimal_fraction",17,-8,2014-08-31 07:04:27.19497 UTC,9,能熟練整數四則混合計算,能熟練整數四則混合計算,order-of-operations,arithmetic
+inverse_proportional_calculation,TRUE,direct_and_inverse_variation,35,5,2014-06-26 04:13:13.75912 UTC,15,反比的計算,反比的計算,rates-and-ratios,arithmetic
+factor_word_problems,FALSE,greatest_common_divisor,16,-11,2014-05-21 04:33:47.17583 UTC,9,因數的應用,因數的應用,factors-multiples,arithmetic
+dividing_polynomials_3,TRUE,dividing_polynomials_2,50,-8,2014-05-07 06:00:50.70827 UTC,22,多項式除以多項式2,多項式除以多項式2,polynomials,algebra
+volume_box,TRUE,area_of_squares_and_rectangles,37,-16,2014-02-06 04:29:38.87314 UTC,10,盒子的容積,盒子的容積,area-perimeter-and-volume,geometry
+finding_percentage,TRUE,,23,-5,2015-01-12 07:17:06.68235 UTC,7,百分比例,百分比例,ratio-percentage,arithmetic
+number_line_4,TRUE,number_line_0.7,6,2,2014-09-02 14:07:06.30738 UTC,6,數線上的加減(整數),數線上的加減(整數),absolute-value,algebra
+cuboid_volume_calculation,FALSE,,2,-12,2015-03-02 22:09:25.90019 UTC,0,長方體體積的計算,長方體體積的計算,N/A,N/A
+fraction_integer,TRUE,,25,-9,2014-12-30 16:11:07.77717 UTC,7,分數的整數倍,分數的整數倍,fractions,arithmetic
+volume_container,TRUE,"volume_box,volume_space",38,-15,2014-02-06 04:24:58.27555 UTC,11,倒水進容器,倒水進容器,area-perimeter-and-volume,geometry
+count_number_to_50,TRUE,number_within_fifty,-1,3,2014-12-28 16:30:17.49866 UTC,4,數到50,數到50,addition-subtraction,arithmetic
+interpreting_linear_equations,TRUE,"graphing_points_2,identifying_points_1,identifying_points_2",36,9,2012-10-11 17:54:48.46832 UTC,5,看懂線性方程式,看線性方程式,linear-equations-and-inequalitie,algebra
+linear_equations_3,TRUE,linear_equations_2,30,9,2012-10-11 17:54:53.00102 UTC,12,線性方程式 3,線性方程式3,solving-linear-equations-and-inequalities,algebra
+factoring_difference_of_squares_4,FALSE,,-15,-18,2012-10-11 17:54:58.00486 UTC,0,因式分解平方差 4,平方差4,polynomials,algebra
+expressions_with_unknown_variables_2,TRUE,expressions_with_unknown_variables,33,12,2012-10-11 17:55:01.72765 UTC,9,代入未解出的算式 2,代入未解出的算式 2,quadtratics,algebra
+congruent_triangles_1,TRUE,"angles_2,parallel_lines_2,basic_concept_of_congruent_triangles",35,-25,2012-10-11 17:55:43.50998 UTC,5,全等三角形 1,全等三角形1,congruent-triangles,geometry
+division_1,TRUE,division_0.5,7,-7,2012-10-11 17:54:21.92286 UTC,4,除以10以下的數字,除法 1,multiplication-division,arithmetic
+rounding_whole_numbers,TRUE,place_value,14,3,2012-10-11 17:54:42.54808 UTC,7,整數的四捨五入,整數捨入,decimals,arithmetic
+completing_the_square_2,TRUE,"solving_quadratics_by_factoring_2,completing_the_square_1",52,-2,2012-10-11 17:55:05.14532 UTC,15,配方法 2,配方法2,quadtratics,algebra
+age_word_problems,TRUE,linear_equations_3,31,10,2012-10-11 17:55:11.32335 UTC,21,年齡應用題,年齡應用,solving-linear-equations-and-inequalities,algebra
+simplifying_fractions,TRUE,"greatest_common_divisor,adding_fractions_with_common_denominators,equivalent_fractions_2,subtracting_fractions_with_common_denominators,equivalent_fractions_conversion",21,-10,2012-10-11 17:54:36.33083 UTC,9,簡化分數-約分,約分,fractions,arithmetic
+factoring_difference_of_squares_3,TRUE,factoring_difference_of_squares_2,50,-7,2012-10-11 17:54:57.59361 UTC,17,因式分解平方差 3,平方差3,polynomials,algebra
+quadratic_equation,TRUE,completing_the_square_2,53,-2,2012-10-11 17:55:00.91818 UTC,10,二次方程,二次方程,quadtratics,algebra
+parallel_lines_2,TRUE,"corresponding_angles_2,alternate_exterior_angles_2,alternate_interior_angles_2,same_side_exterior_angles_2,same_side_interior_angles_2",33,-26,2012-10-11 17:55:37.23244 UTC,11,平行線 2,平行線2,parallel-and-perpendicular-lines,geometry
+geometry_proofs_1,TRUE,"congruent_triangles_2,geometry_identification_concept",38,-26,2012-10-11 17:55:48.51892 UTC,60,幾何證明 1,幾何證明1,congruent-triangles,geometry
+subtraction_3,TRUE,subtraction_2,4,6,2012-10-11 17:54:17.69497 UTC,6,二位數的減法(需借位),二位數減法借位,addition-subtraction,arithmetic
+recognizing_rays_lines_and_line_segments,TRUE,"area_of_triangles_1,area_of_a_circle",24,-21,2012-10-11 17:55:28.63974 UTC,4,認識射線、線與線段,射線 線段,segments-and-angles,analytic-geometry
+comparing_decimal_place_value,TRUE,writing_and_interpreting_decimals,5,3,2015-01-12 07:14:40.24889 UTC,13,小數位值比較,小數位值比較,decimals,arithmetic
+matrix_row_operation,TRUE,matrix_basic_product,50,17,2014-05-21 04:48:13.93525 UTC,7,矩陣的列操作,矩陣的列操作,vectors-matrix,algebra
+area_of_a_circle2,TRUE,area_of_a_circle,23,-19,2014-06-27 07:14:57.14406 UTC,17,圓面積的計算,圓面積的計算,basic-geometry,geometry
+equal_parts_of_circles_and_rectangles,TRUE,halves_and_fourths,17,-2,2015-01-19 10:07:35.18226 UTC,5,圓形與長方形的等分,圓形與長方形的等分,fractions,arithmetic
+volume_box_nocover,TRUE,"volume_box,volume_space",38,-16,2014-02-06 04:24:08.10399 UTC,14,無蓋子的盒子容積計算,無蓋子的盒子容積計算,area-perimeter-and-volume,geometry
+statistical_table_and_chart,TRUE,reading_tables_2,15,-24,2014-08-31 17:16:48.51496 UTC,5,將原始資料整理成次數分配表與統計圖,整理成次數分配表統計圖,statistics,probability-statistics
+calculation_of_proportions,TRUE,"writing_proportions,ratio",31,-7,2014-07-08 07:01:08.98636 UTC,7,比例式的計算,比例式的計算,rates-and-ratios,arithmetic
+lines_plane_vertical_parallel,TRUE,points_lines_and_planes,26,-25,2014-08-31 16:12:21.45085 UTC,8,線與平面、平面與平面的平行與垂直,線、平面的平行與垂直,basic-geometry,geometry
+fractions_word_problem,TRUE,multiplying_fractions,25,-11,2014-06-27 07:15:30.72307 UTC,5,分數的應用問題,分數的應用問題,fractions,arithmetic
+adding_decimals_0.5_new,TRUE,,8,7,2015-01-12 07:16:06.73837 UTC,6,小數的加法0.5,小數的加法0.5,decimals,arithmetic
+seq_sequence_exam_3,TRUE,seq_sequence_exam_2,36,2,2015-02-26 17:03:37.52865 UTC,40,等差數列：綜合評量3,等差數列：綜合評量3,sequence_and_series,arithmetic
+equivalent_fractions_2,TRUE,equivalent_fractions,20,-6,2012-10-11 17:54:30.29409 UTC,5,等值分數 2,等值分數2,fractions,arithmetic
+systems_of_equations_with_elimination,TRUE,systems_of_equations_with_elimination_0.5,48,10,2012-10-11 17:55:08.14017 UTC,35,加減消去法,加減消去法 1,systems-of-eq-and-ineq,algebra
+logarithms_2,TRUE,logarithms_1,22,3,2012-10-11 17:55:13.55114 UTC,5,對數 2,對數2,exponents-radicals,algebra
+multiplication_2,TRUE,"multiplication_1.5,multiplication_with_carrying",8,-6,2012-10-11 17:54:22.95489 UTC,7,有進位的乘法,乘法 2,multiplication-division,arithmetic
+ordering_objects,FALSE,,-11,-19,2012-10-11 17:55:31.95269 UTC,5,,Ordr Objcts,N/A,N/A
+complementary_and_supplementary_angles,TRUE,"supplementary_angles,complementary_angles,measuring_angles",27,-19,2012-10-11 17:55:35.96325 UTC,5,餘角和補角,餘補角,segments-and-angles,analytic-geometry
+negative_number_word_problems,TRUE,"adding_and_subtracting_negative_numbers,number_line_3,definition_opposite_number",17,10,2012-10-11 17:54:21.14632 UTC,7,負數應用題,負應用,absolute-value,algebra
+line_graph_intuition,TRUE,slope_of_a_line,38,9,2012-10-11 17:54:48.71257 UTC,10,線性圖的直覺,線性圖直覺,linear-equations-and-inequalitie,algebra
+reading_bar_charts_3,TRUE,"reading_bar_charts_2,mean_median_and_mode",19,-24,2012-10-11 17:56:00.37807 UTC,11,長條圖 3,長條圖3,statistics,probability-statistics
+same_side_interior_angles,TRUE,segment_addition,30,-25,2012-10-11 17:55:34.46256 UTC,6,同側內角,同側內角,parallel-and-perpendicular-lines,geometry
+reading_tables_2,TRUE,reading_tables_1,14,-24,2012-10-11 17:56:00.16232 UTC,8,看表格 2,表格2,statistics,probability-statistics
+divisibility_intuition,TRUE,division_2,10,-11,2012-10-11 17:54:28.55327 UTC,7,整除直覺,整除直覺,factors-multiples,arithmetic
+cube_roots,TRUE,exponents_2,20,6,2012-10-11 17:55:17.5615 UTC,5,立方根,立方根,exponents-radicals,algebra
+multiplication_0.5,TRUE,addition_2,2,-5,2012-10-11 17:54:23.55714 UTC,4,基礎的乘法,乘法0.5,multiplication-division,arithmetic
+adding_decimals_0.5,TRUE,"decimals_on_the_number_line_2,decimals_on_the_number_line_2_new",10,3,2012-10-11 17:54:41.13124 UTC,12,小數的加法 0.5,加小數0.5,decimals,arithmetic
+division_2,TRUE,division_1.5,9,-7,2012-10-11 17:54:21.65683 UTC,6,三位數的整除2,除法 2,multiplication-division,arithmetic
+ordering_fractions,TRUE,comparing_fractions_2,24,-14,2012-10-11 17:54:37.17834 UTC,11,分數的排序,排分數,fractions,arithmetic
+slope_of_a_line,TRUE,interpreting_linear_equations,37,9,2012-10-11 17:54:47.28007 UTC,7,線的斜率,斜率,linear-equations-and-inequalitie,algebra
+multiplying_and_dividing_scientific_notation,TRUE,scientific_notation,23,3,2012-10-11 17:55:15.60887 UTC,14,科學記號的乘除,x÷科學記號,exponents-radicals,algebra
+probability_1,TRUE,counting_2,28,0,2012-10-11 17:55:53.89801 UTC,8,機率 1,機率1,probability,probability-statistics
+adding_and_subtracting_decimals_word_problems,TRUE,subtracting_decimals,14,6,2012-10-11 17:54:43.60189 UTC,19,小數加減應用題,小數加減應用,decimals,arithmetic
+decimals_on_the_number_line_2,TRUE,decimals_on_the_number_line_1,9,3,2012-10-11 17:54:44.80985 UTC,5,數線上面的小數 2,數線小數2,decimals,arithmetic
+combining_like_terms_2,TRUE,combining_like_terms_1,27,7,2012-10-11 17:54:56.70793 UTC,16,簡化式子 2,簡化式子1,solving-linear-equations-and-inequalities,algebra
+herons_formula,TRUE,shaded_areas,39,-21,2012-10-11 17:55:44.98864 UTC,26,海龍公式,海龍公式,area-perimeter-and-volume,geometry
+subtraction_2,TRUE,subtraction_1,3,6,2012-10-11 17:54:17.89997 UTC,5,二位數與三位數的減法(不用借位),二位三位數減法,addition-subtraction,arithmetic
+adding_and_subtracting_fractions,TRUE,"subtracting_fractions,adding_fractions",23,-4,2012-10-11 17:54:33.78886 UTC,17,分數加減,分數加減,fractions,arithmetic
+quotient_rule,TRUE,"power_rule,special_derivatives",60,-25,2012-10-11 17:56:02.65584 UTC,10,函數相除的微分公式,除法律,calculus,calculus
+number_line,TRUE,,0,4,2012-10-11 17:54:19.00474 UTC,5,數線,數線,addition-subtraction,arithmetic
+multiplying_radicals,TRUE,simplifying_radicals,28,5,2012-10-11 17:55:14.43457 UTC,7,二次方根計算2,二次方根計算2,exponents-radicals,algebra
+even_and_odd_functions,TRUE,functions_2,36,-4,2012-10-11 17:55:18.00768 UTC,4,奇函數或偶函數,奇函數或偶函數,algebra-functions,algebra
+shaded_areas,TRUE,"circles_and_arcs,areas_of_circles_and_sectors",38,-21,2012-10-11 17:55:33.66098 UTC,20,面積減法,面積減法,area-perimeter-and-volume,geometry
+multiplication_1,TRUE,multiplication_0.5,3,-5,2012-10-11 17:54:20.74357 UTC,4,一位數的乘法,乘法 1,multiplication-division,arithmetic
+matrix_gaussian_elimination,TRUE,matrix_row_echelon,53,18,2014-05-21 04:42:58.53425 UTC,16.5,矩陣的高斯消去法,矩陣的高斯消去法,vectors-matrix,algebra
+geometric_construction,TRUE,points_lines_and_planes,29,-23,2014-09-04 07:22:55.21185 UTC,18,尺規作圖2,尺規作圖2,basic-geometry,geometry
+regular_number_of_columns,TRUE,counting_2,27,3,2014-08-31 17:20:35.00825 UTC,6,日常生活中數列的規律,日常生活中數列的規律,sequence_and_series,arithmetic
+regrouping_decimals,TRUE,comparing_decimal_place_value,6,3,2014-12-29 15:46:58.78429 UTC,8,小數位值換算,小數位值換算,decimals,arithmetic
+adding_decimals_2_new,TRUE,,10,7,2015-01-12 07:15:20.82671 UTC,9,小數的加法2,小數的加法2,decimals,arithmetic
+basic_concept_of_circumcenter,TRUE,properties_of_incenters,35,-15,2014-07-24 02:05:08.20401 UTC,13,外心的基本概念,外心的基本概念,triangle-properties,geometry
+millimeter_and_centimeter,TRUE,understanding_decimals_place_value,15,4,2014-08-31 05:36:55.5085 UTC,5,公分與毫米,公分與毫米,decimals,arithmetic
+seq-arithmetic-sequences-l1,TRUE,seq_understaning_arithmetic_sequence_2,31,0,2015-02-12 08:01:25.70327 UTC,16,等差數列的計算1,等差數列的計算1,sequence_and_series,arithmetic
+multiplication_formula_sub,TRUE,multiplication_formula_add,50,-4,2014-06-26 03:58:14.24647 UTC,9,乘法公式-平方差公式,乘法公式-平方差公式,polynomials,algebra
+understand_coins,TRUE,number_line,1,4,2014-09-03 09:43:40.03565 UTC,9,認識硬幣,認識硬幣,addition-subtraction,arithmetic
+parts_of_circles,TRUE,perimeter_of_squares_and_rectangles,20,-19,2013-12-04 09:03:04.85017 UTC,4,圓的結構,圓的結構,basic-geometry,geometry
+number_sense_length_l1,TRUE,number_sense_length_l1,6,15,2015-02-10 12:01:47.97766 UTC,5,長度的量感1,長度的量感1,quantity-sense,arithmetic
+measuring_and_comparing_angles,TRUE,measuring_angles,26,-20,2013-12-04 09:00:22.67818 UTC,5,角度的測量與比較,比角度測角度,segments-and-angles,analytic-geometry
+l_ml_word_problem,TRUE,l_ml_transform,17,8,2014-05-21 04:41:33.58998 UTC,15,公升和毫公升的加減運算,公升和毫公升的加減運算,unit-conversion,arithmetic
+marking_inequalities_range_on_a_number_line,TRUE,one_step_inequalities,30,15,2014-08-31 17:41:16.89151 UTC,12,在數線上標示出不等式,在數線上標示出不等式,linear-equations-and-inequalitie,algebra
+multiplying_and_dividing,TRUE,arithmetic_word_problems,9,-1,2014-09-11 06:24:44.44677 UTC,9,乘法與除法的文字應用題,乘法與除法的文字應用題,multiplication-division,arithmetic
+count_one_by_one_1,TRUE,,-4,8,2014-09-03 09:35:18.06346 UTC,5,數一數0.5,數一數0.5,addition-subtraction,arithmetic
+square_root_calculation_3,TRUE,square_roots_2,23,7,2014-06-26 04:26:05.25322 UTC,7,二次方根的計算3,二次方根的計算3,exponents-radicals,algebra
+skip_counting_by_5s,TRUE,count_numbers,0,-1,2015-01-21 03:57:13.9782 UTC,9,以5為一單位時數的快速算法,5為單位數快速算法,addition-subtraction,arithmetic
+complex_fraction,TRUE,advanced_fraction,27,-11,2014-09-03 09:47:37.56267 UTC,10,化簡繁分數,化簡繁分數,fractions,arithmetic
+life_1,TRUE,,-7,-5,2014-12-19 06:23:18.01886 UTC,5,生命世界基測題,生命世界基測題,biology,biology
+notation_calculation_type,TRUE,number_properties_terminology_1,15,-6,2014-08-31 07:06:45.37407 UTC,25,具體情境解決兩步驟問題並學習併式的記法與計算,解決兩步驟問題學習併式,order-of-operations,arithmetic
+cube_rectangular_and_regular_tetrahedron,TRUE,,1,-11,2015-02-10 11:40:06.07217 UTC,4,正方體、長方體與正四面體,正方體長方體與正四面體,basic-geometry,geometry
+moving_points,TRUE,graphing_points_2,36,8,2014-07-15 03:21:00.72744 UTC,13,直角坐標上點的平移,直角坐標上點的平移,linear-equations-and-inequalitie,algebra
+multiplying_fractions_by_integers,TRUE,add_subtract_negative_fractions,22,11,2015-01-19 10:10:20.4295 UTC,7,分數乘以整數,分數乘以整數,fractions,arithmetic
+draw_a_pie_chart,TRUE,reading_bar_charts_3,20,-25,2014-09-04 06:42:15.7301 UTC,25,生活中常用的圓形圖,生活中常用的圓形圖,statistics,probability-statistics
+decimals_distributive_law_of_multiplication,TRUE,converting_decimals_to_fractions_2,26,-3,2014-08-31 07:53:55.50723 UTC,20,小數的乘法對加法減法的分配律來簡化計算過程,New Ex,decimals,arithmetic
+multiplication_with_carrying,TRUE,multiplication_1.5,7,-5,2015-01-12 07:13:41.41445 UTC,11,有進位的乘法2.5,有進位的乘法2.5,multiplication-division,arithmetic
+symmetry_concept_and_application,TRUE,judging_axis_of_symmetry,45,-30,2014-08-31 17:29:06.04752 UTC,5,線對稱圖形的性質與應用,線對稱圖形的性質與應用,transformations,geometry
+number_line_0.5,TRUE,number_line_0.5_new,3,-1,2014-12-28 16:01:16.89104 UTC,5,數線上的加減0.5(含有負數),數線上的加減0.5,absolute-value,algebra
+one_step_equation_problems,TRUE,"evaluating_expressions_1,understand_equivalent_axiom",27,11,2014-06-26 04:05:36.49231 UTC,14,等量公理解題,等量公理解題,solving-linear-equations-and-inequalities,algebra
+adding_subtracting_no_carry_3,TRUE,subtraction_3,6,6,2014-09-02 14:19:21.58648 UTC,7,熟練三位數不進位加減直式計算,三位數不進位加減直式,addition-subtraction,arithmetic
+inequality_properties,TRUE,linear_inequalities,32,14,2014-06-26 03:07:11.27223 UTC,6,不等式的性質應用,不等式的性質應用,solving-linear-equations-and-inequalities,algebra
+comparing_with_multiplication,TRUE,multiply_by_tens,5,-5,2014-12-29 15:44:45.22646 UTC,6,乘法的比較,乘法的比較,multiplication-division,arithmetic
+recognizing_fractions,TRUE,recognizing_fractions_0.5,20,-1,2012-10-11 17:54:30.51768 UTC,4,認得分數,認分數,fractions,arithmetic
+decimals_on_the_number_line_1,TRUE,"addition_2,regrouping_decimals",8,3,2012-10-11 17:54:40.83392 UTC,5,數線上的小數,數線小數,decimals,arithmetic
+rounding_numbers,TRUE,rounding_whole_numbers,15,3,2012-10-11 17:54:42.16575 UTC,7,四捨五入,四捨五入,decimals,arithmetic
+one_step_equations_0.5,FALSE,,-12,-17,2012-10-11 17:54:51.85331 UTC,5,單步驟方程式 0.5,單步驟方程式0.5,solving-linear-equations-and-inequalities,algebra
+identifying_points_2,TRUE,graphing_points,35,10,2012-10-11 17:55:22.59202 UTC,12,辨識座標 2,辨識座標 2,linear-equations-and-inequalitie,algebra
+geometry_proofs_2,TRUE,geometry_proofs_1,39,-26,2012-10-11 17:55:48.24426 UTC,11,幾何證明 2,幾何證明2,congruent-triangles,geometry
+parabola_intuition_3,TRUE,vertex_of_a_parabola,56,-1,2012-10-11 17:55:23.46171 UTC,44,?物線直覺 3,?物線直覺3,conic-sections,algebra
+attributs_of_shapes,TRUE,compare_shapes,24,-15,2015-01-13 16:24:13.05434 UTC,5,形狀的特性,形狀的特性,basic-geometry,geometry
+negative_nums_on_num_line_without_reference_to_zero,TRUE,number_line_3,16,11,2015-01-21 03:58:12.67645 UTC,7,生活中的負數,生活中的負數,absolute-value,algebra
+count_number_to_100,TRUE,"count_numbers,count_number_to_50,addition_within_20,meaning_of_equal_sign",0,2,2014-08-01 08:58:54.66965 UTC,5,數到100,數到100,addition-subtraction,arithmetic
+sort-groups-by-count_1,FALSE,,12,-23,2015-01-12 07:09:55.87988 UTC,0,按照數目或類別分類,按照數目或類別分類,statistics,probability-statistics
+fractions_and_percentage_of_exchange,FALSE,,1,-12,2015-02-17 00:36:12.24332 UTC,0,分數與百分率互換（不可整除）,分數百分率互換不整除,N/A,N/A
+ratio_and_the_ratio_of,TRUE,expressing_ratios_as_fractions,27,-10,2014-07-24 02:20:21.80341 UTC,13,比與比值2,比與比值2,rates-and-ratios,arithmetic
+matrix_mul_two_2,TRUE,,52,16,2014-08-31 07:37:57.27552 UTC,21,兩個矩陣的乘法1,兩個矩陣的乘法1,vectors-matrix,algebra
+time_word_problem_5,TRUE,time_word_problem_4,9,10,2014-09-04 05:28:11.8158 UTC,21,能解決時間乘除計算問題,能解決時間乘除計算問題,telling-time,arithmetic
+get_gcd_and_lcm,TRUE,"prime_factorization,find_gcd_and_lcm",13,-13,2014-09-04 04:02:49.24196 UTC,12,短除法求最大公因數最小公倍數,"短除法求GCD,LCM",factors-multiples,arithmetic
+writing_expressions_3,TRUE,writing_expressions_2,28,8,2014-05-21 04:53:42.12749 UTC,9,以符號列式及化簡的文字題,以符號列式及化簡的文字,solving-linear-equations-and-inequalities,algebra
+adding_and_subtracting_within_20,TRUE,"subtraction_within_20,repeated_addition",2,3,2014-09-03 09:34:49.4795 UTC,6,20以內的連加或連減,20以內的連加或連減,addition-subtraction,arithmetic
+short_divide_gcf_and_lcm,TRUE,,0,-7,2015-02-10 11:34:13.794 UTC,12,最大公因數與最小公倍數應用題（短除法）,"gcd, lcm應用題",factors-multiples,arithmetic
+represent_by_symbol_multiplier,TRUE,represent_by_symbol_subtrahend,24,9,2014-08-01 09:18:16.22553 UTC,9,用符號代表數-解決被乘數或乘數未知的問題,解決被乘數乘數未知問題,solving-linear-equations-and-inequalities,algebra
+multiplication_word_problems,TRUE,"multiplication_4,multiplication_3",12,-2,2014-08-07 10:40:45.14141 UTC,9,乘法的應用問題,乘法的應用問題,multiplication-division,arithmetic
+seq-arithmetic-means-1,TRUE,,32,1,2015-02-17 00:38:37.39081 UTC,7,等差中項1,等差中項1,sequence_and_series,arithmetic
+simplifying_rational_expressions_2,FALSE,,-14,-17,2012-10-11 17:55:04.26759 UTC,0,簡化有理式 2,簡化有理式2,quadtratics,algebra
+exponents_4,TRUE,exponents_3,21,4,2012-10-11 17:55:12.25643 UTC,11,指數 4,指數4,exponents-radicals,algebra
+simplifying_radicals,TRUE,"square_roots_2,simplify_the_root_type,radical_multiplication_and_division",27,5,2012-10-11 17:55:14.86505 UTC,8,二次方根計算1,二次方根計算1,exponents-radicals,algebra
+percentage_word_problems_1,TRUE,"converting_decimals_to_percents,converting_percents_to_decimals",27,-5,2012-10-11 17:54:46.45102 UTC,18,百分比應用題 1,%應用1,ratio-percentage,arithmetic
+distance_formula,TRUE,"pythagorean_theorem_1,pythagorean_thaorem_application",42,-13,2012-10-11 17:54:51.02704 UTC,15,距離公式,距離公式,pythagorean-theorem,algebra
+permutations_1,TRUE,counting_2,28,-1,2012-10-11 17:55:54.80868 UTC,5,排列組合 1,排列組合1,probability,probability-statistics
+systems_of_equations_with_substitution,TRUE,graphing_systems_of_equations,47,11,2012-10-11 17:55:07.15593 UTC,38,代入消去法,代入消去法,systems-of-eq-and-ineq,algebra
+exploring_mean_and_median,TRUE,order_of_operations,17,-23,2012-10-11 17:55:59.50313 UTC,28,平均值與中間值,平均中間,statistics,probability-statistics
+angle-types,FALSE,,-14,-18,2012-10-12 05:12:50.13255 UTC,0,,New Ex,N/A,N/A
+writing_expressions_1,TRUE,evaluating_expressions_1,26,8,2012-10-11 17:54:51.42182 UTC,8,寫式子 1,寫式子1,solving-linear-equations-and-inequalities,algebra
+factoring_polynomials_3,FALSE,,-14,-19,2012-10-11 17:55:04.57406 UTC,0,提取公因式法 3,提取公因式法3,polynomials,algebra
+fractions_on_the_number_line_3,TRUE,fractions_on_the_number_line_2,25,-6,2012-10-11 17:54:38.25249 UTC,5,數線上的分數 3,數線分數3,fractions,arithmetic
+subtracting_fractions_with_common_denominators,TRUE,"order_of_operations,recognizing_fractions_0.5,decomposing_fractions",20,-3,2012-10-11 17:54:29.94111 UTC,5,分數減法 相同分母,同分母減法,fractions,arithmetic
+adding_decimals_2,TRUE,adding_decimals,12,4,2012-10-11 17:54:45.17873 UTC,11,小數的加法 2,加小數2,decimals,arithmetic
+adding_and_subtracting_radicals,TRUE,simplifying_radicals,24,6,2012-10-11 17:55:14.65295 UTC,14,根式的加減運算,根式的加減運算,exponents-radicals,algebra
+graphing_points,TRUE,linear_equations_1,34,9,2012-10-11 17:55:21.8734 UTC,5,點的繪製,點的繪製,linear-equations-and-inequalitie,algebra
+corresponding_angles_2,TRUE,"parallel_lines_1,congruent_angles",32,-27,2012-10-11 17:55:41.23289 UTC,8,同位角 2,同位角2,parallel-and-perpendicular-lines,geometry
+inscribed_angles_1,TRUE,"circles_and_arcs,radius_angle,circumferential_angle",42,-22,2012-10-11 17:55:47.20224 UTC,6,圓周角與圓心角換算 1,圓周角與圓心角換算1,circle-properties,geometry
+slope_intercept_form,TRUE,"line_graph_intuition,solving_for_the_x-intercept",39,10,2012-10-11 17:54:48.2005 UTC,23,斜截式,斜截式,linear-equations-and-inequalitie,algebra
+functions_3,TRUE,functions_2,36,-2,2012-10-11 17:55:20.30796 UTC,29,函數 3,函數3,algebra-functions,algebra
+rate_problems_2,TRUE,rate_problems_1,31,-11,2012-10-11 17:54:12.26879 UTC,9,速率問題 2,速率2,rates-and-ratios,arithmetic
+reading_line_charts_1,TRUE,reading_bar_charts_1,17,-26,2012-10-11 17:55:57.40644 UTC,5,折線圖 1,折線圖1,statistics,probability-statistics
+percentage_word_problems_2,TRUE,percentage_word_problems_1,28,-5,2012-10-11 17:54:46.13763 UTC,17,百分比應用題 2,%應用2,ratio-percentage,arithmetic
+segment_addition,TRUE,"measuring_segments,congruent_segments",27,-22,2012-10-11 17:55:29.47342 UTC,16,線段加法,線段加法,segments-and-angles,analytic-geometry
+pythagorean_theorem_2,TRUE,trigonometry_1.5,51,-24,2012-10-11 17:55:51.02009 UTC,6,畢氏定理 2,畢氏定理2,trigonometry,analytic-geometry
+arithmetic_word_problems_1,TRUE,"addition_2,subtraction_2",4,5,2012-10-11 17:54:15.60633 UTC,9,二位數加減法應用題,二位數加減法應用題,addition-subtraction,arithmetic
+factoring_difference_of_squares_1,TRUE,"multiplying_expressions_1,multiplying_polynomials",48,-7,2012-10-11 17:54:57.08225 UTC,9,因式分解平方差 1,平方差1,polynomials,algebra
+recognizing_conic_sections,TRUE,adding_and_subtracting_polynomials,46,3,2012-10-11 17:55:25.12821 UTC,4,認得圓錐曲線,認得圓錐曲線,conic-sections,algebra
+multiplying_2_digits_by_2_digits_with_area_models,TRUE,multiplication_2,9,-5,2015-01-12 07:14:09.04312 UTC,10,二位數乘以二位數應用,二位數乘以二位數應用,multiplication-division,arithmetic
+adding_subtracting_dicimals_fractions_and_percentage,TRUE,adding_and_subtracting_negative_numbers,19,11,2015-01-19 10:23:20.87307 UTC,14,"負數的加減(小數,分數,百分比)",負數的加減2,absolute-value,algebra
+adding_subtracting_carry_2,TRUE,"subtraction_4,subtraction_and_addition",11,6,2014-08-31 03:46:25.37558 UTC,19,能用併式紀錄加減兩步驟的問題,併式紀錄加減兩步驟問題,addition-subtraction,arithmetic
+area_of_fans,TRUE,sectors_as_fraction_of_circles_2,44,-21,2014-07-08 07:04:40.49221 UTC,17,弧長與扇形面積1,弧長與扇形面積1,circle-properties,geometry
+length_word_problem,TRUE,"measuring_lengths_2,comparing_lengths",25,-16,2015-01-19 10:04:56.08691 UTC,7,長度比較文字應用題,長度比較文字應用題,basic-geometry,geometry
+angle_rotation,TRUE,understanding_comparing_angle,24,-19,2014-09-04 06:50:59.49642 UTC,5,理解旋轉角,理解旋轉角,basic-geometry,geometry
+linear_equations_word_problems_2,TRUE,application_of_linear_equations_1,34,8,2014-06-26 03:53:31.93245 UTC,32,一元一次方程式應用問題2,一元一次方程式應用2,solving-linear-equations-and-inequalities,algebra
+define_one_function,TRUE,functions_1,34,-2,2014-08-31 06:23:03.18676 UTC,5,一次函數的定義,一次函數的定義,algebra-functions,algebra
+kg_g_unit_transform,TRUE,metric_weight_unit_conversion,17,5,2014-06-27 07:17:40.42283 UTC,5,公斤與公克的單位換算1,公斤與公克的單位換算1,unit-conversion,arithmetic
+recognize_graph_zoom_effect,TRUE,congruent_triangles_2,36,-28,2014-09-04 07:15:43.51706 UTC,10,"平面圖形放大,縮小對長度,角度與面積的影響",平面圖形放大縮小的影響,similar-triangle,geometry
+seq_understaning_arithmetic_sequence_2,TRUE,seq_understaning_arithmetic_sequence_1,31,1,2015-02-04 15:04:55.40043 UTC,5,認識等差數列2,認識等差數列2,sequence_and_series,arithmetic
+systems_of_equ_substitution_1,TRUE,systems_of_equations_with_substitution,48,12,2014-04-30 07:36:27.19673 UTC,18,代入消去法 1,代入消去法 1,systems-of-eq-and-ineq,algebra
+add_subtract_negative_fractions,TRUE,operations_with_negative_numbers,21,11,2014-06-26 02:37:14.84407 UTC,8,正負分數的加法,正負分數的加法,absolute-value,algebra
+systems_of_equations_with_elimination_3,TRUE,"systems_of_equ_elimination_1,systems_of_equations_with_elimination_2",51,10,2014-06-27 04:03:37.54499 UTC,44.5,加減消去法 3,加減消去法 3,systems-of-eq-and-ineq,algebra
+systems_of_equ_elimination_1,TRUE,systems_of_equations_with_elimination,49,10,2014-04-30 07:34:20.43495 UTC,19,加減消去法 1,加減消去法 1,systems-of-eq-and-ineq,algebra
+large_angle_long_edge,TRUE,triangle_types,31,-18,2014-07-08 07:07:29.42283 UTC,6,大邊對大角-大角對大邊,大邊對大角-大角對大邊,triangle-properties,geometry
+classification_bctest_cap,TRUE,,-3,-7,2015-01-19 07:11:21.4892 UTC,5,分類基測題,分類基測題,biology,biology
+recognize_decimal_percentile_position,TRUE,"adding_decimals_2,comparing_decimals_2",12,5,2014-09-03 09:16:49.51753 UTC,5,認識二位小數與百分位的位名並比較,二位小數與百分位名比較,decimals,arithmetic
+volume_of_rectangular_boxes_2,TRUE,volume_of_rectangular_boxes,38,-18,2014-02-14 08:01:42.31143 UTC,36,複合形立方體積的計算,複合形立方體積的計算,area-perimeter-and-volume,geometry
+eval_expressions_w_two_var,TRUE,simplify_expressions_w_two_var_1,31,7,2014-06-26 02:55:11.58582 UTC,12,二元一次式的值,二元一次式的值,solving-linear-equations-and-inequalities,algebra
+matrix_submatrix,TRUE,matrix_add_zero_negative,51,14,2014-04-30 07:27:43.11364 UTC,29.75,找出子矩陣,找出子矩陣,vectors-matrix,algebra
+application_of_scientific_notation,TRUE,scientific_notation_decimals,24,1,2014-07-26 11:13:22.50565 UTC,8,以科學記號表示生活中的量,科學記號表示生活中的量,exponents-radicals,algebra
+re_graphics,TRUE,large_angle_long_edge,31,-16,2014-09-04 06:59:43.91433 UTC,10,將簡單圖形切割重組成另一簡單圖形,簡單圖形切割重組,basic-geometry,geometry
+multiplying_fractions_and_whole_numbers_word_problems,FALSE,,22,-11,2014-12-30 16:12:19.17749 UTC,0,分數乘法的應用1,分數乘法的應用1,fractions,arithmetic
+operations_with_negative_numbers,TRUE,"adding_and_subtracting_negative_numbers,adding_subtracting_dicimals_fractions_and_percentage",20,11,2014-05-07 06:04:23.72649 UTC,26,負整數的四則運算,負整數的四則運算,absolute-value,algebra
+matrix_mul_scalar,TRUE,matrix_add_sub_3,51,16,2014-04-30 07:22:05.25222 UTC,7,矩陣與常數的乘法,矩陣與常數的乘法,vectors-matrix,algebra
+sequences_word_problems,TRUE,arithmetic_series_1,32,4,2014-03-07 09:22:08.70521 UTC,55,等差數列的應用,等差數列的應用,sequence_and_series,arithmetic
+seq_sequence_pattern_2,TRUE,seq_sequence_pattern_1,30,5,2015-02-26 16:35:31.57988 UTC,7,數列的規律2,數列的規律2,sequence_and_series,arithmetic
+seq-arithmetic-means-2,TRUE,seq-arithmetic-means-1,33,1,2015-02-17 00:42:45.14389 UTC,8,等差中項2,等差中項2,sequence_and_series,arithmetic
+word_problem_formula_translate,TRUE,notation_calculation_type,16,-7,2014-09-04 07:12:58.80495 UTC,19,具體情境解決三步驟問題並併式計算,解決三步驟問題併式計算,order-of-operations,arithmetic
+triangles_similar_nature,TRUE,"congruent_triangles_2,recognize_graph_zoom_effect,planar_graph_resizing",36,-31,2014-08-01 09:10:36.66961 UTC,20,三角形相似性質,三角形相似性質,similar-triangle,geometry
+inequality_symbol_word_problems,TRUE,solving_linear_inequalities,33,13,2014-06-26 03:11:15.8272 UTC,6,運用不等式的符號,運用不等式的符號,solving-linear-equations-and-inequalities,algebra
+simplify_expressions_w_two_var_2,TRUE,simplify_expressions_w_two_var_1,31,5,2014-06-26 04:19:04.18272 UTC,12,二元一次式化簡問題(2)-分配律(1),二元一次式化簡分配律1,solving-linear-equations-and-inequalities,algebra
+dividing_polynomials_1,TRUE,"multiplying_expressions_1,multiplying_polynomials,recognizing_factoring",48,-8,2014-05-07 05:58:38.33133 UTC,9,多項式除以單項式,多項式除以單項式,polynomials,algebra
+number_line_0.7,TRUE,number_line_0.7_new,5,1,2014-12-28 16:03:34.81496 UTC,5,數線上的加減0.7(含有負數),數線上的加減0.7,absolute-value,algebra
+corresponding_angles,TRUE,segment_addition,30,-27,2012-10-11 17:55:35.62292 UTC,4,同位角,同位角,parallel-and-perpendicular-lines,geometry
+subtracting_decimals_0.5,TRUE,"subtraction_4,adding_decimals",12,6,2012-10-11 17:54:44.29255 UTC,11,小數的減法 0.5,減小數0.5,decimals,arithmetic
+composite_numbers,TRUE,"divisibility_0.5,divisibility_tests",12,-10,2012-10-11 17:54:27.82274 UTC,5,質數與合數,質數與合數,factors-multiples,arithmetic
+graphing_inequalities_2,TRUE,graphing_inequalities,44,8,2012-10-11 17:55:05.96929 UTC,25,畫不等式 2,畫不等式2,linear-equations-and-inequalitie,algebra
+pythagorean_theorem_1,TRUE,adding_and_subtracting_radicals,39,-13,2012-10-11 17:54:50.20128 UTC,12,畢氏定理 1,畢氏定理1,pythagorean-theorem,algebra
+parallel_lines_1,TRUE,"same_side_exterior_angles,same_side_interior_angles,alternate_exterior_angles,alternate_interior_angles,corresponding_angles",31,-25,2012-10-11 17:55:35.12373 UTC,5,平行線 1,平行線1,parallel-and-perpendicular-lines,geometry
+division_word_problems_1,TRUE,division_1.5,9,-6,2013-11-07 12:56:05.43737 UTC,5,除法應用題1,除法應用題1,multiplication-division,arithmetic
+number_line_0.5_new,TRUE,number_line,2,1,2015-01-19 10:30:41.35962 UTC,6,數線上的加減0.5,數線上的加減0.5,absolute-value,algebra
+volume_of_cylinders,TRUE,areas_of_circles_and_sectors,38,-23,2014-02-14 08:03:38.04808 UTC,5,圓柱的體積,圓柱的體積,area-perimeter-and-volume,geometry
+dividing_decimals_int_to_int_0.7,TRUE,dividing_decimals_int_to_int_0.5,14,0,2014-12-30 16:09:24.07206 UTC,6,小數除法0.7(整數除以整數）,小數除法0.7,decimals,arithmetic
+polygon_similarity,TRUE,calculations_using_similar_shapes,42,-33,2014-08-31 16:01:16.4697 UTC,5,多邊形相似的意義,多邊形相似的意義,similar-triangle,geometry
+multiplication_formula_1,TRUE,multiplying_polynomials,48,-4,2014-07-26 11:16:33.94334 UTC,10,乘法公式的基礎運算,乘法公式的基礎運算,polynomials,algebra
+volume_of_rectangular_boxes,TRUE,"area_of_squares_and_rectangles,volume_and_cc",41,-17,2014-02-14 08:01:07.78981 UTC,14,立方體積的計算,立方體積的計算,area-perimeter-and-volume,geometry
+narrative_and_opposite_narrative,TRUE,,30,-33,2014-08-31 17:31:14.6626 UTC,5,敘述與逆敘述的關係,敘述與逆敘述的關係,logical-reasoning,logics
+multiplication_formula_add,TRUE,multiplication_formula_1,49,-4,2014-06-26 03:57:35.79872 UTC,11,乘法公式-和平方公式,乘法公式-和平方公式,polynomials,algebra
+kg_g_arithmatic,TRUE,"kg_g_unit_transform,kg_g_unit_transform2",18,5,2014-06-27 07:16:29.56594 UTC,19,公斤與公克的加減運算,公斤與公克的加減運算,unit-conversion,arithmetic
+consistency_bctest_cap,TRUE,,-3,-5,2015-01-19 07:02:31.6381 UTC,5,恆定基測題,恆定基測題,biology,biology
+time_units_transformation_2,TRUE,time_units_transformation_1,12,10,2013-11-29 09:40:05.53053 UTC,6,時間單位的轉換 2,時間單位轉換2,telling-time,arithmetic
+multiplicative_problems,TRUE,"fraction_word_problems_1,fraction_of_one_step_to_unknow_formula",21,-6,2014-08-31 06:37:51.27725 UTC,6,具體情境中解決分數的兩步驟問題並併式計算,解決分數的兩步驟問題,fractions,arithmetic
+number_sense_weight_l1,TRUE,,6,16,2015-02-10 12:07:00.24284 UTC,5,重量的量感1,重量的量感1,quantity-sense,arithmetic
+using_fractions_to_divide_pizzas_pies_and_cakes,TRUE,fractions_word_problem,27,-12,2015-01-21 03:59:39.85129 UTC,6,披薩、水果派與蛋糕分配問題,披薩水果派蛋糕分配問題,fractions,arithmetic
+adding_decimals,TRUE,"addition_4,adding_decimals_0.5,recognize_num_less_than_10000",11,4,2012-10-11 17:54:44.57327 UTC,12,小數的加法,加小數,decimals,arithmetic
+multiplication_3,TRUE,"multiplication_2,multiplying_2_digits_by_2_digits_with_area_models",10,-4,2012-10-11 17:54:22.70288 UTC,13,三位數乘以二位數,乘法 3,multiplication-division,arithmetic
+divisibility,TRUE,prime_factorization,15,-12,2012-10-11 17:54:26.26936 UTC,7,整除性,整除性,factors-multiples,arithmetic
+trigonometry_1,TRUE,"trigonometry_0.5,unit_circle",49,-25,2012-10-11 17:55:50.05387 UTC,7,三角函數 1,三角函數1,trigonometry,analytic-geometry
+multiplication_4,FALSE,multiplication_3,11,-3,2012-10-11 17:54:22.36258 UTC,11,多位數的乘法,乘法 4,multiplication-division,arithmetic
+linear_equations_1,TRUE,"evaluating_expressions_2,one_step_equations,combining_like_terms_2",28,9,2012-10-11 17:54:52.57052 UTC,5,線性方程式 1,線性方程式1,solving-linear-equations-and-inequalities,algebra
+solving_for_a_variable,TRUE,linear_equations_4,33,10,2012-10-11 17:54:55.52434 UTC,24,整理出變數,整理出變數,solving-linear-equations-and-inequalities,algebra
+converting_repeating_decimals_to_fractions_2,TRUE,converting_repeating_decimals_to_fractions_1,33,11,2012-10-11 17:55:08.51457 UTC,15,循環小數轉換成分數 2,循環小數轉分數 2,solving-linear-equations-and-inequalities,algebra
+solutions_to_systems_of_equations,TRUE,graphing_systems_of_equations,47,9,2012-10-11 17:55:10.74251 UTC,7,解聯立方程式,解聯立方程式,systems-of-eq-and-ineq,algebra
+comparing_fractions_2,TRUE,comparing_fractions_1,23,-14,2012-10-11 17:54:37.4455 UTC,5,分數的比較 2,比較分數2,fractions,arithmetic
+plotting_the_line_of_best_fit,TRUE,reading_line_charts_1,18,-26,2012-10-11 17:56:00.59838 UTC,6,最佳擬合線,擬合,statistics,probability-statistics
+square_roots_2,TRUE,"square_roots,computing_law_with_power",23,5,2012-10-11 17:55:17.33158 UTC,6,根號的近似值,根號的近似值,exponents-radicals,algebra
+number_line_2,TRUE,subtracting_decimals,14,9,2012-10-11 17:54:15.99409 UTC,6,數線上的加減,數線上的加減,absolute-value,algebra
+factoring_polynomials_by_grouping_1,FALSE,factoring_polynomials_2,50,-5,2012-10-11 17:55:05.68753 UTC,25,提出公因式法 1,提出公因式法1,polynomials,algebra
+significant_figures_1,TRUE,scientific_notation,23,2,2012-10-11 17:55:15.32117 UTC,4,有效數字 1,有效數字1,exponents-radicals,algebra
+radians_and_degrees,TRUE,"radians_to_degrees,degrees_to_radians",47,-25,2012-10-11 17:55:52.60822 UTC,8,弧度與角度,弧度 <-> 角度,trigonometry,analytic-geometry
+fractions_on_the_number_line_2,TRUE,converting_mixed_numbers_and_improper_fractions,24,-6,2012-10-11 17:54:38.45733 UTC,5,數線上的分數 2,數線分數2,fractions,arithmetic
+angle_addition_postulate,TRUE,vertical_angles,29,-20,2012-10-11 17:55:42.63937 UTC,24,角度加法推理,加角度解x,segments-and-angles,analytic-geometry
+radians_to_degrees,TRUE,congruent_triangles_2,46,-26,2012-10-11 17:55:52.82257 UTC,10,弧度轉換成角度,弧度 -> 角度,trigonometry,analytic-geometry
+subtracting_fractions,TRUE,"subtracting_fractions_with_common_denominators,simplifying_fractions",22,-3,2012-10-11 17:54:35.62206 UTC,22,分數減法,分數減法,fractions,arithmetic
+equation_of_a_hyperbola,TRUE,equation_of_a_circle_1,48,5,2012-10-11 17:55:22.89356 UTC,11.25,雙曲線方程式,雙曲線方程式,conic-sections,algebra
+units,TRUE,"multiplying_fractions,complex_fraction",28,-11,2012-10-11 17:54:14.40077 UTC,19,單位,單位,rates-and-ratios,arithmetic
+arithmetic_word_problems,TRUE,"arithmetic_word_problems_2,multiplication_and_division_word_problems",9,-2,2012-10-11 17:54:19.6431 UTC,9,乘法除法應用題,乘法除法應用題,multiplication-division,arithmetic
+factorization_quadratic_polynomial,TRUE,solving_quadratics_by_factoring,51,-3,2014-08-31 17:36:39.73532 UTC,14,因式分解解一元二次方程式,因式分解一元二次方程式,quadtratics,algebra
+matrix_app_fruit_oil,FALSE,"matrix_mul_scalar,matrix_mul_scalar",53,16,2014-06-09 09:42:21.05984 UTC,10,矩陣向量-成份比例,矩陣向量-成份比例,vectors-matrix,algebra
+count_number_to_20,TRUE,,-2,5,2014-12-28 16:29:26.38405 UTC,5,數一數-20以內的數,數一數-20以內的數,addition-subtraction,arithmetic
+the_four_arithmetic_exponentially,TRUE,simplifying_expressions_with_exponents,22,7,2014-08-31 04:36:55.66251 UTC,31,含有指數的四則運算,含有指數的四則運算,exponents-radicals,algebra
+simplify_expressions_w_two_var_3,TRUE,simplify_expressions_w_two_var_1,31,6,2014-06-26 04:21:27.35539 UTC,11,二元一次式化簡問題(3)-分配律(2),二元一次式化簡分配律2,solving-linear-equations-and-inequalities,algebra
+radius_angle_by_percentage,TRUE,,0,-10,2015-02-10 11:43:59.99489 UTC,7,運用百分率算出圓心角,運用百分率算出圓心角,circle-properties,geometry
+matrix_transpose,TRUE,matrix_basic_product,51,18,2014-05-21 04:49:36.75621 UTC,7,矩陣轉置,矩陣轉置,vectors-matrix,algebra
+parallel_lines_proportion,TRUE,parallel_lines_2,33,-28,2014-08-31 16:02:24.84074 UTC,12,平行線截比例線段性質,平行線截比例線段性質,parallel-and-perpendicular-lines,geometry
+interpreting_absolute_value,TRUE,absolute_value,21,12,2015-01-19 10:22:28.2833 UTC,9,絕對值概念的文字題,絕對值概念的文字題,absolute-value,algebra
+range_quarter_case_chart,TRUE,mean_median_and_mode,18,-22,2014-08-31 17:17:52.04899 UTC,6,全距、四分位距與盒狀圖,全距、四分位距與盒狀圖,statistics,probability-statistics
+separation_and_union,TRUE,count_one_by_one_1,-3,7,2014-09-03 09:40:33.23556 UTC,5,10以內的分合,10以內的分合,addition-subtraction,arithmetic
+baseline_compareline,TRUE,"ratio_and_the_ratio_of,scale,basic_compared_with_the_reference_quantity",29,-10,2014-08-07 10:38:28.80104 UTC,11,基準量與比較量,基準量與比較量,rates-and-ratios,arithmetic
+dividing_polynomials_5,TRUE,dividing_polynomials,50,-9,2014-05-07 06:02:30.37192 UTC,32,多項式的除法2,多項式的除法2,polynomials,algebra
+age_problems_new,TRUE,writing_expressions_1,27,10,2014-06-09 07:59:43.42556 UTC,14,年齡問題 2,年齡問題 2,solving-linear-equations-and-inequalities,algebra
+application_of_linear_equations_2,FALSE,,-15,-19,2014-06-09 09:40:15.02971 UTC,12,一元一次方程式的應用問題2,一元一次應用問題2,solving-linear-equations-and-inequalities,algebra
+simple_hologram_concept,TRUE,volume_of_rectangular_boxes_2,39,-15,2014-08-31 16:15:03.76101 UTC,5,簡單的立體圖形,簡單的立體圖形,area-perimeter-and-volume,geometry
+seq_sequence_exam_2,TRUE,seq_sequence_exam_1,35,1,2015-02-26 17:02:38.58821 UTC,6,等差數列：綜合評量2,等差數列：綜合評量2,sequence_and_series,arithmetic
+areas_of_trapezoids,TRUE,angles_2,36,-21,2013-12-24 07:28:41.74808 UTC,7,梯形的面積,梯形的面積,area-perimeter-and-volume,geometry
+circumferential_angle,TRUE,radius_angle,41,-22,2014-08-31 05:23:12.68393 UTC,11,圓周角,圓周角,circle-properties,geometry
+decimal_two_steps,TRUE,understanding_moving_the_decimal,15,2,2014-08-31 05:35:28.60455 UTC,15,具體情境中解決小數的兩步驟問題並併式計算,解決小數的兩步驟問題,decimals,arithmetic
+morning_afternoon_night,TRUE,time_terminology,5,9,2014-09-04 05:29:36.59897 UTC,6,時間用語2,時間用語2,telling-time,arithmetic
+absolute_value_add_sub,TRUE,"absolute_value,absolute_values_meaning",23,13,2014-05-07 05:53:43.65125 UTC,13,含有絕對值的加減運算,含有絕對值的加減運算,absolute-value,algebra
+sectors_as_fraction_of_circles_2,TRUE,sectors_as_fraction_of_circles_1,43,-21,2014-03-17 07:00:21.76652 UTC,18,扇形與圓心角2,扇形與圓心角2,circle-properties,geometry
+approximate_number,TRUE,rounding_numbers,16,3,2014-09-03 09:07:43.03706 UTC,7,概數的應用,概數的應用,decimals,arithmetic
+parallel_and_perpendicular,TRUE,points_lines_and_planes,26,-23,2014-09-04 06:58:18.50523 UTC,9,認識面線與面的平行與垂直,認識面線與面的平行垂直,basic-geometry,geometry
+area_relationship_larger_narrow_graph,TRUE,triangles_similar_nature,37,-31,2014-08-31 04:39:57.24049 UTC,8,放大圖與縮小圖的面積關係1,放大圖縮小圖面積關係1,similar-triangle,geometry
+km_m_unit_transform,FALSE,metric_area_unit_comparison,18,7,2014-06-27 07:18:07.45282 UTC,3,公里與公尺的換算,公里與公尺的換算,unit-conversion,arithmetic
+subtraction_of_vary_denominator_fraction,TRUE,subtract_of_positive_negative_fraction,25,-2,2014-09-03 09:52:19.90527 UTC,21,異分母的正負分數減法,異分母的正負分數減法,fractions,arithmetic
+trapezoid_concept_and_application,TRUE,concepts_related_to_diamond,36,-12,2014-08-31 17:25:31.54249 UTC,9,梯形的性質與應用,梯形的性質與應用,quadrilaterals-and-polygons,geometry
+matrix_app_fruit_oil,FALSE,"matrix_mul_scalar,matrix_mul_scalar",53,16,2014-06-20 03:42:02.24297 UTC,10,矩陣向量-成份比例,矩陣向量-成份比例,vectors-matrix,algebra
+four_operations_and_decimal_fraction,FALSE,order_of_operations,17,-6,2014-09-04 07:12:23.50943 UTC,10,分數與小數的四則運算,分數與小數的四則運算,order-of-operations,arithmetic
+understanding_moving_the_decimal,TRUE,multiplying_decimals,14,2,2012-10-11 17:54:39.43332 UTC,5,了解小數點的移位,小數移位,decimals,arithmetic
+comparing_improper_fractions_and_mixed_numbers,TRUE,converting_mixed_numbers_and_improper_fractions,24,-8,2012-10-11 17:54:36.90832 UTC,6,比較假分數和帶分數,比假貸分數,fractions,arithmetic
+simplifying_rational_expressions_1,FALSE,,-13,-18,2012-10-11 17:55:03.97249 UTC,0,簡化有理式 1,簡化有理式1,quadtratics,algebra
+estimation_with_decimals,TRUE,"rounding_numbers,approximate_number",17,3,2012-10-11 17:54:39.19895 UTC,14,用小數來估計,小數估計,decimals,arithmetic
+multiplying_decimals,TRUE,"multiplication_4,integers_multiply_decimals",13,2,2012-10-11 17:54:43.34193 UTC,16,小數的乘法,乘小數,decimals,arithmetic
+multiplying_expressions_1,TRUE,multiplying_expressions_0.5,47,-7,2012-10-11 17:54:58.42355 UTC,6,式子的乘法 1,式子乘法1,polynomials,algebra
+functions_2,TRUE,"functions_1,constant_function_and_a_fuction",35,-3,2012-10-11 17:55:20.80797 UTC,18,函數 2,函數2,algebra-functions,algebra
+dividing_complex_numbers,TRUE,multiplying_complex_numbers,49,-12,2012-10-11 17:55:25.61283 UTC,20,虛數的除法,虛數的除法,complex-numbers,algebra
+triangle_types,TRUE,angle_addition_postulate,30,-19,2012-10-11 17:55:47.62507 UTC,4,三角形的類別,三角形種類,triangle-properties,geometry
+limits_1,TRUE,"quadratic_equation,graphs_of_sine_and_cosine,inverse_trig_functions,trig_identities_1",55,-25,2012-10-11 17:56:05.41634 UTC,5,極限 1,極限1,calculus,calculus
+prime_factorization,TRUE,"prime_numbers,composite_numbers",13,-12,2012-10-11 17:54:27.47996 UTC,6,質因數分解法,質因數分解法,factors-multiples,arithmetic
+common_factors_of_a_polynomial_2,FALSE,,-13,-19,2012-10-11 17:55:03.78008 UTC,0,多項式的公因式 2,多項式的公因式2,quadtratics,algebra
+scientific_notation_intuition,TRUE,"exponents_3,exponent_rules",21,2,2012-10-11 17:55:15.85848 UTC,4,科學記號的直覺,科學記號直覺,exponents-radicals,algebra
+writing_expressions_2,TRUE,writing_expressions_1,27,8,2012-10-11 17:54:51.64776 UTC,9,寫式子 2,寫式子2,solving-linear-equations-and-inequalities,algebra
+angle_bisector_theorem,TRUE,triangle_angles_1,33,-19,2012-10-11 17:55:46.40999 UTC,16,角平分線,角平分線,triangle-properties,geometry
+scaling_vectors,TRUE,adding_vectors,32,19,2012-10-11 17:56:05.63431 UTC,6,向量倍增,向量倍增,vectors-matrix,algebra
+skip_counting_by_10s,TRUE,skip_counting_by_5s,1,-3,2015-01-05 04:30:11.36978 UTC,7,以10為一單位時數的快速算法,10為一單位快速算法,addition-subtraction,arithmetic
+application_add_large_nums,TRUE,,13,5,2014-08-31 03:51:13.81121 UTC,21,大數的加減計算,大數的加減計算,addition-subtraction,arithmetic
+gcd_and_lcm_word_problems,TRUE,"least_common_multiple,greatest_common_divisor",15,-9,2014-06-26 03:02:53.90153 UTC,13,最大公因數與最小公倍數的應用,gcd與lcm應用,factors-multiples,arithmetic
+dividing_polynomials,TRUE,dividing_polynomials_1,49,-9,2014-05-07 05:57:34.86016 UTC,7,多項式的除法,多項式的除法,polynomials,algebra
+multiplication_and_division_word_problems,TRUE,arithmetic_word_problems_2,9,-3,2015-01-05 04:35:11.53203 UTC,5,乘除法文字應用題,乘除法文字應用題,multiplication-division,arithmetic
+understand_length_unit,TRUE,"metric_weight_unit_conversion,understanding_km",19,8,2014-08-31 05:43:21.27679 UTC,6,能認識長度單位公里及其他長度單位的關係,認識公里及其他長度單位,decimals,arithmetic
+seq-understaning-arithmetic-sequence-1,FALSE,,-10,-19,2015-01-26 12:39:21.63026 UTC,0,認識等差數列1,New Ex,N/A,N/A
+difference_between_solid_and_plane_graphics,TRUE,,1,-8,2015-02-10 11:39:16.23907 UTC,4,區別立體圖形與平面圖形,區別立體圖形與平面圖形,basic-geometry,geometry
+ordering_negative_numbers,TRUE,"number_line_3,negative_nums_on_num_line_without_reference_to_zero",17,12,2012-10-11 17:54:16.74366 UTC,6,負數大小排序,負數大小,absolute-value,algebra
+multiplying_expressions_0.5,TRUE,adding_and_subtracting_polynomials,46,-7,2012-10-11 17:54:58.21436 UTC,6,式子的乘法 0.5,式子的乘法0.5,polynomials,algebra
+reading_bar_charts_2,TRUE,reading_bar_charts_1,18,-24,2012-10-11 17:55:58.07544 UTC,9,長條圖 2,長條圖2,statistics,probability-statistics
+graphing_systems_of_inequalities,TRUE,"graphing_systems_of_equations,graphing_inequalities_2",48,8,2012-10-11 17:55:10.00255 UTC,39,畫聯立不等式,畫聯立不等式,systems-of-eq-and-ineq,algebra
+quadrilateral_angles,TRUE,quadrilateral_types,34,-14,2012-10-11 17:55:28.00918 UTC,5,四邊形的角,四邊形的角,quadrilaterals-and-polygons,geometry
+z_scores_3,TRUE,z_scores_2,23,-22,2012-10-11 17:56:01.1692 UTC,38,標準分數 3,標準分數3,statistics,probability-statistics
+telling_time_0.5,TRUE,,4,11,2012-10-11 17:54:11.70678 UTC,6,幾點幾分,幾點幾分,telling-time,arithmetic
+representing_numbers,TRUE,"comparison_between_numbers_within_ten,number_within_fifty",-2,1,2012-10-11 17:54:19.27694 UTC,6,數一數,數一數,addition-subtraction,arithmetic
+divisibility_tests,TRUE,divisibility_intuition,11,-10,2012-10-11 17:54:28.74333 UTC,5,整除性檢定,整除性檢定,factors-multiples,arithmetic
+point_slope_form,TRUE,line_graph_intuition,39,8,2012-10-11 17:54:49.97377 UTC,16,點斜式,點斜式,linear-equations-and-inequalitie,algebra
+systems_of_equations_word_problems,TRUE,systems_of_equations,50,11,2012-10-11 17:55:07.45914 UTC,60,聯立方程式應用題,聯立方程式應用題,systems-of-eq-and-ineq,algebra
+chain_rule_1,TRUE,"power_rule,special_derivatives",60,-27,2012-10-11 17:56:01.42907 UTC,7,連鎖法則 1,連鎖法則1,calculus,calculus
+fractions_cut_and_copy_1,TRUE,dividing_fractions,25,-12,2012-10-11 17:54:35.27477 UTC,9,分數剪裁複製 1,剪貼分數1,fractions,arithmetic
+graphing_parabolas_2,TRUE,"graphing_parabolas_1,vertex_of_a_parabola",55,-1,2012-10-11 17:54:59.83574 UTC,35,畫拋物線 2,畫拋物線2,quadtratics,algebra
+factoring_polynomials_1,TRUE,"multiplying_expressions_1,multiplying_polynomials",48,-6,2012-10-11 17:55:02.69486 UTC,15,多項式因式分解 1,多項式因式分解1,polynomials,algebra
+graphs_of_sine_and_cosine,TRUE,trigonometry_2,52,-24,2012-10-11 17:55:50.38343 UTC,7,Sin Cos 圖,Sin Cos 圖,trigonometry,analytic-geometry
+new_definitions_1,TRUE,linear_equations_3,34,3,2012-10-11 17:55:18.32905 UTC,8,定義運算子 1,定義運算子1,algebra-functions,algebra
+area_1,TRUE,order_of_operations,18,-17,2012-10-11 17:55:32.50181 UTC,5,面積 1,面積1,basic-geometry,geometry
+solving_similar_triangles_1,TRUE,similar_triangles_2,39,-33,2012-10-11 17:55:45.5321 UTC,8,解出相似三角形,解相似三角形1,similar-triangle,geometry
+dependent_probability,TRUE,independent_probability,30,0,2012-10-11 17:55:53.67311 UTC,31.5,相依事件機率,相依機率,probability,probability-statistics
+limits_2,TRUE,limits_1,56,-25,2012-10-11 17:56:04.61591 UTC,5,極限 2,極限2,calculus,calculus
+addition_2,TRUE,"number_line,addition_1,count_number_to_100,understand_coins,number_line_4,adding_and_subtracting_within_20",3,4,2012-10-11 17:54:15.27519 UTC,5,二位數的加法(未進位),二位數加法未進位,addition-subtraction,arithmetic
+subtraction_1,TRUE,addition_1,2,6,2012-10-11 17:54:15.79994 UTC,4,一位數的減法,減法1,addition-subtraction,arithmetic
+identifying_points_1,TRUE,graphing_points,35,9,2012-10-11 17:55:22.2548 UTC,12,辨識座標 1,辨識座標 1,linear-equations-and-inequalitie,algebra
+same_side_interior_angles_2,TRUE,"parallel_lines_1,congruent_angles",32,-25,2012-10-11 17:55:42.16869 UTC,14,同側內角 2,同側內角2,parallel-and-perpendicular-lines,geometry
+trigonometry_1.5,TRUE,trigonometry_1,50,-25,2012-10-11 17:55:51.68989 UTC,8,三角函數 1.5,三角函數1.5,trigonometry,analytic-geometry
+exploring_standard_deviation_1,TRUE,variance,20,-21,2012-10-11 17:55:55.28976 UTC,10,探索標準差 1,標準差1,statistics,probability-statistics
+special_derivatives,TRUE,derivatives_1,59,-24,2012-10-11 17:56:02.19773 UTC,5,函數之微分,函數之微分,calculus,calculus
+writing_proportions,TRUE,,29,-7,2012-10-11 17:54:13.25247 UTC,7,寫比例,寫比例,rates-and-ratios,arithmetic
+order_of_operations,TRUE,"properties_of_numbers_2,number_properties_terminology_1,distributive_property,notation_calculation_type",15,-4,2012-10-11 17:54:23.96089 UTC,7,四則運算,四則運算,order-of-operations,arithmetic
+graphing_systems_of_inequalities_2,TRUE,graphing_systems_of_inequalities,49,8,2012-10-11 17:55:09.43971 UTC,39,畫聯立不等式 2,畫聯立不等式 2,systems-of-eq-and-ineq,algebra
+graphing_points_2,TRUE,graphing_points,35,8,2012-10-11 17:55:18.61279 UTC,7,點的繪製 2,點的繪製2,linear-equations-and-inequalitie,algebra
+triangles_congruent_nature_aas,TRUE,congruent_triangles_2,36,-24,2014-07-24 02:31:06.49942 UTC,11,AAS全等性質,AAS全等性質,congruent-triangles,geometry
+triangle_length_of_side,TRUE,large_angle_long_edge,32,-16,2014-08-31 07:13:33.1889 UTC,7,三角形的邊長關係,三角形的邊長關係,triangle-properties,geometry
+solving_linear_equations,TRUE,linear_equations_3,31,8,2014-06-09 09:45:19.18421 UTC,40,解一元一次方程式,解一元一次方程式,solving-linear-equations-and-inequalities,algebra
+visualizing_equivalent_fraction,TRUE,,18,-7,2015-01-21 04:02:26.55336 UTC,6,看圖辨別兩個相等的分數,看圖辨別兩個相等的分數,fractions,arithmetic
+basic_concept_of_similar_shapes,TRUE,similar_triangles_2,39,-34,2014-07-15 03:16:16.62497 UTC,23,相似形的基本概念,相似形的基本概念,similar-triangle,geometry
+comparing_lengths,TRUE,measuring_lengths_2,24,-16,2015-01-21 03:25:03.04831 UTC,10,長度的比較,長度的比較,basic-geometry,geometry
+rates_and_ratios,TRUE,proportions_2,31,-9,2014-08-31 05:16:23.54209 UTC,21,運用相等的比解應用問題,運用相等的比解應用問題,rates-and-ratios,arithmetic
+repeated_addition,TRUE,count_number_to_100,1,3,2015-01-12 07:16:40.7284 UTC,8,連續加法,連續加法,addition-subtraction,arithmetic
+halves_and_fourths,TRUE,,15,-3,2014-12-29 15:40:59.57129 UTC,5,兩等份與四等份,兩等份與四等份,fractions,arithmetic
+volume_unit_conversion,TRUE,understanding_moving_the_decimal,36,-13,2014-02-06 04:27:40.79867 UTC,7,容積與容量的換算,容積與容量的換算,area-perimeter-and-volume,geometry
+denominator_comparison,TRUE,equivalent_fractions_2,21,-7,2014-08-31 06:23:59.07174 UTC,6,能用通分做簡單易分母的比較,通分做簡單易分母比較,fractions,arithmetic
+seq-understaning-arithmetic-sequence-2,FALSE,,-10,-18,2015-01-26 12:40:33.28596 UTC,0,seq-understaning-arithmetic-sequence-2,New Ex,N/A,N/A
+time_word_problem_3,TRUE,time_word_problem_1,8,9,2013-11-29 09:42:02.77413 UTC,8,時間應用題 3,時間應用題3,telling-time,arithmetic
+number_line_0.7_new,TRUE,number_line_0.5,4,0,2015-01-19 10:31:18.76114 UTC,5,數線上的加減0.7,數線上的加減0.7,absolute-value,algebra
+multiply_by_tens,TRUE,multiplication_1,4,-5,2014-12-29 15:45:17.93029 UTC,5,乘以10,乘以10,multiplication-division,arithmetic
+time_word_problem_1,TRUE,"telling_time_2,arithmetic_word_problems_1",7,9,2013-11-29 09:40:51.97934 UTC,8,時間應用題 1,時間應用題1,telling-time,arithmetic
+special_triangle_and_quadrilateral_concept,TRUE,concepts_related_to_diamond,36,-11,2014-08-31 17:24:09.04213 UTC,5,特殊三角形與四邊形的性質,特殊三角形與四邊形性質,quadrilaterals-and-polygons,geometry
+metric_area_unit_comparison,TRUE,metric_area_unit_conversion,17,7,2013-12-24 07:34:17.91024 UTC,5,公制面積大單位比較,公制面積大單位比較,unit-conversion,arithmetic
+simplify_expressions_w_two_var_1,TRUE,combining_like_terms_with_two_variables,30,6,2014-06-26 04:18:23.61209 UTC,12,二元一次式化簡問題(1)-同類項合併,同類項合併,solving-linear-equations-and-inequalities,algebra
+transportation_bctest_cap,TRUE,,-4,-5,2015-01-19 06:50:42.93759 UTC,5,運輸基測題,運輸基測題,biology,biology
+perimeter_of_combined_shapes,TRUE,"order_of_operations,understanding_square_rectangular",18,-19,2013-11-15 10:09:24.05658 UTC,7,合併圖形的周長,合併圖形的周長,basic-geometry,geometry
+adding_subtracting_carry_3,TRUE,,5,6,2014-08-31 03:49:52.90407 UTC,13,能熟練三位數二次進位加法直式計算,三位數二次進位加法直式,addition-subtraction,arithmetic
+understanding_km,TRUE,metric_weight_unit_conversion,18,9,2014-09-03 09:22:17.74847 UTC,20,認識公里,認識公里,decimals,arithmetic
+subtract_of_positive_negative_fraction,TRUE,adding_and_subtracting_fractions,24,-3,2014-08-31 06:39:49.01302 UTC,9,正負分數的減法,正負分數的減法,fractions,arithmetic
+complex_number_polar_form_intuition_new,TRUE,,49,-13,2015-01-21 03:52:31.73999 UTC,9,複數平面與極坐標的直覺,複數平面與極坐標的直覺,complex-numbers,algebra
+triangles_congruent_nature_asa,TRUE,congruent_triangles_2,37,-23,2014-08-01 08:55:46.62336 UTC,8,ASA全等性質,ASA全等性質,congruent-triangles,geometry
+ratio,TRUE,"writing_proportions,writing_proportions",30,-7,2014-09-04 05:19:54.05148 UTC,7,比例式,比例式,rates-and-ratios,arithmetic
+comparing_decimals_2,TRUE,comparing_decimals_1,10,5,2015-01-19 10:16:33.44158 UTC,4,小數大小的比較2,小數大小的比較2,decimals,arithmetic
+quadratic_function_maximum_and_minimum,TRUE,quadratic_function_graphing,34,-4,2014-08-31 17:10:18.0007 UTC,4,二次函數的極值,二次函數的極值,algebra-functions,algebra
+triangles_congruent_nature_sss,TRUE,congruent_triangles_2,35,-24,2014-07-24 02:17:10.29789 UTC,17.75,SSS全等性質,SSS全等性質,congruent-triangles,geometry
+application_of_gcd_and_lcm_1,TRUE,least_common_multiple,15,-14,2015-01-21 04:06:54.80432 UTC,9,最大公因數與最小公倍數應用題,最大公因最小公倍數應用,factors-multiples,arithmetic
+volume_and_cc,TRUE,areas_of_rhombi,40,-17,2014-09-03 10:20:34.76228 UTC,12,體積與立方公分,體積與立方公分,area-perimeter-and-volume,geometry
+comparing_size,TRUE,measuring_lengths_with_different_units,21,-16,2015-01-19 10:03:01.19892 UTC,4,圖形比大小,圖形比大小,basic-geometry,geometry
+chickens_and_rabbits_questions,TRUE,order_of_operations,16,-2,2014-07-26 11:26:31.76566 UTC,18,雞兔問題,雞兔問題,order-of-operations,arithmetic
+number_within_fifty,TRUE,count_number_to_20_2,-2,3,2014-09-03 09:39:14.67939 UTC,6,認識50以內的數,認識50以內的數,addition-subtraction,arithmetic
+recognizing_shapes,TRUE,,20,-15,2014-12-29 15:42:31.5678 UTC,5,認識圖形,認識圖形,basic-geometry,geometry
+triangles_congruent_nature_rhs,TRUE,congruent_triangles_2,35,-23,2014-07-24 02:30:23.44699 UTC,30.25,RHS全等性質,RHS全等性質,congruent-triangles,geometry
+reproduction_bctest_cap,TRUE,,-6,-7,2015-02-16 14:16:03.00162 UTC,5,生殖基測題,生殖基測題,biology,biology
+represent_by_symbol_subtrahend,TRUE,represent_by_symbol_addend,23,9,2014-08-31 06:53:55.65251 UTC,13,用符號代表數-解決減數或被減數未知的問題,解決減數被減數未知問題,solving-linear-equations-and-inequalities,algebra
+recognizing_factoring,TRUE,multiplying_expressions_1,46,-8,2014-09-04 05:10:35.84185 UTC,9,判斷因式,判斷因式,polynomials,algebra
+solving_problems_with_line_plots_1,TRUE,solving_problems_with_picture_graphs_1,16,-22,2015-01-21 03:54:46.93047 UTC,6,解答線性圖表問題,解答線性圖表問題,complex-numbers,algebra
+scientific_notation_decimals,TRUE,scientific_notation,23,1,2014-05-07 06:05:52.12181 UTC,9,用科學記號表示小於1的正數,用科學記號表示小數字,exponents-radicals,algebra
+fraction_word_problems_1,TRUE,"adding_fractions_with_common_denominators,subtracting_fractions_with_common_denominators",21,-4,2012-10-11 17:54:34.02308 UTC,10,分數應用題 1,分數應用題1,fractions,arithmetic
+adding_fractions_with_common_denominators,TRUE,"order_of_operations,recognizing_fractions_0.5",20,-5,2012-10-11 17:54:36.12453 UTC,5,分數加法 相同分母,#NAME?,fractions,arithmetic
+domain_of_a_function,TRUE,"functions_2,domain_and_range_0.5",36,-1,2012-10-11 17:55:19.82449 UTC,6,函數的定義域,函數的定義域,algebra-functions,algebra
+functions_1,TRUE,linear_equations_3,33,-1,2012-10-11 17:55:21.05863 UTC,5,函數 1,函數1,algebra-functions,algebra
+distributive_property,TRUE,multiplying_and_dividing_negative_numbers,14,-3,2012-10-11 17:54:24.15885 UTC,6,分配律,分配律,order-of-operations,arithmetic
+comparing_objects,FALSE,,-11,-18,2012-10-11 17:55:31.72144 UTC,4,,Comp Objcts,basic-geometry,geometry
+vertical_angles,TRUE,"complementary_and_supplementary_angles,exploring_angle_pairs_1",28,-20,2012-10-11 17:55:39.39357 UTC,4,對頂角,對頂角,segments-and-angles,analytic-geometry
+unit_circle,TRUE,radians_and_degrees,48,-26,2012-10-11 17:55:52.36212 UTC,12,單位圓,單位圓,trigonometry,analytic-geometry
+multiplication_1.5,TRUE,"multiplication_1,comparing_with_multiplication",6,-5,2012-10-11 17:54:23.25639 UTC,5,三位數乘以一位數,乘法 1.5,multiplication-division,arithmetic
+dividing_fractions_word_problems,TRUE,"dividing_fractions_0.5,fractional_division_life_problem",24,-13,2012-10-11 17:54:32.08877 UTC,9,分數除法應用題,除分數應用,fractions,arithmetic
+plugging_in_values,TRUE,line_graph_intuition,39,9,2012-10-11 17:54:49.57511 UTC,11,代入數值,代入數值,linear-equations-and-inequalitie,algebra
+solving_quadratics_by_taking_the_square_root,TRUE,factoring_polynomials_1,50,-1,2012-10-11 17:55:01.92819 UTC,10,用取平方根法解二次方程,平方根解二次式,quadtratics,algebra
+lcm_word_problems,TRUE,least_common_multiple,15,-11,2014-06-26 03:51:10.18881 UTC,7,最小公倍數的生活應用問題,最小公倍數的生活應用,factors-multiples,arithmetic
+recording_life_problem_by_expressions,TRUE,age_word_problems,32,10,2014-09-18 04:57:44.86267 UTC,6,以符號算式紀錄生活問題1,符號算式紀錄生活問題1,solving-linear-equations-and-inequalities,algebra
+writing_fractions_1,TRUE,"order_of_operations,halves_and_fourths,filling_rectangles_with_same-sized_squares",17,-3,2013-12-20 03:56:14.89839 UTC,5,用分數表示數量,用分數表示數量,fractions,arithmetic
+fraction_and_per_swap_divide,FALSE,,0,-6,2015-02-17 00:37:30.3836 UTC,0,分數與百分率互換（可整除）,分數百分率互換可整除,N/A,N/A
+l_ml_time_div,TRUE,l_ml_word_problem,18,8,2014-05-21 04:40:02.83342 UTC,7,公升與毫升的乘除問題,公升與毫升的乘除問題,unit-conversion,arithmetic
+naming_shapes,TRUE,recognizing_shapes,21,-15,2015-01-21 03:55:29.19289 UTC,4,圖形的命名,圖形的命名,basic-geometry,geometry
+simple_hologram_surface_area,TRUE,solid_geometry,41,-18,2014-08-31 16:16:02.88659 UTC,5,立體圖形的表面積與側面積,立體圖形的表面積側面積,area-perimeter-and-volume,geometry
+coordination_bctest_cap,TRUE,,-7,-7,2014-12-29 03:46:10.62055 UTC,5,協調作用基測題,協調-總,biology,biology
+date_and_weekday,TRUE,time_terminology,5,8,2014-09-04 05:29:13.52933 UTC,7,報讀日期與星期,報讀日期與星期,telling-time,arithmetic
+exponent_rules,TRUE,exponents_2,20,7,2012-10-11 17:55:12.86549 UTC,5,指數法則,指數法則,exponents-radicals,algebra
+points_lines_and_planes,TRUE,recognizing_rays_lines_and_line_segments,25,-23,2012-10-11 17:55:31.50653 UTC,6,點、線與面,點線面,segments-and-angles,analytic-geometry
+multiplying_fractions_word_problems,TRUE,multiplying_fractions,24,-11,2012-10-11 17:54:33.57592 UTC,7,分數乘法應用題,分數乘法應用題,fractions,arithmetic
+expressing_ratios_as_fractions,TRUE,simplifying_fractions,26,-10,2012-10-11 17:54:13.47748 UTC,6,比與比值,比與比值,rates-and-ratios,arithmetic
+properties_of_numbers_1,TRUE,multiplying_and_dividing_negative_numbers,13,-5,2012-10-11 17:54:25.4478 UTC,5,數字概念 1,數字概念1,order-of-operations,arithmetic
+dividing_decimals_1,TRUE,"dividing_decimals_0.5,division_4,dividing_decimals_int_to_int_0.7",15,-1,2012-10-11 17:54:41.56445 UTC,13,小數的除法 1,除小數1,decimals,arithmetic
+markup_and_commission_word_problems,TRUE,"converting_decimals_to_percents,converting_percents_to_decimals",29,-2,2012-10-11 17:54:46.90846 UTC,18,利潤與佣金應用題,利潤應用,ratio-percentage,arithmetic
+comparing_absolute_values,TRUE,absolute_value,20,12,2012-10-11 17:55:11.54465 UTC,4,絕對值的比較,比絕對值,absolute-value,algebra
+standard_deviation,TRUE,variance,20,-22,2012-10-11 17:55:55.02456 UTC,30,標準差,標準差,statistics,probability-statistics
+equivalent_fractions,TRUE,"order_of_operations,recognizing_fractions_0.5,visualizing_equivalent_fraction",19,-6,2012-10-11 17:54:38.03429 UTC,5,等值分數,等值分數,fractions,arithmetic
+completing_the_square_1,TRUE,"solving_quadratics_by_taking_the_square_root,solving_quadratics_by_factoring,completing_the_square_2_new",53,-1,2012-10-11 17:55:01.34672 UTC,9,配方法 1,配方法1,quadtratics,algebra
+trigonometry_0.5,TRUE,"pythagorean_theorem_1,radians_and_degrees",48,-24,2012-10-11 17:55:51.89668 UTC,9,三角函數 0.5,三角函數0.5,trigonometry,analytic-geometry
+solving_quadratics_by_factoring_2,TRUE,solving_quadratics_by_factoring,51,-2,2012-10-11 17:55:02.21158 UTC,14,因式分解法 2,因式分解法2,quadtratics,algebra
+scientific_notation,TRUE,scientific_notation_intuition,22,2,2012-10-11 17:55:12.66172 UTC,10,科學記號,科學記號,exponents-radicals,algebra
+complementary_angles,TRUE,angle_types,26,-19,2012-10-11 17:55:40.70163 UTC,5,餘角,餘角,segments-and-angles,analytic-geometry
+square_roots,TRUE,exponents_2,20,5,2012-10-11 17:55:16.79659 UTC,4,平方根,平方根,exponents-radicals,algebra
+parabola_intuition_2,TRUE,parabola_intuition_1,48,2,2012-10-11 17:55:23.22509 UTC,30,?物線直覺 2,?物線直覺2,conic-sections,algebra
+congruent_segments,TRUE,recognizing_rays_lines_and_line_segments,25,-21,2012-10-11 17:55:29.20541 UTC,4,全等線段,全等線段,segments-and-angles,analytic-geometry
+midpoint_of_a_segment,TRUE,"measuring_segments,congruent_segments",26,-21,2012-10-11 17:55:29.78359 UTC,14,線段的中點,線段中點,segments-and-angles,analytic-geometry
+areas_of_circles_and_sectors,TRUE,area_of_parallelograms,37,-21,2012-10-11 17:55:33.88663 UTC,35,圓形與扇形的面積,扇形面積,area-perimeter-and-volume,geometry
+alternate_interior_angles,TRUE,segment_addition,30,-28,2012-10-11 17:55:38.68173 UTC,4,內錯角,內錯角,parallel-and-perpendicular-lines,geometry
+degrees_to_radians,TRUE,congruent_triangles_2,46,-24,2012-10-11 17:55:53.07734 UTC,8,角度轉換成弧度,角度 -> 弧度,trigonometry,analytic-geometry
+reading_bar_charts_1,TRUE,"reading_tables_2,statistical_table_and_chart",16,-24,2012-10-11 17:55:55.6634 UTC,5,長條圖 1,長條圖1,statistics,probability-statistics
+adding_vectors,TRUE,linear_equations_1,31,19,2012-10-11 17:56:05.86291 UTC,6,向量相加,#NAME?,vectors-matrix,algebra
+telling_time_2,TRUE,telling_time,6,11,2012-10-11 17:54:11.50089 UTC,6,調整時鐘的指針,調整時針,telling-time,arithmetic
+comparing_fractions_1,TRUE,simplifying_fractions,22,-14,2012-10-11 17:54:37.7826 UTC,4,分數的比較 1,比較分數1,fractions,arithmetic
+measuring_angles,TRUE,recognizing_rays_lines_and_line_segments,25,-20,2012-10-11 17:55:40.98073 UTC,13,角度的測量,量角度,segments-and-angles,analytic-geometry
+congruent_triangles_2,TRUE,"congruent_triangles_1,congruency_postulates",36,-25,2012-10-11 17:55:43.83303 UTC,6,全等三角形 2,全等三角形2,congruent-triangles,geometry
+measuring_segments,TRUE,"recognizing_rays_lines_and_line_segments,length_word_problem",26,-22,2012-10-11 17:55:28.93486 UTC,5,測量線段,測量線段,segments-and-angles,analytic-geometry
+axis_of_symmetry,TRUE,similar_triangles_1,43,-30,2012-10-11 17:55:28.42599 UTC,4,對稱軸,對稱軸,transformations,geometry
+average_word_problems,TRUE,mean_median_and_mode,19,-23,2012-10-11 17:55:59.01855 UTC,19,平均值的應用題,平均應用,statistics,probability-statistics
+division_3,TRUE,"multiplication_2,division_2",10,-7,2012-10-11 17:54:20.05195 UTC,11,有餘數的除法2,除法 3,multiplication-division,arithmetic
+radius_angle,TRUE,circles_and_arcs,41,-21,2014-08-01 08:57:56.20453 UTC,6,圓心角,圓心角,circle-properties,geometry
+meters_and_centimeters_conversion,TRUE,,0,-8,2015-02-10 11:33:36.2659 UTC,5,公尺與公分的換算,公尺與公分的換算,unit-conversion,arithmetic
+meters_and_centimeters,TRUE,millimeter_and_centimeter,14,8,2014-09-03 09:13:37.98015 UTC,5,公分和公尺,公分和公尺,decimals,arithmetic
+skip_counting_by_100s,TRUE,count_number_to_100,1,0,2015-01-21 03:56:15.49489 UTC,6,以100為一單位時數的快速算法,100為單位數快速算法,addition-subtraction,arithmetic
+matrix_row_echelon,TRUE,matrix_transpose,52,18,2014-05-21 04:44:17.49237 UTC,5,列梯形與最簡列梯形矩陣,列梯形與最簡列梯形矩陣,vectors-matrix,algebra
+scale_see_compare_see,TRUE,,0,-9,2015-02-10 11:38:29.4676 UTC,5,秤秤看、比比看,秤秤看、比比看,unit-conversion,arithmetic
+understand_circle,TRUE,parts_of_circles,21,-20,2014-09-04 07:01:12.73948 UTC,6,"圓規畫圓認識圓心,圓周,半徑,直徑",圓規畫圓認識圓,basic-geometry,geometry
+matrix_triangular_and_symmetric,TRUE,matrix_row_operation,51,17,2014-05-21 04:50:50.90442 UTC,5,三角矩陣與對稱矩陣,三角矩陣與對稱矩陣,vectors-matrix,algebra
+factorization_by_add_sub_square,TRUE,factoring_difference_of_squares_3,51,-7,2014-06-26 02:58:41.60295 UTC,5,運用和平方公式與差平方公式做因式分解,平方公式與差平方公式,polynomials,algebra
+cc_and_cubic_meter_conversion,FALSE,,1,-7,2015-02-17 00:45:38.25303 UTC,0,立方公分與立方公尺換算,立方公分與立方公尺換算,N/A,N/A
+ratio_discount,TRUE,ratio_money,31,-8,2014-04-02 06:50:25.68355 UTC,14,比例-折扣,比例-折扣,rates-and-ratios,arithmetic
+nutrition_bctest_cap,TRUE,,-5,-5,2015-01-19 06:48:04.04295 UTC,5,營養基測題,營養基測題,biology,biology
+measuring_lengths_with_different_units,TRUE,,20,-16,2015-01-29 09:40:17.69133 UTC,12,不同單位的測量,不同單位的測量,basic-geometry,geometry
+concepts_related_to_kite,TRUE,quadrilateral_angles,35,-14,2014-07-08 07:09:16.94206 UTC,18,與箏形相關的概念,與箏形相關的概念,quadrilaterals-and-polygons,geometry
+multiplication_and_division_order,TRUE,"arithmetic_word_problems,multiplying_and_dividing",9,0,2014-08-31 07:10:31.72373 UTC,20,理解先乘再除與先除再乘的結果,先乘再除與先除再乘結果,multiplication-division,arithmetic
+concepts_related_to_parallelogram,TRUE,quadrilateral_angles,36,-14,2014-09-04 07:10:14.4217 UTC,12,與平行四邊形相關的概念,平行四邊形相關概念,quadrilaterals-and-polygons,geometry
+one_more_one_less,TRUE,"subtraction_1,addition_2",3,5,2014-08-01 09:15:32.84519 UTC,4,多一個、少一個,多一個、少一個,addition-subtraction,arithmetic
+represent_by_symbol_addend,TRUE,,22,8,2014-08-31 06:48:37.22821 UTC,9,用符號代表數-解決被加數或加數未知的問題,解決被加數加數未知問題,solving-linear-equations-and-inequalities,algebra
+time_word_problem_4,TRUE,time_word_problem_2,8,10,2013-11-29 09:42:39.08153 UTC,9,時間應用題 4,時間應用題4,telling-time,arithmetic
+fraction_of_one_step_to_unknow_formula,TRUE,fraction_word_problems_1,22,-2,2014-09-03 09:50:48.16438 UTC,9,分數情境問題列式求解,分數情境問題列式求解,fractions,arithmetic
+graphs_of_linear_equations,TRUE,interpreting_linear_equations,37,8,2014-06-26 03:04:56.57354 UTC,13,一次函數的方程式及圖形,一次函數的方程式及圖形,linear-equations-and-inequalitie,algebra
+matrix_add_sub_3,TRUE,matrix_add_sub_2,50,16,2014-04-09 04:45:09.95211 UTC,14,三個矩陣的加減,三個矩陣的加減,vectors-matrix,algebra
+triangle_angles_sum,TRUE,triangle_types,31,-19,2014-04-07 09:40:52.40242 UTC,8,三角形的內角和,三角形的內角和,triangle-properties,geometry
+filling_rectangles_with_same-sized_squares,TRUE,equal_parts_of_circles_and_rectangles,18,-1,2015-01-19 10:09:51.67198 UTC,5,拼拼看,拼拼看,fractions,arithmetic
+unit_conversion_rate,TRUE,speed_applying,32,-10,2014-08-31 05:17:15.71633 UTC,12,速率的單位換算(文字題),速率的單位換算文字題,rates-and-ratios,arithmetic
+cell_bctest_cap,TRUE,,-6,-5,2015-01-19 04:02:16.82033 UTC,5,細胞基測題,細胞基測題,biology,biology
+advanced_fraction,TRUE,fractions_word_problem,26,-11,2014-06-27 07:14:13.22421 UTC,27,分數除法的應用題(進階),分數除法的應用題進階,fractions,arithmetic
+addition_within_20,TRUE,,1,1,2014-12-29 15:43:39.94616 UTC,4,20以內的加法,20以內的加法,addition-subtraction,arithmetic
+surface_area_of_rectangular_boxes,TRUE,area_of_squares_and_rectangles,36,-18,2014-02-14 08:02:41.86199 UTC,18,方塊的表面積,方塊的表面積,area-perimeter-and-volume,geometry
+g_and_kg_word_problems,FALSE,,1,-6,2015-02-17 00:33:22.13175 UTC,0,公克與公斤的文字應用題,公克與公斤的文字應用題,N/A,N/A
+area_unit_cm_square,TRUE,area_1,19,-15,2014-09-03 10:16:48.64214 UTC,23,面積單位平方公分實測計算,面積單位平方公分計算,area-perimeter-and-volume,geometry
+vertical_concepts,TRUE,points_lines_and_planes,26,-24,2014-08-31 16:03:17.92598 UTC,6,認識垂直及相關概念,認識垂直及相關概念,parallel-and-perpendicular-lines,geometry
+direct_and_inverse_variation,TRUE,linear_equations_3,34,4,2012-10-11 17:55:17.80927 UTC,8,正比與反比,正反比,algebra-functions,algebra
+quadrilateral_types,TRUE,angles_2,33,-14,2012-10-11 17:55:28.21379 UTC,4,四邊形種類,四邊形種類,quadrilaterals-and-polygons,geometry
+area_of_parallelograms,TRUE,angles_2,36,-20,2012-10-11 17:55:32.77947 UTC,4,平行四邊形的面積,平行四邊形面積,area-perimeter-and-volume,geometry
+discount_tax_and_tip_word_problems,TRUE,"converting_decimals_to_percents,converting_percents_to_decimals",27,-4,2012-10-11 17:54:45.75591 UTC,16,打折、小費與稅率應用題,打折應用,ratio-percentage,arithmetic
+adding_and_subtracting_complex_numbers,TRUE,"adding_and_subtracting_polynomials,the_complex_plane",47,-12,2012-10-11 17:55:25.3294 UTC,6,複數的加減,+/- 複數,complex-numbers,algebra
+vertex_of_a_parabola,TRUE,"graphing_parabolas_0.5,completing_the_square_1",54,-1,2012-10-11 17:55:00.28857 UTC,23,拋物線的頂點,拋物線頂點,quadtratics,algebra
+logarithms_1,TRUE,exponents_3,21,3,2012-10-11 17:55:13.77551 UTC,5,對數 1,對數1,exponents-radicals,algebra
+division_0.9,TRUE,division_0.5,6,-8,2013-11-07 12:52:14.09087 UTC,4,除以9以下的數字,除法0.9,multiplication-division,arithmetic
+proportions_inner_outer_product,TRUE,writing_proportions,30,-6,2014-07-08 07:03:23.01233 UTC,21,比例式-內項乘積=外項乘積,比例式內項乘積外項乘積,rates-and-ratios,arithmetic
+area_of_triangular_shapes,TRUE,"large_angle_long_edge,re_graphics",31,-14,2014-07-08 07:01:48.86531 UTC,15,各式圖形的面積計算,各式圖形的面積計算,basic-geometry,geometry
+seq_sequence_exam_1,TRUE,seq-arithmetic-means-2,34,1,2015-02-26 16:58:15.28662 UTC,15,等差數列：綜合評量1,等差數列：綜合評量1,sequence_and_series,arithmetic
+position_relation_between_circle_point,TRUE,circles_and_arcs,41,-20,2014-07-24 02:13:42.81493 UTC,8,點與圓的位置關係,點與圓的位置關係,circle-properties,geometry
+number_sense_weight_L1,FALSE,,-9,-19,2015-02-10 11:57:06.66214 UTC,0,重量的量感1(old),重量的量感1,quantity-sense,arithmetic
+decomposing_fractions,TRUE,adding_fractions_with_common_denominators,20,-4,2015-01-21 03:59:00.32384 UTC,9,將分數分解,將分數分解,fractions,arithmetic
+matrix_basic_distance,TRUE,matrix_basic_percentage,49,16,2014-04-09 04:49:03.7539 UTC,11,定義矩陣：城市距離,定義矩陣：城市距離,vectors-matrix,algebra
+ordering_decimals_new,TRUE,recognize_decimal_percentile_position,13,10,2015-01-19 10:20:24.53248 UTC,8,小數大小的排列,小數大小的排列,decimals,arithmetic
+simplificate_ractional_formula,TRUE,combining_like_terms_2,28,6,2014-07-26 11:08:36.62044 UTC,56,分數型算式的化簡,分數型算式的化簡,solving-linear-equations-and-inequalities,algebra
+geometry_identification_concept,TRUE,congruent_triangles_2,37,-28,2014-08-31 15:52:17.28445 UTC,6,證明的意義與應用,證明的意義與應用,congruent-triangles,geometry
+simplify_the_root_type,TRUE,square_roots_2,24,5,2014-08-01 09:08:19.07562 UTC,10,化成最簡根式,化成最簡根式,exponents-radicals,algebra

@@ -1,0 +1,124 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> python -u "e:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\preprocess_step2_prereqgraph_edgelist.py"
+Loading vocab...
+Vocab: 835 exercises, indices 0 to 834
+
+Loading exercise table...
+Rows loaded: 837 -> 835 after dedup (consistent with step 1)
+
+Building prerequisite edges...
+Raw edges collected:      982
+Self-loops found:         2
+Skipped (not in vocab):   0
+  Self-loops:
+    number_sense_length_l1 (idx 496) lists itself as prereq
+    proportions_1 (idx 562) lists itself as prereq
+
+Duplicate edges removed:  3
+Final edge count:         979
+All indices in range [0, 834]: OK
+
+--- Graph Analysis ---
+Nodes:                           835
+Edges:                           979
+Is valid DAG (no cycles):        False
+
+WARNING: Graph contains cycles. These are data quality issues in the source.
+Number of cycles: 1
+First 5 cycles (with names):
+  simplifying_radicals -> adding_and_subtracting_radicals -> radical_multiplication_and_division -> (back to simplifying_radicals)
+Root nodes (no prerequisites):   97
+Leaf nodes (no dependents):      292
+Isolated nodes (no edges):       59
+Weakly connected components:     69
+
+Top 10 most-prerequisite-of exercises (highest in-degree):
+  [696] solid_geometry — needed by 7 exercises
+  [ 32] addition_2 — needed by 6 exercises
+  [156] congruent_angles — needed by 5 exercises
+  [524] parallel_lines_1 — needed by 5 exercises
+  [525] parallel_lines_2 — needed by 5 exercises
+  [687] simplifying_fractions — needed by 5 exercises
+  [177] count_number_to_100 — needed by 4 exercises
+  [343] hundred_million_adding_and_subtracting — needed by 4 exercises
+  [383] limits_1 — needed by 4 exercises
+  [513] order_of_operations — needed by 4 exercises
+
+Top 10 exercises with most prerequisites (highest out-degree):
+  [159] congruent_triangles_2 — requires 14 prerequisites
+  [513] order_of_operations — requires 14 prerequisites
+  [389] linear_equations_3 — requires 9 prerequisites
+  [ 11] adding_and_subtracting_negative_numbers — requires 8 prerequisites
+  [ 32] addition_2 — requires 7 prerequisites
+  [ 55] angles_2 — requires 7 prerequisites
+  [ 72] area_of_squares_and_rectangles — requires 6 prerequisites
+  [110] circles_and_arcs — requires 6 prerequisites
+  [417] mean_median_and_mode — requires 6 prerequisites
+  [475] multiplying_polynomials — requires 6 prerequisites
+
+--- Sample Edges (first 15) ---
+  [ 11] adding_and_subtracting_negative_numbers       --> [  0] absolute_value
+  [  0] absolute_value                                --> [  1] absolute_value_add_sub
+  [  5] absolute_values_meaning                       --> [  1] absolute_value_add_sub
+  [  1] absolute_value_add_sub                        --> [  2] absolute_value_add_sub_properties
+  [389] linear_equations_3                            --> [  3] absolute_value_equations
+  [753] the_complex_plane                             --> [  4] absolute_value_of_complex_numbers
+  [211] distance_formula                              --> [  4] absolute_value_of_complex_numbers
+  [143] complex_number_polar_form_intuition_new       --> [  4] absolute_value_of_complex_numbers
+  [ 11] adding_and_subtracting_negative_numbers       --> [  5] absolute_values_meaning
+  [359] interpreting_absolute_value                   --> [  5] absolute_values_meaning
+  [511] operations_with_negative_numbers              --> [  6] add_subtract_negative_fractions
+  [373] l_ml_time_div                                 --> [  7] adding_and_subtracting_centimeter_and_millimeter
+  [ 12] adding_and_subtracting_polynomials            --> [  8] adding_and_subtracting_complex_numbers
+  [753] the_complex_plane                             --> [  8] adding_and_subtracting_complex_numbers
+  [723] subtracting_decimals                          --> [  9] adding_and_subtracting_decimals_word_problems
+
+Saved: data\processed\prerequisite_edges.csv          (model input — indices only)
+Saved: data\processed\prerequisite_edges_with_names.csv  (human readable — with names)
+Step 2 complete.
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> python -u "e:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\preprocess_step2b_fix_cycle.py"
+Edges before fix: 979
+
+Edge to remove:
+  from_idx=582 (radical_multiplication_and_division)
+  to_idx  =688 (simplifying_radicals)
+
+Edge found in prerequisite_edges.csv:            True
+Edge found in prerequisite_edges_with_names.csv: True
+
+Edges after fix: 978
+Edges removed:   1  (expected: 1)
+
+Is valid DAG after fix: True
+
+Checking the two correct edges in the cycle are preserved:
+  simplifying_radicals -> adding_and_subtracting_radicals: OK
+  adding_and_subtracting_radicals -> radical_multiplication_and_division: OK
+
+--- Final Graph Stats ---
+Nodes:                       835
+Edges:                       978
+Is valid DAG:                True
+Weakly connected components: 69
+Root nodes (no prereqs):     97
+Isolated nodes (no edges):   59
+
+Overwritten: data\processed\prerequisite_edges.csv
+Overwritten: data\processed\prerequisite_edges_with_names.csv
+Step 2b complete. Prerequisite graph is now a clean DAG.
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> 

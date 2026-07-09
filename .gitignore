@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# VS Code
+.vscode/
+
+# Large dataset
+PROJECT-V1/fedgkt/data/raw/junyi_ProblemLog_original.csv

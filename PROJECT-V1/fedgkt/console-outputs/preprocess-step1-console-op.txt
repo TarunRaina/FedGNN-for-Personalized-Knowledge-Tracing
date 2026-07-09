@@ -1,0 +1,35 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> python -u "e:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\preprocess_step1_vocab.py"
+Loading exercise table...
+Rows loaded: 837
+
+--- Sanity Checks ---
+Total exercises:        837
+Unique exercise names:  835
+Duplicate names:        2
+Live exercises:         776
+Non-live exercises:     61
+Exercises with prereqs: 742
+Root nodes (no prereq): 95
+
+--- Vocab Built ---
+Vocab size: 835
+Index range: 0 to 834
+
+--- Checking prerequisite references ---
+All prerequisite references exist in vocab. Graph will be complete.
+
+--- First 10 vocab entries ---
+    0  absolute_value
+    1  absolute_value_add_sub
+    2  absolute_value_add_sub_properties
+    3  absolute_value_equations
+    4  absolute_value_of_complex_numbers
+    5  absolute_values_meaning
+    6  add_subtract_negative_fractions
+    7  adding_and_subtracting_centimeter_and_millimeter
+    8  adding_and_subtracting_complex_numbers
+    9  adding_and_subtracting_decimals_word_problems
+
+Saved to: data\processed\exercise_vocab.json
+Step 1 complete.
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> 
