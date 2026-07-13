@@ -1,0 +1,111 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> python preprocess_step3_filter_interactions.py                            
+Loading vocab...                                     
+Valid exercises in vocab: 835
+
+Processing log in chunks of 500,000 rows...
+This will take several minutes. Progress printed per chunk.
+
+  Chunk   1:  500,000 in → 500,000 kept  | total read so far:    500,000
+  Chunk   2:  500,000 in → 500,000 kept  | total read so far:  1,000,000
+  Chunk   3:  500,000 in → 500,000 kept  | total read so far:  1,500,000
+  Chunk   4:  500,000 in → 500,000 kept  | total read so far:  2,000,000
+  Chunk   5:  500,000 in → 500,000 kept  | total read so far:  2,500,000
+  Chunk   6:  500,000 in → 500,000 kept  | total read so far:  3,000,000
+  Chunk   7:  500,000 in → 500,000 kept  | total read so far:  3,500,000
+  Chunk   8:  500,000 in → 500,000 kept  | total read so far:  4,000,000
+  Chunk   9:  500,000 in → 500,000 kept  | total read so far:  4,500,000
+  Chunk  10:  500,000 in → 500,000 kept  | total read so far:  5,000,000
+  Chunk  11:  500,000 in → 500,000 kept  | total read so far:  5,500,000
+  Chunk  12:  500,000 in → 500,000 kept  | total read so far:  6,000,000
+  Chunk  13:  500,000 in → 500,000 kept  | total read so far:  6,500,000
+  Chunk  14:  500,000 in → 500,000 kept  | total read so far:  7,000,000
+  Chunk  15:  500,000 in → 500,000 kept  | total read so far:  7,500,000
+  Chunk  16:  500,000 in → 500,000 kept  | total read so far:  8,000,000
+  Chunk  17:  500,000 in → 500,000 kept  | total read so far:  8,500,000
+  Chunk  18:  500,000 in → 500,000 kept  | total read so far:  9,000,000
+  Chunk  19:  500,000 in → 500,000 kept  | total read so far:  9,500,000
+  Chunk  20:  500,000 in → 500,000 kept  | total read so far: 10,000,000
+  Chunk  21:  500,000 in → 500,000 kept  | total read so far: 10,500,000
+  Chunk  22:  500,000 in → 500,000 kept  | total read so far: 11,000,000
+  Chunk  23:  500,000 in → 500,000 kept  | total read so far: 11,500,000
+  Chunk  24:  500,000 in → 500,000 kept  | total read so far: 12,000,000
+  Chunk  25:  500,000 in → 500,000 kept  | total read so far: 12,500,000
+  Chunk  26:  500,000 in → 500,000 kept  | total read so far: 13,000,000
+  Chunk  27:  500,000 in → 500,000 kept  | total read so far: 13,500,000
+  Chunk  28:  500,000 in → 500,000 kept  | total read so far: 14,000,000
+  Chunk  29:  500,000 in → 500,000 kept  | total read so far: 14,500,000
+  Chunk  30:  500,000 in → 500,000 kept  | total read so far: 15,000,000
+  Chunk  31:  500,000 in → 500,000 kept  | total read so far: 15,500,000
+  Chunk  32:  500,000 in → 500,000 kept  | total read so far: 16,000,000
+  Chunk  33:  500,000 in → 500,000 kept  | total read so far: 16,500,000
+  Chunk  34:  500,000 in → 500,000 kept  | total read so far: 17,000,000
+  Chunk  35:  500,000 in → 500,000 kept  | total read so far: 17,500,000
+  Chunk  36:  500,000 in → 500,000 kept  | total read so far: 18,000,000
+  Chunk  37:  500,000 in → 500,000 kept  | total read so far: 18,500,000
+  Chunk  38:  500,000 in → 500,000 kept  | total read so far: 19,000,000
+  Chunk  39:  500,000 in → 500,000 kept  | total read so far: 19,500,000
+  Chunk  40:  500,000 in → 500,000 kept  | total read so far: 20,000,000
+  Chunk  41:  500,000 in → 500,000 kept  | total read so far: 20,500,000
+  Chunk  42:  500,000 in → 500,000 kept  | total read so far: 21,000,000
+  Chunk  43:  500,000 in → 500,000 kept  | total read so far: 21,500,000
+  Chunk  44:  500,000 in → 500,000 kept  | total read so far: 22,000,000
+  Chunk  45:  500,000 in → 500,000 kept  | total read so far: 22,500,000
+  Chunk  46:  500,000 in → 500,000 kept  | total read so far: 23,000,000
+  Chunk  47:  500,000 in → 500,000 kept  | total read so far: 23,500,000
+  Chunk  48:  500,000 in → 500,000 kept  | total read so far: 24,000,000
+  Chunk  49:  500,000 in → 500,000 kept  | total read so far: 24,500,000
+  Chunk  50:  500,000 in → 500,000 kept  | total read so far: 25,000,000
+  Chunk  51:  500,000 in → 500,000 kept  | total read so far: 25,500,000
+  Chunk  52:  425,992 in → 425,992 kept  | total read so far: 25,925,992
+
+Combining 52 filtered chunks...
+Combined: 25,925,992 rows, 247,606 unique students
+Sorting by user_id then time_done (chronological)...
+Null check: no nulls in final dataframe — clean
+
+==================================================
+FILTERING SUMMARY
+==================================================
+Total rows read:                     25,925,992
+Dropped (exercise not in vocab):               0
+Dropped (correct was null):                    0
+Dropped (correct was unmappable):              0
+Final rows kept:                      25,925,992
+Unique students:                         247,606
+
+--- Interactions per student ---
+count    247606.000000
+mean        104.706639
+std         385.269222
+min           1.000000
+25%           3.000000
+50%          10.000000
+75%          50.000000
+max       22067.000000
+
+Students with >=  10 interactions:   124,882
+Students with >=  20 interactions:    96,521
+Students with >=  30 interactions:    81,174
+Students with >=  50 interactions:    62,124
+Students with >= 100 interactions:    41,933
+Students with >= 200 interactions:    26,629
+
+--- Data quality checks ---
+Correct column unique values:  [0, 1]
+hint_used column unique values: [0, 1]
+Overall accuracy:  0.8279
+Hint used rate:    0.0646
+
+--- exercise_idx range ---
+Min idx: 0  (expected 0)
+Max idx: 834  (expected <= 834)
+Unique exercises in log: 722  (out of 835)
+
+--- time_done range ---
+Earliest: 1350003835131230
+Latest:   1421000065650430
+
+Saving to data\processed\filtered_interactions.csv ...
+Saved: 25,925,992 rows
+Step 3 complete.
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> 

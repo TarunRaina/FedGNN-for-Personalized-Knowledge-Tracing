@@ -12,3 +12,4 @@ env/
 
 # Large dataset
 PROJECT-V1/fedgkt/data/raw/junyi_ProblemLog_original.csv
+PROJECT-V1/fedgkt/data/processed/filtered_interactions.csv
