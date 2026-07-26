@@ -1,0 +1,57 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing> cd "E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt"        
+>> python -u preprocess_step5_build_pkg_sequences.py
+======================================================================
+STEP 5 — Build per-student PKG interaction sequences + shared edge_index
+======================================================================
+
+Loading student_splits.json...
+  train: 800  val: 100  test: 100
+  Union (train+val+test), no overlap: 1000 students — OK
+
+Loading prerequisite_edges.csv...
+  edge_index shape: (2, 978)  dtype: torch.int64
+  Saved: data\processed\edge_index.pt
+
+Loading filtered_interactions.csv (full load, then filtering to 1,000 IDs)...
+This mirrors Step 4's approach — ~500-700 MB expected, well within budget.
+  Full file loaded: 25,925,992 rows, 247,606 students
+  Filtered to working subset: 310,955 rows, 1,000 students
+  Null check: no nulls — OK
+
+Building 1000 per-student sequence files...
+  Saved 100/1000 student PKG files...
+  Saved 200/1000 student PKG files...
+  Saved 300/1000 student PKG files...
+  Saved 400/1000 student PKG files...
+  Saved 500/1000 student PKG files...
+  Saved 600/1000 student PKG files...
+  Saved 700/1000 student PKG files...
+  Saved 800/1000 student PKG files...
+  Saved 900/1000 student PKG files...
+  Saved 1000/1000 student PKG files...
+  Saved 1000/1000 student PKG files — done
+
+File count on disk confirmed: 1000 files in data\processed\pkgs
+
+--- Spot-check: reloading 3 saved files ---
+  user_id=161063  n_interactions=72  exercise_idx dtype=torch.int64  correct dtype=torch.float32
+  user_id=176324  n_interactions=90  exercise_idx dtype=torch.int64  correct dtype=torch.float32
+  user_id=136754  n_interactions=242  exercise_idx dtype=torch.int64  correct dtype=torch.float32
+
+--- Interaction count summary (working subset, from saved files) ---
+count    1000.0
+mean      311.0
+std       660.7
+min        30.0
+25%        51.0
+50%       105.5
+75%       280.5
+max      9548.0
+
+  Min: 30  Max: 9548  Total: 310,955
+
+edge_index.pt: shape (2, 978)
+pkgs/ folder: 1000 files
+
+Step 5 complete.
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> 

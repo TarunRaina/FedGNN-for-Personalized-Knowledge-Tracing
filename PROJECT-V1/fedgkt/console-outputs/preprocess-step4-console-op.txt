@@ -1,0 +1,87 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing> cd "E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt"
+>> python -u preprocess_step4_student_filter.py
+Config:
+  Min interactions threshold : 30
+  Working subset size         : 1000
+  Strata (deciles)            : 10
+  Per stratum                 : 100  (80 train / 10 val / 10 test)
+  Total split                 : 800 train / 100 val / 100 test
+  Random seed                 : 42
+
+Loading filtered_interactions.csv...
+Using explicit dtypes to minimise RAM (~500-700 MB expected).
+Loaded: 25,925,992 rows | 247,606 students | 519 MB
+
+Computing per-student statistics (this may take a minute)...
+Stats computed for all 247,606 students
+
+--- Qualification filter (>= 30 interactions) ---
+  Total students:         247,606
+  Qualified:               81,174
+  Disqualified:           166,432  (67.2%)
+
+--- Qualified student stats ---
+       total_interactions  unique_exercises  accuracy  active_days
+count            81174.00          81174.00  81174.00     81174.00
+mean               303.56             23.73      0.82        52.47
+std                627.56             30.74      0.13        89.08
+min                 30.00              1.00      0.00         0.00
+25%                 52.00              8.00      0.78         0.00
+50%                105.00             14.00      0.85        12.10
+75%                283.00             27.00      0.91        64.00
+max              22067.00            672.00      1.00       793.80
+
+Filter sanity check: min interactions = 30 >= 30 — OK
+
+--- Stratified sampling of 1000 students (10 deciles) ---
+
+Decile breakdown (qualified students per decile):
+        n_students  min_interactions  max_interactions
+decile                                                
+0             8304                30                36
+1             7995                37                46
+2             8092                47                58
+3             8281                59                78
+4             8014                79               105
+5             8104               106               149
+6             8053               150               225
+7             8101               226               366
+8             8112               367               709
+9             8118               710             22067
+
+Smallest decile has 7,995 students — sampling 100 per decile is safe
+
+--- Working subset split ---
+  Train :   800  (80%)
+  Val   :   100  (10%)
+  Test  :   100  (10%)
+  Total :  1000
+
+Overlap / duplicate checks: all passed — OK
+
+--- Working subset interaction distribution ---
+count    1000.0
+mean      311.0
+std       660.7
+min        30.0
+25%        51.0
+50%       105.5
+75%       280.5
+max      9548.0
+
+  Min interactions in subset : 30
+  Max interactions in subset : 9548
+  Mean                        : 311.0
+  Unique exercises (mean/student): 24.2
+  Mean accuracy in subset     : 0.8210
+
+Saved: data\processed\student_stats.csv
+  81,174 qualified students | columns: ['user_id', 'total_interactions', 'unique_exercises', 'accuracy', 'hint_rate', 'active_days']
+
+Saved: data\processed\student_splits.json
+  Train : 800 student IDs
+  Val   : 100 student IDs
+  Test  : 100 student IDs
+
+Step 4 complete.
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> 
