@@ -1,0 +1,18 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> python pickfiles.py
+Smallest:
+       user_id  total_interactions
+76564   233536                  30
+39749   121567                  30
+74834   228484                  30
+
+Middle:
+       user_id  total_interactions
+30556    93827                 105
+14762    45224                 106
+80907   246770                 107
+
+Largest:
+       user_id  total_interactions
+11913    36700                6009
+37944   115877                6488
+6906     21419                9548

@@ -1,0 +1,35 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> python -u src\utils\config.py
+======================================================================
+FedGKT Phase 1 Config — sanity check
+======================================================================
+
+PROJECT_ROOT: E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt
+  exists: True
+
+Data paths:
+  VOCAB_PATH             E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\data\processed\exercise_vocab.json   [OK]
+  EDGE_INDEX_PATH        E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\data\processed\edge_index.pt   [OK]
+  PKG_DIR                E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\data\processed\pkgs   [OK]
+  SPLITS_PATH            E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\data\processed\student_splits.json   [OK]
+  STUDENT_STATS_PATH     E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\data\processed\student_stats.csv   [OK]
+
+Graph structure: 835 nodes, 978 edges, 7 features/node
+Feature order: ['mastery_score', 'attempt_count', 'recent_accuracy_5', 'recent_accuracy_10', 'time_decay', 'streak', 'first_attempt']
+
+GAT architecture:
+  Layer 1: 4 heads x 32 dim -> 128-dim output
+  Layer 2: 4 heads x 32 dim -> 128-dim output
+  Layer 3: 1 head  x 64 dim -> 64-dim output
+  Head:    Linear(64->32) -> ReLU -> Dropout(0.2) -> Linear(32->1) -> Sigmoid
+
+Training hyperparameters (placeholder defaults, not locked):
+  Learning rate: 0.001
+  Optimizer: Adam
+  Students per gradient step: 8
+  Epochs: 20
+  Random seed: 42
+
+Split sizes: train=800 val=100 test=100
+
+Config sanity check complete.
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> 
