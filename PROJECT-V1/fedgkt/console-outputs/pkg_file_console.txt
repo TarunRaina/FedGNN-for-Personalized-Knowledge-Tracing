@@ -1,0 +1,76 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> python -u src\data\pkg.py
+======================================================================
+PersonalKnowledgeGraph -- standalone self-test (synthetic data)
+======================================================================
+
+Initial x shape: (835, 7)
+Cold-start assertions passed.
+
+--- Simulating interactions on node 10 ---
+
+Step 0: exercise_idx=10 correct=1 time=1400000000000000
+  x[10] before update: [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  x[10] after  update: [0.65, 0.6931, 1.0, 1.0, 0.0, 0.1, 1.0]
+
+Step 1: exercise_idx=10 correct=1 time=1400000060000000
+  x[10] before update: [0.65, 0.6931, 1.0, 1.0, 1.0, 0.1, 1.0]
+  x[10] after  update: [0.755, 1.0986, 1.0, 1.0, 1.0, 0.2, 1.0]
+
+Step 2: exercise_idx=10 correct=0 time=1400000120000000
+  x[10] before update: [0.755, 1.0986, 1.0, 1.0, 0.9998, 0.2, 1.0]
+  x[10] after  update: [0.5285, 1.3863, 0.6667, 0.6667, 0.9998, 0.0, 1.0]
+
+Step 3: exercise_idx=10 correct=1 time=1400259200000000
+  x[10] before update: [0.5285, 1.3863, 0.6667, 0.6667, 0.741, 0.0, 1.0]
+  x[10] after  update: [0.67, 1.6094, 0.75, 0.75, 0.741, 0.1, 1.0]
+
+--- Checking an untouched node's time_decay ---
+  Node 500 (never attempted) time_decay: 0.0 (expected 0.0)
+
+Self-test complete -- no assertion failures.
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> 
+
+
+
+
+
+
+
+
+
+
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> python -u src\data\pkg.py         
+======================================================================
+PersonalKnowledgeGraph -- standalone self-test (synthetic data)
+======================================================================
+
+Initial x shape: (835, 7)
+Cold-start assertions passed.
+
+--- Simulating interactions on node 10 ---
+
+Step 0: exercise_idx=10 correct=1 time=1400000000000000
+  x[10] before update: [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  x[10] after  update: [0.65, 0.6931, 1.0, 1.0, 0.0, 0.1, 1.0]
+
+Step 1: exercise_idx=10 correct=1 time=1400000060000000
+  x[10] before update: [0.65, 0.6931, 1.0, 1.0, 0.9999, 0.1, 1.0]
+  x[10] after  update: [0.755, 1.0986, 1.0, 1.0, 0.9999, 0.2, 1.0]
+
+Step 2: exercise_idx=10 correct=0 time=1400000120000000
+  x[10] before update: [0.755, 1.0986, 1.0, 1.0, 0.9999, 0.2, 1.0]
+  x[10] after  update: [0.5285, 1.3863, 0.6667, 0.6667, 0.9999, 0.0, 1.0]
+
+Step 3: exercise_idx=10 correct=1 time=1400259200000000
+  x[10] before update: [0.5285, 1.3863, 0.6667, 0.6667, 0.7409, 0.0, 1.0]
+  x[10] after  update: [0.67, 1.6094, 0.75, 0.75, 0.7409, 0.1, 1.0]
+
+--- Checking an untouched node's time_decay ---
+  Node 500 (never attempted) time_decay: 0.0 (expected 0.0)
+
+--- Sanity check: two identical 60,000,000us gaps should match ---
+  (This is the exact check that caught the original float32 bug --
+   step 1 and step 2 above both simulate a 1-minute gap and must
+   now print the SAME time_decay value in their 'before update' row.)
+
+Self-test complete -- no assertion failures.

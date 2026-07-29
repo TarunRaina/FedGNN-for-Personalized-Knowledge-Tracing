@@ -1,0 +1,22 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> python -u src\models\gat.py
+======================================================================
+GAT -- standalone self-test
+======================================================================
+
+Loaded real edge_index.pt: shape (2, 978)
+
+GAT parameter count: 26,432
+  (Design doc target for GAT + personal head combined: ~85,000. The head is added separately in fedgkt.py, so this number alone should be somewhat less than 85,000.)
+
+Input x shape:  (835, 7)
+Output shape:   (835, 64)
+Shape check passed: matches expected (835, 64)
+No NaN/Inf values in output -- OK
+
+Gradient flow check: 12/12 parameter tensors received nonzero gradients after backward()
+All parameter tensors received gradients -- OK
+
+Different-feature sanity check: two students with different mastery on node 10 produce embeddings differing by total abs diff = 19.9276 (must be > 0)
+Output correctly differs based on input features -- OK
+
+Self-test complete -- no assertion failures.

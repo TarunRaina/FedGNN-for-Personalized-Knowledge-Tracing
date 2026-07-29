@@ -1,0 +1,28 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> python -u src\utils\metrics.py
+======================================================================
+metrics.py -- standalone self-test
+======================================================================
+
+--- bce_loss ---
+  loss = 0.164252  (manual F.binary_cross_entropy check: 0.164252)
+  Gradient flowed correctly through bce_loss -- OK
+  Extreme case (pred=1.0/0.0 exactly): loss = 0.000000 (must not be NaN/Inf)
+  No NaN/Inf on boundary values -- OK
+
+--- per_student_auc ---
+  Perfect separation: AUC = 1.0 (expected 1.0)
+  All predictions tied, balanced classes: AUC = 0.5 (expected 0.5)
+  Single-class student (all correct): AUC = None (expected None)
+
+--- macro_auc ---
+  Input: [1.0, 0.5, None, 0.8, None]
+  Result: {'macro_auc': 0.7666666666666666, 'n_valid': 3, 'n_skipped': 2, 'n_total': 5}
+  Macro average and skip-counting both correct -- OK
+
+--- per_concept_auc ---
+  per_concept dict: {5: 1.0}
+  n_concepts_with_auc: 1  n_concepts_skipped: 1
+  Per-concept grouping, computation, and skip-handling all correct -- OK
+
+Self-test complete -- no assertion failures.
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> 
