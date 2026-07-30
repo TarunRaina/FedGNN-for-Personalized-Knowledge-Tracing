@@ -1,0 +1,35 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> python -u src\training\evaluator.py
+======================================================================
+evaluator.py -- standalone self-test (REAL student data, untrained model)
+======================================================================
+
+Evaluating UNTRAINED model on 3 real students: [233536, 45224, 21419]
+(Untrained/random-weight model -- AUC near 0.5 is EXPECTED here. This test verifies the evaluation PIPELINE works correctly, not that the model has learned anything yet -- that comes after real training.)
+
+  [1/3] user_id=233536  n_interactions=30  auc=0.6801
+  [2/3] user_id=45224  n_interactions=106  auc=0.6589
+  [3/3] user_id=21419  n_interactions=9548  auc=0.4663
+
+--- Aggregated results ---
+Macro AUC:              0.6018
+  Valid students:       3 / 3 (skipped: 0)
+Overall BCE:            0.7171
+Concepts with AUC:      205
+Concepts skipped:       94
+Total interactions:     9,684
+Elapsed time:           35.00s
+Interactions/sec:       276.6
+
+Total interaction count matches expected (30+106+9548=9684) -- OK
+  user_id=233536  n_interactions=30  auc=0.6801242236024845
+  user_id=45224  n_interactions=106  auc=0.6588516746411484
+  user_id=21419  n_interactions=9548  auc=0.4662914104620328
+
+Self-test complete -- no assertion failures.
+
+NOTE: this used only 3 students for a fast smoke test. The full
+training loop will call evaluate() on all 100 val / 100 test students
+-- the interactions/sec figure above gives a rough sense of runtime
+for that (though a trained model in training mode with dropout may
+differ slightly in speed from this eval-mode, untrained run).
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> 

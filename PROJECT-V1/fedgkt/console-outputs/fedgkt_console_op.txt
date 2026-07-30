@@ -1,0 +1,30 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> python -u src\models\fedgkt.py
+======================================================================
+FedGKT -- standalone self-test
+======================================================================
+
+Loaded real edge_index.pt: shape (2, 978)
+
+Parameter counts: base (GAT) = 26,432  head = 2,113  total = 28,545
+  (Design doc target: ~85,000 total -- this is a rough guideline from the original spec, not an enforced assertion. Current total is well under that, which is fine for a small, FL-communication-efficient model.)
+
+Single exercise_idx=42 -> prediction: 0.4531 (shape (), must be scalar/0-dim)
+
+Batch exercise_idx=[0, 42, 834] -> predictions: [0.4531, 0.4531, 0.4531] (shape (3,))
+Single and batch prediction shapes/ranges both correct -- OK
+NOTE: all 3 predictions above are expected to be IDENTICAL -- x here is
+      completely uniform across every node (pure cold-start), and a GAT's
+      attention-weighted aggregation of identical vectors mathematically
+      returns that same vector regardless of graph structure. This is
+      correct behaviour for a degenerate uniform input, not a bug -- the
+      REAL node-differentiation check follows below with varied features.
+
+Same batch, REALISTIC varied features -> predictions: [0.4525, 0.4526, 0.4531]
+  Unique prediction values: 3 (must be > 1 -- nodes with different features must score differently)
+  Nodes with different features correctly produce different predictions -- OK
+
+Gradient flow: base (GAT) params all have grad = True, head params all have grad = True
+Gradients reached both submodules -- OK
+
+Self-test complete -- no assertion failures.
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> 
