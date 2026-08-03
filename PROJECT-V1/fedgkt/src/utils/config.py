@@ -89,6 +89,20 @@ TRAIN_SIZE = 800
 VAL_SIZE = 100
 TEST_SIZE = 100
 
+# ── device (confirmed decision, not a silent omission) ───────────────────────
+# 835 nodes / 978 edges, processed one interaction at a time, sequentially --
+# GPU transfer overhead per call would likely exceed any compute benefit at
+# this graph size. CPU is the deliberate default. Change to 'cuda' here to
+# benchmark GPU later if ever needed -- no model code changes required, since
+# nothing in pkg.py/gat.py/fedgkt.py/evaluator.py hardcodes a device.
+DEVICE = 'cpu'
+
+# ── early stopping (NOT locked -- standard default, like the other training
+# hyperparameters in this file. Tune later if needed.) ───────────────────────
+EARLY_STOPPING_PATIENCE = 5   # epochs without val macro_auc improvement before stopping
+
+# ── checkpoints ────────────────────────────────────────────────────────────
+CHECKPOINT_DIR = os.path.join(PROJECT_ROOT, 'checkpoints')
 
 if __name__ == '__main__':
     print("=" * 70)
