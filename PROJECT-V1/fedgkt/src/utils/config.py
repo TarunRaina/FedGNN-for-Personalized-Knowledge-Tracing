@@ -81,7 +81,7 @@ DROPOUT = 0.2
 LEARNING_RATE = 1e-3
 OPTIMIZER = 'Adam'
 STUDENTS_PER_GRADIENT_STEP = 8    # accumulate loss over N students before backward+step
-NUM_EPOCHS = 20                    # placeholder, will likely change after first real run
+NUM_EPOCHS = 50                    # placeholder, will likely change after first real run
 RANDOM_SEED = 42                  # same seed used throughout preprocessing
 
 # ── train/val/test split sizes (locked, from Step 4) ─────────────────────────

@@ -1,0 +1,103 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> python -u train_baseline.py
+======================================================================
+FedGKT Phase 1 -- Baseline Training
+======================================================================
+
+Loaded splits: train=800  val=100  test=100
+
+Fresh start. Model initialised: 28,545 parameters
+
+--- Timing one real epoch on the FULL train/val sets ---
+Training 1 epoch over 800 students, validating on 100 students. This is a REAL measurement, not an estimate.
+Training config: epochs=1  group_size=8  patience=5  lr=0.001  train_students=800  val_students=100
+Epoch   1/1  train_loss=0.4883  val_auc=0.5949 (99/100 valid)  val_bce=0.4520  train_time=2674.6s  val_time=126.7s  <-- new best
+
+Reloaded best checkpoint (epoch 1, val_auc=0.5949) from E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\checkpoints\best_model.pt
+Saved training history: E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\checkpoints\training_history.json
+
+One epoch took 46.7 minutes (2801.4s).
+Projected time for remaining 19 epochs (early stopping may end it sooner): ~887.1 minutes
+Projected TOTAL time if all 20 epochs run: ~933.8 minutes (~15.6 hours)
+
+Continue training for the remaining 19 epochs? [y/n]: y
+
+--- Continuing training for up to 19 more epochs ---
+Resumed from E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\checkpoints\latest_state.pt: last completed epoch=1, best_epoch=1 (val_auc=0.5949), patience_counter=0/5, continuing from epoch 2
+Training config: epochs=20  group_size=8  patience=5  lr=0.001  train_students=800  val_students=100
+Epoch   2/20  train_loss=0.4524  val_auc=0.5979 (99/100 valid)  val_bce=0.4477  train_time=2562.7s  val_time=113.3s  <-- new best
+Epoch   3/20  train_loss=0.4343  val_auc=0.6077 (99/100 valid)  val_bce=0.4520  train_time=2957.7s  val_time=126.0s  <-- new best
+Epoch   4/20  train_loss=0.4268  val_auc=0.6118 (99/100 valid)  val_bce=0.4492  train_time=2551.5s  val_time=106.8s  <-- new best
+Epoch   5/20  train_loss=0.4241  val_auc=0.6172 (99/100 valid)  val_bce=0.4359  train_time=2458.4s  val_time=107.1s  <-- new best
+Epoch   6/20  train_loss=0.4210  val_auc=0.6267 (99/100 valid)  val_bce=0.4343  train_time=2809.1s  val_time=126.4s  <-- new best
+Epoch   7/20  train_loss=0.4205  val_auc=0.6269 (99/100 valid)  val_bce=0.4330  train_time=2735.8s  val_time=112.9s  <-- new best
+Epoch   8/20  train_loss=0.4189  val_auc=0.6276 (99/100 valid)  val_bce=0.4349  train_time=2557.4s  val_time=106.3s  <-- new best
+Epoch   9/20  train_loss=0.4202  val_auc=0.6254 (99/100 valid)  val_bce=0.4325  train_time=2598.8s  val_time=107.9s
+Epoch  10/20  train_loss=0.4181  val_auc=0.6243 (99/100 valid)  val_bce=0.4353  train_time=2923.1s  val_time=148.7s
+Epoch  11/20  train_loss=0.4196  val_auc=0.6298 (99/100 valid)  val_bce=0.4382  train_time=2955.8s  val_time=138.0s  <-- new best
+Epoch  12/20  train_loss=0.4167  val_auc=0.6309 (99/100 valid)  val_bce=0.4325  train_time=2741.6s  val_time=120.8s  <-- new best
+Epoch  13/20  train_loss=0.4152  val_auc=0.6294 (99/100 valid)  val_bce=0.4347  train_time=2933.0s  val_time=130.0s
+Epoch  14/20  train_loss=0.4157  val_auc=0.6308 (99/100 valid)  val_bce=0.4325  train_time=2919.0s  val_time=125.0s
+Epoch  15/20  train_loss=0.4144  val_auc=0.6326 (99/100 valid)  val_bce=0.4308  train_time=2905.0s  val_time=122.8s  <-- new best
+Epoch  16/20  train_loss=0.4144  val_auc=0.6316 (99/100 valid)  val_bce=0.4338  train_time=2727.3s  val_time=106.8s
+Epoch  17/20  train_loss=0.4142  val_auc=0.6324 (99/100 valid)  val_bce=0.4312  train_time=2802.5s  val_time=124.9s
+Epoch  18/20  train_loss=0.4136  val_auc=0.6312 (99/100 valid)  val_bce=0.4328  train_time=2351.5s  val_time=109.4s
+Epoch  19/20  train_loss=0.4138  val_auc=0.6321 (99/100 valid)  val_bce=0.4318  train_time=2409.9s  val_time=105.9s
+Epoch  20/20  train_loss=0.4137  val_auc=0.6339 (99/100 valid)  val_bce=0.4313  train_time=2461.9s  val_time=123.2s  <-- new best
+
+Reloaded best checkpoint (epoch 20, val_auc=0.6339) from E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\checkpoints\best_model.pt
+Saved training history: E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\checkpoints\training_history.json
+
+--- Final evaluation on TEST set (first use in this entire project) ---
+Evaluating the best checkpoint on 100 held-out test students.
+
+Test macro AUC:        0.6686 (98/100 valid)
+Test overall BCE:      0.3927
+Test concepts w/ AUC:  307 (skipped: 83)
+
+Saved final results: E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\checkpoints\final_results.json
+Best model checkpoint: E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\checkpoints\best_model.pt
+
+======================================================================
+Baseline training complete.
+======================================================================
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> 
+
+
+
+Epoch  21/30  train_loss=0.4131  val_auc=0.6332 (99/100 valid)  val_bce=0.4336  train_time=2752.4s  val_time=120.1s
+Epoch  22/30  train_loss=0.4130  val_auc=0.6378 (99/100 valid)  val_bce=0.4290  train_time=3077.8s  val_time=113.3s  <-- new best
+Epoch  23/30  train_loss=0.4119  val_auc=0.6387 (99/100 valid)  val_bce=0.4284  train_time=2459.7s  val_time=105.6s  <-- new best
+Epoch  24/30  train_loss=0.4110  val_auc=0.6381 (99/100 valid)  val_bce=0.4302  train_time=2812.6s  val_time=126.1s
+Epoch  25/30  train_loss=0.4122  val_auc=0.6387 (99/100 valid)  val_bce=0.4322  train_time=2857.1s  val_time=119.9s  <-- new best
+Epoch  26/30  train_loss=0.4104  val_auc=0.6397 (99/100 valid)  val_bce=0.4285  train_time=3095.6s  val_time=150.7s  <-- new best
+Epoch  27/30  train_loss=0.4097  val_auc=0.6409 (99/100 valid)  val_bce=0.4303  train_time=2670.6s  val_time=107.0s  <-- new best
+Epoch  28/30  train_loss=0.4107  val_auc=0.6374 (99/100 valid)  val_bce=0.4315  train_time=2325.1s  val_time=105.5s
+Epoch  29/30  train_loss=0.4099  val_auc=0.6448 (99/100 valid)  val_bce=0.4285  train_time=2319.9s  val_time=106.0s  <-- new best
+Epoch  30/30  train_loss=0.4097  val_auc=0.6438 (99/100 valid)  val_bce=0.4273  train_time=2326.4s  val_time=106.3s
+
+Reloaded best checkpoint (epoch 29, val_auc=0.6448) from E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\checkpoints\best_model.pt
+Saved training history: E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\checkpoints\training_history.json
+
+--- Final evaluation on TEST set (first use in this entire project) ---
+Evaluating the best checkpoint on 100 held-out test students.
+
+Test macro AUC:        0.6655 (98/100 valid)
+Test overall BCE:      0.3971
+Test concepts w/ AUC:  307 (skipped: 83)
+
+Saved final results: E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\checkpoints\final_results.json
+Best model checkpoint: E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\checkpoints\best_model.pt
+
+======================================================================
+Baseline training complete.
+======================================================================
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt> 
+
+Epoch  31/50  train_loss=0.4113  val_auc=0.6366 (99/100 valid)  val_bce=0.4292  train_time=2938.4s  val_time=117.9s
+Epoch  32/50  train_loss=0.4102  val_auc=0.6452 (99/100 valid)  val_bce=0.4277  train_time=3036.6s  val_time=141.7s  <-- new best
+Epoch  33/50  train_loss=0.4095  val_auc=0.6444 (99/100 valid)  val_bce=0.4280  train_time=2708.9s  val_time=111.2s
+Epoch  34/50  train_loss=0.4101  val_auc=0.6442 (99/100 valid)  val_bce=0.4328  train_time=2870.3s  val_time=127.0s
+Epoch  35/50  train_loss=0.4097  val_auc=0.6439 (99/100 valid)  val_bce=0.4267  train_time=2904.4s  val_time=113.7s
+Epoch  36/50  train_loss=0.4100  val_auc=0.6445 (99/100 valid)  val_bce=0.4272  train_time=3064.0s  val_time=133.8s
+Epoch  37/50  train_loss=0.4091  val_auc=0.6461 (99/100 valid)  val_bce=0.4274  train_time=2609.9s  val_time=114.7s  <-- new best
+Epoch  38/50  train_loss=0.4087  val_auc=0.6455 (99/100 valid)  val_bce=0.4291  train_time=3067.4s  val_time=128.7s

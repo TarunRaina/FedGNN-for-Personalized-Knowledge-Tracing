@@ -72,8 +72,8 @@ class FedGKT(nn.Module):
         assert idx_tensor.dtype == torch.long, (
             f"BUG: exercise_idx tensor must be dtype long, got {idx_tensor.dtype}"
         )
-        assert torch.all(idx_tensor >= 0) and torch.all(idx_tensor < cfg.NUM_NODES), (
-            f"BUG: exercise_idx contains values out of range [0, {cfg.NUM_NODES - 1}]"
+        assert torch.all(idx_tensor >= 0) and torch.all(idx_tensor < node_embeddings.shape[0]), (
+            f"BUG: exercise_idx contains values out of range [0, {node_embeddings.shape[0] - 1}]"
         )
 
         selected = node_embeddings[idx_tensor]        # [k, GAT_LAYER_3_DIM]
