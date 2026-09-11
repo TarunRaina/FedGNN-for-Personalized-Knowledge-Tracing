@@ -10,7 +10,7 @@ from src.data.pkg_batched import BatchedPersonalKnowledgeGraph
 # --- Paths ---
 EDGE_INDEX_PATH = os.path.join("data", "processed", "edge_index.pt")
 CHECKPOINT_PATH = os.path.join("checkpoints_gpu_batched", "best_model_batched.pt")
-STUDENT_PKG_PATH = os.path.join("data", "processed", "pkgs", "pkg_21419.pt")
+STUDENT_PKG_PATH = os.path.join("data", "processed", "pkgs", "pkg_6382.pt")
 
 # Output dir for high-res saves (so you can zoom in beyond what plt.show() gives you)
 OUT_DIR = "viz_output"
