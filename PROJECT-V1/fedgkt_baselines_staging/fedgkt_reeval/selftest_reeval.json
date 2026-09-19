@@ -1,0 +1,39 @@
+{
+  "macro_auc_full": 0.6017557589090183,
+  "macro_full_n_valid": 3,
+  "macro_full_n_skipped": 0,
+  "pooled_auc_full": 0.46954772246333926,
+  "macro_auc_no_first": 0.6018810922422527,
+  "macro_no_first_n_valid": 3,
+  "macro_no_first_n_skipped": 0,
+  "pooled_auc_no_first": 0.46972847754679475,
+  "n_students": 3,
+  "n_interactions_full": 9684,
+  "n_interactions_no_first": 9681,
+  "n_dropped_first_interactions": 3,
+  "split": "selftest",
+  "checkpoint": null,
+  "verified_against_locked_evaluator": true,
+  "locked_evaluator_macro_auc": 0.6017557589090183,
+  "locked_evaluator_overall_bce": 0.7170508503913879,
+  "per_student": [
+    {
+      "user_id": 233536,
+      "n_interactions": 30,
+      "auc_full": 0.6801242236024845,
+      "auc_no_first": 0.6739130434782609
+    },
+    {
+      "user_id": 45224,
+      "n_interactions": 106,
+      "auc_full": 0.6588516746411484,
+      "auc_no_first": 0.6653771760154739
+    },
+    {
+      "user_id": 21419,
+      "n_interactions": 9548,
+      "auc_full": 0.4662913784834221,
+      "auc_no_first": 0.46635305723302334
+    }
+  ]
+}

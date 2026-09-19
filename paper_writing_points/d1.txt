@@ -1,0 +1,31 @@
+Both passed, and the number that mattered came out right.
+
+Macro AUC on full sequences: 0.681071. That's your existing reported test result, reproduced exactly by the replay and confirmed against the locked evaluator.py at 0.0 difference. The script is verified against real trained weights, not just an untrained smoke test.
+
+Your four numbers
+	macro	pooled
+Full sequences (27,971)	0.6811	0.7549
+First interaction dropped (27,871)	0.6820	0.7554
+
+The bolded one goes in the head-to-head table. 0.6811 becomes the FedGKT-only secondary line.
+
+Two things worth noticing
+
+The first-interaction handicap was real. Dropping it moved macro AUC up by 0.0010 — small, but in FedGKT's favour and in the direction predicted. Exactly 100 predictions dropped, one per student, 0.36%. So FedGKT was genuinely being penalised for answering a question the baselines never face.
+
+The pooled number is 0.7549. For context, published Junyi results sit around 0.7443 for DKT and 0.7476 for DKVMN. So FedGKT is in that neighbourhood.
+
+Be careful with that, though — it's context, not a result. Those papers used different preprocessing, a different subset of Junyi, and different splits. The pyKT paper's whole argument is that cross-paper KT numbers diverge for exactly these reasons. So the honest statement is "our pooled figure falls in the range reported for this dataset," not "we beat DKT." The real DKT comparison is the one we're about to run ourselves, on identical data.
+
+Also noted: 2 of the 100 test students are single-class (all right or all wrong), so they're excluded from the macro average. That's the locked convention working as intended, and it's a number worth stating in the paper.
+
+Next: the DKT baseline
+
+Four things to settle before I write the driver:
+
+GKT graph — my recommendation stands: keep direction as-is, row-normalise, self-loops on the 59 isolated nodes. Only affects GKT, so it can wait, but it's the one still unanswered.
+Hyperparameter parity — Adam, lr 1e-3, dropout 0.2, patience 5 across all five baselines, matching FedGKT's config. Equal-budget, stated in the paper.
+Early stopping on val macro AUC, not pyKT's pooled default. If we leave pyKT's criterion in place, it picks a different "best epoch" than the metric we actually report. This one matters and is easy to miss.
+data_config entry — Step 1 computes it but never writes it. Small, needs doing before pyKT can load anything.
+
+Say go on those and I'll build the DKT driver.

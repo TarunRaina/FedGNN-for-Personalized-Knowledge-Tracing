@@ -1,0 +1,141 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt_baselines_staging> python baseline_step2_macro_auc_eval.py                
+======================================================================                                   
+baseline_step2_macro_auc_eval.py -- self-test              
+Proves per_student_auc()/macro_auc() are numerically IDENTICAL                                                    
+to FedGKT's own src/utils/metrics.py (imported directly and      
+compared, not just independently re-derived from the same                            
+description) -- then tests evaluate_macro_auc()'s own new
+logic: grouping flat per-interaction arrays by uid, including
+a student whose interactions are split across multiple rows.
+======================================================================
+
+Ground truth loaded from: E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\src\utils\metrics.py
+
+--- per_student_auc: comparing against FedGKT's own metrics.py ---
+  student A: ours=0.56  metrics.py=0.56  match=True
+  student B: ours=0.5  metrics.py=0.5  match=True
+  student C: ours=None  metrics.py=None  match=True
+  student D: ours=None  metrics.py=None  match=True
+  student E: ours=1.0  metrics.py=1.0  match=True
+  Single-class students C (all-correct) and D (all-incorrect) both correctly return None in both implementations -- OK
+
+--- macro_auc: comparing against FedGKT's own metrics.py ---
+  ours:      {'macro_auc': 0.6866666666666666, 'n_valid': 3, 'n_skipped': 2, 'n_total': 5}
+  metrics.py:{'macro_auc': 0.6866666666666666, 'n_valid': 3, 'n_skipped': 2, 'n_total': 5}
+  macro_auc value, n_valid, n_skipped, n_total all match metrics.py exactly (3 valid: A,B,E; 2 skipped: C,D) -- OK
+
+--- evaluate_macro_auc: flat per-interaction arrays -> grouped by uid ---
+  Flat input: 62 total interactions across 5 students (E split across 3 separate rows)
+  Result: macro_auc=0.686667  n_valid=3  n_skipped=2  n_total=5
+  Matches the direct per-student computation above exactly -- OK
+  Student E AUC (grouped from 3 separate rows): 1.000000
+  Student E AUC (from one concatenated sequence): 1.000000
+  Identical -- confirms multi-row students (long sequences split across several pyKT chunks/windows) are pooled correctly before AUC is computed, not accidentally scored per-row -- OK
+
+--- Contrast: pyKT's own pooled (non-macro) AUC on the same data ---
+  pyKT's own pooled interaction-level AUC: 0.789916
+  Our macro-averaged per-student AUC:      0.686667
+  (These are expected to differ -- that's the entire point of this override. Pooled AUC also silently includes students C/D's interactions as if they contributed signal, when in fact a single-class student contributes no rankable information at all; macro AUC correctly excludes them instead.)
+
+======================================================================
+Self-test complete -- no assertion failures.
+per_student_auc/macro_auc proven numerically identical to
+FedGKT's own metrics.py. evaluate_macro_auc's flat-array-to-
+per-student grouping verified correct, including the multi-row
+(long student split across several chunks) case.
+======================================================================
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt_baselines_staging> python baseline_step3_fedgkt_reeval.py --self-test
+C:\Users\tarun\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\jit\_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+======================================================================
+baseline_step3_fedgkt_reeval.py
+======================================================================
+FedGKT root (read-only): E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt
+edge_index: (2, 978)
+
+SELF-TEST MODE: untrained model, 3 known students (30 / 106 / 9548 interactions).
+An untrained model scores near 0.5 -- that is expected and not what is being tested here. What IS being tested is that the replay reproduces the locked evaluator.py exactly.
+
+--- Replaying 3 students ---
+  [1/3] user_id=233536  n_interactions=30
+  [2/3] user_id=45224  n_interactions=106
+  [3/3] user_id=21419  n_interactions=9548
+    9,684 interactions in 33.1s (292/sec)
+
+--- Verifying replay against the locked evaluator.py ---
+    (second full pass over the same data -- this is the guarantee, not wasted work)
+    Interaction count matches: 9,684
+    All 3 per-student AUCs match exactly
+    Macro AUC matches exactly: 0.601756 (difference 0.0)
+    Replay is provably doing the same thing as the locked code.
+
+======================================================================
+RESULTS -- selftest split, 3 students
+======================================================================
+
+Full sequences (9,684 predictions -- FedGKT's native protocol):
+  macro  AUC : 0.6018   (3 students, 0 skipped as single-class)
+  pooled AUC : 0.4695
+
+First interaction dropped (9,681 predictions -- matches what pyKT baselines are scored on):
+  macro  AUC : 0.6019   (3 students, 0 skipped as single-class)
+  pooled AUC : 0.4697
+
+Dropped 3 predictions (0.03% of the total), one per student.
+Effect on macro AUC: +0.0001
+
+For the head-to-head table, use the 'first interaction dropped' macro AUC.
+Report the full-sequence macro AUC as a FedGKT-only secondary line.
+
+Written: E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt_baselines_staging\fedgkt_reeval\selftest_reeval.json
+
+======================================================================
+Done -- replay verified against the locked evaluator, no assertion failures.
+======================================================================
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt_baselines_staging> python baseline_step3_fedgkt_reeval.py
+C:\Users\tarun\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\jit\_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+======================================================================
+baseline_step3_fedgkt_reeval.py
+======================================================================
+FedGKT root (read-only): E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt
+edge_index: (2, 978)
+Checkpoint loaded: E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt\checkpoints_gpu_batched\best_model_batched.pt
+  16 parameter tensors, all keys matched exactly
+
+Split: test  (100 students)
+
+--- Replaying 100 students ---
+    27,971 interactions in 93.8s (298/sec)
+
+--- Verifying replay against the locked evaluator.py ---
+    (second full pass over the same data -- this is the guarantee, not wasted work)
+    Interaction count matches: 27,971
+    All 100 per-student AUCs match exactly
+    Macro AUC matches exactly: 0.681071 (difference 0.0)
+    Replay is provably doing the same thing as the locked code.
+
+======================================================================
+RESULTS -- test split, 100 students
+======================================================================
+
+Full sequences (27,971 predictions -- FedGKT's native protocol):
+  macro  AUC : 0.6811   (98 students, 2 skipped as single-class)
+  pooled AUC : 0.7549
+
+First interaction dropped (27,871 predictions -- matches what pyKT baselines are scored on):
+  macro  AUC : 0.6820   (98 students, 2 skipped as single-class)
+  pooled AUC : 0.7554
+
+Dropped 100 predictions (0.36% of the total), one per student.
+Effect on macro AUC: +0.0010
+
+For the head-to-head table, use the 'first interaction dropped' macro AUC.
+Report the full-sequence macro AUC as a FedGKT-only secondary line.
+
+Written: E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt_baselines_staging\fedgkt_reeval\test_reeval.json
+
+======================================================================
+Done -- replay verified against the locked evaluator, no assertion failures.
+======================================================================
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt_baselines_staging> 
