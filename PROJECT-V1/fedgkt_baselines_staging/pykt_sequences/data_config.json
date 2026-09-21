@@ -1,0 +1,21 @@
+{
+  "junyi_fedgkt": {
+    "dpath": "E:\\FINAL YEAR PROJECT\\Federated GNN for Knowledge Tracing\\PROJECT-V1\\fedgkt_baselines_staging\\pykt_sequences",
+    "num_c": 835,
+    "num_q": 0,
+    "input_type": [
+      "concepts"
+    ],
+    "max_concepts": 1,
+    "train_valid_file": "train_valid_sequences.csv",
+    "test_file": "test_sequences.csv",
+    "test_window_file": "test_window_sequences.csv",
+    "folds": [
+      0,
+      1
+    ],
+    "emb_path": "",
+    "maxlen": 200,
+    "min_seq_len": 3
+  }
+}

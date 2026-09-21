@@ -45,8 +45,8 @@ this file. That was fragile in the worst possible way -- a stale copy that
 had drifted from the locked original would still import cleanly and be
 used as "ground truth" without anyone noticing. It now imports the real
 locked file directly, by anchoring to this script's own location
-(fedgkt/ and fedgkt_baselines_staging/ are siblings), the same way
-config.py anchors to its own path. Nothing is copied and nothing in
+walking upward until it finds fedgkt/, the same way config.py anchors
+to its own path. Nothing is copied and nothing in
 fedgkt/ is modified -- it is opened read-only.
 """
 
@@ -163,17 +163,26 @@ if __name__ == "__main__":
 
     # ---- locate FedGKT's locked metrics.py (read-only ground truth) -------
     # Anchored to THIS file's location, not the current working directory --
-    # same principle as config.py. fedgkt/ is a sibling of this folder.
-    _THIS_DIR = os.path.dirname(os.path.abspath(__file__))   # fedgkt_baselines_staging/
-    _PARENT_DIR = os.path.dirname(_THIS_DIR)                  # PROJECT-V1/
-    FEDGKT_ROOT = os.path.join(_PARENT_DIR, 'fedgkt')
+    # same principle as config.py. Walks upward until it finds a folder
+    # containing fedgkt/src/utils/metrics.py, so it works whether this file
+    # sits at the staging root or inside common/.
+    #
+    # NOTE: only this self-test block needs fedgkt/. When a driver imports
+    # evaluate_macro_auc from this file, this block never runs -- which is
+    # why it works in Colab, where fedgkt/ is not uploaded.
+    _here = os.path.dirname(os.path.abspath(__file__))
+    FEDGKT_ROOT = None
+    for _ in range(4):
+        _candidate = os.path.join(_here, 'fedgkt')
+        if os.path.exists(os.path.join(_candidate, 'src', 'utils', 'metrics.py')):
+            FEDGKT_ROOT = _candidate
+            break
+        _here = os.path.dirname(_here)
 
-    assert os.path.exists(os.path.join(FEDGKT_ROOT, 'src', 'utils', 'metrics.py')), (
-        f"Could not find FedGKT's metrics.py at "
-        f"{os.path.join(FEDGKT_ROOT, 'src', 'utils', 'metrics.py')}.\n"
-        f"This script expects fedgkt/ to be a sibling folder of "
-        f"fedgkt_baselines_staging/. If your layout differs, edit "
-        f"FEDGKT_ROOT above."
+    assert FEDGKT_ROOT is not None, (
+        "Could not find fedgkt/src/utils/metrics.py in any folder above this "
+        "file. This self-test compares against FedGKT's locked metrics.py, so "
+        "it only runs where fedgkt/ exists (your local machine, not Colab)."
     )
     if FEDGKT_ROOT not in sys.path:
         sys.path.insert(0, FEDGKT_ROOT)
