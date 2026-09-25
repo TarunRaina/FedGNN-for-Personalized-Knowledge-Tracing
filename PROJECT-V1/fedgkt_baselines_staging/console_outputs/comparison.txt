@@ -1,0 +1,38 @@
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt_baselines_staging> python baseline_step5_length_bands.py --results-dir baseline_results
+==========================================================================
+Length-band comparison
+==========================================================================
+
+100 test students, 2 single-class (excluded)
+lengths: min 30, median 107, max 2440
+
+--- Band convention check (FedGKT's own full-sequence AUCs) ---
+convention                  30-100     100-500        500+
+published                   0.6646      0.6988      0.6894
+[30,100) [100,500)          0.6647      0.6988      0.6894
+[30,100] (100,500]          0.6647      0.6988      0.6894
+
+closest convention: [lower, upper)   max difference from published: 0.0001
+
+--- Macro AUC by band (auc_no_first for FedGKT) ---
+students per band          46          34          18
+                  30-100     100-500        500+
+FedGKT            0.6663      0.6996      0.6892
+AKT               0.7225      0.7550      0.7566
+DKT               0.7411      0.7605      0.7634
+DKVMN             0.7600      0.7551      0.7557
+GKT               0.7422      0.7427      0.7265
+SAKT              0.7181      0.7419      0.7259
+
+--- Gap to FedGKT (positive = baseline ahead) ---
+                  30-100     100-500        500+
+AKT              +0.0562     +0.0554     +0.0674
+DKT              +0.0748     +0.0609     +0.0742
+DKVMN            +0.0937     +0.0555     +0.0665
+GKT              +0.0759     +0.0431     +0.0373
+SAKT             +0.0518     +0.0423     +0.0367
+
+A claim about handling long-tailed data lives in how the gap CHANGES
+across bands, not in the overall average. A gap that shrinks toward the
+short-sequence band is evidence for it; a flat or widening gap is not.
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt_baselines_staging> 

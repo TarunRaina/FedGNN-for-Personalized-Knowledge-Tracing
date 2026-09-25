@@ -1,0 +1,52 @@
+name, memory.total [MiB]
+Tesla T4, 15360 MiB
+Sequences : /content/staging_extract/fedgkt_baselines_staging/pykt_sequences
+Run folder: /content/drive/MyDrive/fedgkt_baselines_runs/akt_smoke
+Mode      : SMOKE TEST (2 epochs)
+
+--- Checking the sequence CSVs ---
+  train_valid_sequences.csv        rows= 1,948  students= 900  folds=[0, 1]  [OK]
+      real interactions in file: 282,977   positions pyKT will score: 281,029
+  test_sequences.csv               rows=   200  students= 100  folds=[-1]  [OK]
+      real interactions in file: 27,971   positions pyKT will score: 27,771
+  test_window_sequences.csv        rows=16,108  students= 100  folds=[-1]  [OK]
+      real interactions in file: 3,213,563   positions pyKT will score: 27,871
+AKT running concept-only: question-difficulty (Rasch) term disabled, as expected with num_q = 0.
+======================================================================
+Training AKT   device=cuda
+Run folder: /content/drive/MyDrive/fedgkt_baselines_runs/akt_smoke
+======================================================================
+Start preprocessing /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/train_valid_sequences.csv fold: _0...
+/usr/local/lib/python3.13/dist-packages/pykt/datasets/data_loader.py:152: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:78.)
+  dori[key] = LongTensor(dori[key])
+interaction_num: 248197
+file path: /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/train_valid_sequences.csv, qlen: 0, clen: 1716, rlen: 1716
+Start preprocessing /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/train_valid_sequences.csv fold: _1...
+interaction_num: 34780
+file path: /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/train_valid_sequences.csv, qlen: 0, clen: 232, rlen: 232
+Start preprocessing /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/test_window_sequences.csv fold: _-1...
+interaction_num: 27971
+file path: /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/test_window_sequences.csv, qlen: 0, clen: 16108, rlen: 16108
+train rows=1,716  valid students=100  test students=100
+scored positions: valid=34,548  test=27,871
+epoch   1  loss=0.4656  val macro=0.6355  pooled=0.7099  16.3s  *best*
+epoch   2  loss=0.3956  val macro=0.6411  pooled=0.7230  15.1s  *best*
+
+Stopped: max_epochs.  Best epoch 2, val macro AUC 0.6411.  This session: 33s
+
+--- Test set (windowed file), best epoch ---
+ts.shape: (27871,), ps.shape: (27871,)
+pyKT's own evaluate() agrees on pooled AUC (difference 0.0e+00).
+
+  macro  AUC : 0.6732   (98 students, 2 skipped as single-class)
+  pooled AUC : 0.7693
+  scored     : 27,871 predictions
+
+Written: /content/drive/MyDrive/fedgkt_baselines_runs/akt_smoke/results.json
+
+======================================================================
+AKT smoke test complete.
+  best epoch     : 2
+  test macro AUC : 0.6732
+  test pooled AUC: 0.7693
+======================================================================

@@ -1,0 +1,67 @@
+name, memory.total [MiB]
+Tesla T4, 15360 MiB
+Sequences : /content/staging_extract/fedgkt_baselines_staging/pykt_sequences
+Run folder: /content/drive/MyDrive/fedgkt_baselines_runs/gkt_smoke
+Mode      : SMOKE TEST (2 epochs)
+
+--- Checking the sequence CSVs ---
+  train_valid_sequences.csv        rows= 1,948  students= 900  folds=[0, 1]  [OK]
+      real interactions in file: 282,977   positions pyKT will score: 281,029
+  test_sequences.csv               rows=   200  students= 100  folds=[-1]  [OK]
+      real interactions in file: 27,971   positions pyKT will score: 27,771
+  test_window_sequences.csv        rows=16,108  students= 100  folds=[-1]  [OK]
+      real interactions in file: 3,213,563   positions pyKT will score: 27,871
+
+--- Checking the GKT graph ---
+Graph: /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/gkt_graph_prerequisite.npz
+  978 edges, diagonal zero, 542 rows summing to 1, 293 empty rows
+  sha256 ba567907939837ea0894fe629b5eaed9005fca74dab59fa05699d49d68881b54
+GKT holds FedGKT's prerequisite graph exactly, frozen -- OK
+======================================================================
+Training GKT   device=cuda
+Run folder: /content/drive/MyDrive/fedgkt_baselines_runs/gkt_smoke
+======================================================================
+Start preprocessing /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/train_valid_sequences.csv fold: _0...
+/usr/local/lib/python3.13/dist-packages/pykt/datasets/data_loader.py:152: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:78.)
+  dori[key] = LongTensor(dori[key])
+interaction_num: 248197
+file path: /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/train_valid_sequences.csv, qlen: 0, clen: 1716, rlen: 1716
+Start preprocessing /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/train_valid_sequences.csv fold: _1...
+interaction_num: 34780
+file path: /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/train_valid_sequences.csv, qlen: 0, clen: 232, rlen: 232
+Start preprocessing /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/test_window_sequences.csv fold: _-1...
+interaction_num: 27971
+file path: /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/test_window_sequences.csv, qlen: 0, clen: 16108, rlen: 16108
+train rows=1,716  valid students=100  test students=100
+scored positions: valid=34,548  test=27,871
+Traceback (most recent call last):
+  File "/content/staging_extract/fedgkt_baselines_staging/drivers/run_gkt.py", line 219, in <module>
+    main()
+    ~~~~^^
+  File "/content/staging_extract/fedgkt_baselines_staging/drivers/run_gkt.py", line 196, in main
+    results = tu.fit_and_evaluate(
+        model, MODEL_NAME, cfg,
+    ...<9 lines>...
+        model_config={**MODEL_CONFIG, 'emb_type': EMB_TYPE, 'graph_sha256': graph_sha},
+    )
+  File "/content/staging_extract/fedgkt_baselines_staging/common/train_utils.py", line 550, in fit_and_evaluate
+    train_loss = train_one_epoch(model, splits['train']['loader'], opt)
+  File "/content/staging_extract/fedgkt_baselines_staging/common/train_utils.py", line 335, in train_one_epoch
+    loss = model_forward(model, data)
+  File "/usr/local/lib/python3.13/dist-packages/pykt/models/train_model.py", line 111, in model_forward
+    y = model(cc.long(), cr.long())
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/pykt/models/gkt.py", line 243, in forward
+    h_next, concept_embedding, rec_embedding, z_prob = self._update(tmp_ht, ht, qt)  # [batch_size, num_c, hidden_dim]
+                                                       ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/pykt/models/gkt.py", line 171, in _update
+    m_next, concept_embedding, rec_embedding, z_prob = self._agg_neighbors(tmp_ht, qt)  # [batch_size, num_c, hidden_dim]
+                                                       ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/pykt/models/gkt.py", line 142, in _agg_neighbors
+    neigh_features = adj * self.f_neighbor_list[0](neigh_ht) + reverse_adj * self.f_neighbor_list[1](neigh_ht)
+                                                               ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 17.81 MiB is free. Including non-PyTorch memory, this process has 14.54 GiB memory in use. Of the allocated memory 14.17 GiB is allocated by PyTorch, and 258.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

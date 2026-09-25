@@ -1,0 +1,77 @@
+name, memory.total [MiB]
+Tesla T4, 15360 MiB
+Sequences : /content/staging_extract/fedgkt_baselines_staging/pykt_sequences
+Run folder: /content/drive/MyDrive/fedgkt_baselines_runs/akt
+Mode      : full run
+
+--- Checking the sequence CSVs ---
+  train_valid_sequences.csv        rows= 1,948  students= 900  folds=[0, 1]  [OK]
+      real interactions in file: 282,977   positions pyKT will score: 281,029
+  test_sequences.csv               rows=   200  students= 100  folds=[-1]  [OK]
+      real interactions in file: 27,971   positions pyKT will score: 27,771
+  test_window_sequences.csv        rows=16,108  students= 100  folds=[-1]  [OK]
+      real interactions in file: 3,213,563   positions pyKT will score: 27,871
+AKT running concept-only: question-difficulty (Rasch) term disabled, as expected with num_q = 0.
+======================================================================
+Training AKT   device=cuda
+Run folder: /content/drive/MyDrive/fedgkt_baselines_runs/akt
+======================================================================
+Read data from processed file: /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/train_valid_sequences.csv_0.pkl
+file path: /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/train_valid_sequences.csv, qlen: 0, clen: 1716, rlen: 1716
+Read data from processed file: /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/train_valid_sequences.csv_1.pkl
+file path: /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/train_valid_sequences.csv, qlen: 0, clen: 232, rlen: 232
+Read data from processed file: /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/test_window_sequences.csv_-1.pkl
+file path: /content/staging_extract/fedgkt_baselines_staging/pykt_sequences/test_window_sequences.csv, qlen: 0, clen: 16108, rlen: 16108
+train rows=1,716  valid students=100  test students=100
+scored positions: valid=34,548  test=27,871
+epoch   1  loss=0.4656  val macro=0.6352  pooled=0.7099  15.7s  *best*
+epoch   2  loss=0.3956  val macro=0.6411  pooled=0.7230  15.5s  *best*
+epoch   3  loss=0.3876  val macro=0.6520  pooled=0.7317  15.9s  *best*
+epoch   4  loss=0.3826  val macro=0.6587  pooled=0.7369  16.0s  *best*
+epoch   5  loss=0.3792  val macro=0.6693  pooled=0.7403  16.2s  *best*
+epoch   6  loss=0.3761  val macro=0.6758  pooled=0.7430  15.8s  *best*
+epoch   7  loss=0.3734  val macro=0.6810  pooled=0.7462  15.7s  *best*
+epoch   8  loss=0.3721  val macro=0.6823  pooled=0.7477  15.9s  *best*
+epoch   9  loss=0.3696  val macro=0.6846  pooled=0.7493  15.8s  *best*
+epoch  10  loss=0.3679  val macro=0.6855  pooled=0.7499  15.8s  *best*
+epoch  11  loss=0.3663  val macro=0.6869  pooled=0.7520  15.9s  *best*
+epoch  12  loss=0.3651  val macro=0.6895  pooled=0.7531  15.7s  *best*
+epoch  13  loss=0.3634  val macro=0.6904  pooled=0.7540  15.9s  *best*
+epoch  14  loss=0.3621  val macro=0.6915  pooled=0.7551  15.7s  *best*
+epoch  15  loss=0.3609  val macro=0.6931  pooled=0.7563  15.7s  *best*
+epoch  16  loss=0.3596  val macro=0.6939  pooled=0.7570  15.7s  *best*
+epoch  17  loss=0.3589  val macro=0.6945  pooled=0.7578  15.8s  *best*
+epoch  18  loss=0.3579  val macro=0.6958  pooled=0.7586  16.3s  *best*
+epoch  19  loss=0.3571  val macro=0.6962  pooled=0.7590  15.9s  *best*
+epoch  20  loss=0.3564  val macro=0.6968  pooled=0.7594  15.9s  *best*
+epoch  21  loss=0.3556  val macro=0.6955  pooled=0.7596  15.6s  (no gain 1/5)
+epoch  22  loss=0.3551  val macro=0.6947  pooled=0.7593  15.6s  (no gain 2/5)
+epoch  23  loss=0.3537  val macro=0.6971  pooled=0.7599  15.7s  *best*
+epoch  24  loss=0.3535  val macro=0.6976  pooled=0.7600  15.8s  *best*
+epoch  25  loss=0.3527  val macro=0.6960  pooled=0.7597  16.0s  (no gain 1/5)
+epoch  26  loss=0.3522  val macro=0.6965  pooled=0.7592  15.6s  (no gain 2/5)
+epoch  27  loss=0.3516  val macro=0.6990  pooled=0.7596  15.8s  *best*
+epoch  28  loss=0.3508  val macro=0.6980  pooled=0.7591  15.6s  (no gain 1/5)
+epoch  29  loss=0.3502  val macro=0.6987  pooled=0.7595  15.6s  (no gain 2/5)
+epoch  30  loss=0.3494  val macro=0.6952  pooled=0.7586  15.6s  (no gain 3/5)
+epoch  31  loss=0.3493  val macro=0.6968  pooled=0.7587  15.6s  (no gain 4/5)
+epoch  32  loss=0.3491  val macro=0.6963  pooled=0.7585  15.6s  (no gain 5/5)
+
+Stopped: early_stopping (patience 5).  Best epoch 27, val macro AUC 0.6990.  This session: 525s
+
+--- Test set (windowed file), best epoch ---
+ts.shape: (27871,), ps.shape: (27871,)
+pyKT's own evaluate() agrees on pooled AUC (difference 0.0e+00).
+
+  macro  AUC : 0.7400   (98 students, 2 skipped as single-class)
+  pooled AUC : 0.7977
+  scored     : 27,871 predictions
+
+Written: /content/drive/MyDrive/fedgkt_baselines_runs/akt/results.json
+
+======================================================================
+AKT run complete.
+  best epoch     : 27
+  test macro AUC : 0.7400
+  test pooled AUC: 0.7977
+======================================================================

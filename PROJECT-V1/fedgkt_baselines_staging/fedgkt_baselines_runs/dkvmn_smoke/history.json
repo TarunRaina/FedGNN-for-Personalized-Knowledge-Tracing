@@ -1,0 +1,18 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.4741719223907396,
+    "val_macro_auc": 0.6566891575196944,
+    "val_pooled_auc": 0.6674677670764011,
+    "improved": true,
+    "seconds": 4.2
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.4026858712023568,
+    "val_macro_auc": 0.6809630224337901,
+    "val_pooled_auc": 0.6972623823398711,
+    "improved": true,
+    "seconds": 3.3
+  }
+]
