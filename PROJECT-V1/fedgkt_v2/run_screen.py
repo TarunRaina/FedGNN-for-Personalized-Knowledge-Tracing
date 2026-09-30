@@ -84,6 +84,11 @@ def main():
                    help="v1 = the original FedGKT (default). v2 = learned per-concept "
                         "cold-start prior + raw-feature skip. v2-prior / v2-skip run "
                         "one of the two alone, as an ablation.")
+    p.add_argument('--patience', type=int, default=None,
+                   help="None (default) = no early stopping, which is what SCREENING "
+                        "wants: every variant gets the same budget. Set 5 to turn the "
+                        "run into a FULL run matching the canonical protocol -- and "
+                        "pass --val-every 1 with it, since patience counts VALIDATIONS.")
     p.add_argument('--cpu-eval', action='store_true',
                    help="Use the locked CPU evaluator instead of the batched GPU one "
                         "(~3x slower; for checking a final number).")
@@ -144,6 +149,7 @@ def main():
         edge_index=edge_index,
         eval_batch_size=args.eval_batch_size,
         batched_eval=not args.cpu_eval,
+        patience=args.patience,
     )
 
 

@@ -125,36 +125,67 @@ def set_seed(seed):
         torch.cuda.manual_seed_all(seed)
 
 
-def _fingerprint(variant, lr, batch_size, backward_chunk_size, val_every,
-                 seed, batched_eval):
+def _fingerprint(variant, lr, batch_size, backward_chunk_size, seed, batched_eval):
     """
-    Settings a resumed run must share with the run it continues. `epochs`
-    is excluded so a screen can be extended; everything that changes what
-    is computed is included.
+    Settings a resumed run must share with the run it continues.
+
+    Deliberately EXCLUDED:
+      epochs     -- so a screen can be extended into a full run.
+      val_every  -- validation runs under model.eval() and torch.no_grad(),
+                    consumes no randomness and touches no weights, so how
+                    OFTEN it happens cannot change the training trajectory.
+                    A 25-epoch screen validated every 2 epochs can therefore
+                    be continued with every-epoch validation, which is what
+                    a full run with patience needs.
+      patience   -- adding a stopping rule to a run that had none does not
+                    change what was already computed.
+
+    Everything that does affect the computation is included.
     """
     return {
         'variant': variant,
         'lr': lr,
         'batch_size': batch_size,
         'backward_chunk_size': backward_chunk_size,
-        'val_every': val_every,
         'seed': seed,
         'batched_eval': batched_eval,
     }
 
 
 # ── the screen ───────────────────────────────────────────────────────────
+def patience_counter_from_history(history, best_epoch):
+    """
+    How many VALIDATIONS have happened since the best one. Recomputed from
+    history rather than read from the checkpoint, so a run that was started
+    without a patience rule can be continued with one.
+    """
+    return sum(1 for h in history
+               if h['val_macro_auc'] is not None and h['epoch'] > best_epoch)
+
+
 def run_screen(model, train_ids, val_ids, run_dir, *, variant='baseline',
                epochs=25, val_every=2, batch_size=8, backward_chunk_size=50,
                lr=None, seed=42, device=None, edge_index=None,
-               eval_batch_size=16, batched_eval=True, resume=True, verbose=True):
+               eval_batch_size=16, batched_eval=True, resume=True, verbose=True,
+               patience=None):
     """
-    Trains for a FIXED number of epochs with NO early stopping, validating
-    every `val_every` epochs (and always on the final epoch). Returns the
-    summary dict, which is also written to <run_dir>/screen.json.
+    Trains to a fixed epoch budget, validating every `val_every` epochs (and
+    always on the final one). Returns the summary dict, also written to
+    <run_dir>/screen.json.
+
+    patience: None (default) = no early stopping, which is what SCREENING
+    wants -- every variant gets the same budget, so their numbers are
+    comparable. Set it (e.g. 5) to turn a run into a FULL run that stops
+    when validation stops improving, matching the canonical protocol.
+
+    Patience counts VALIDATIONS, not epochs. With val_every=1 the two are
+    the same, which is what the canonical run did -- so a full run should
+    pass --val-every 1 as well as --patience 5, or "patience 5" means
+    something different from what it meant before.
     """
     assert len(train_ids) > 0 and len(val_ids) > 0
     assert epochs > 0 and val_every > 0
+    assert patience is None or patience > 0
 
     lr = cfg.LEARNING_RATE if lr is None else lr
     device = device if device is not None else torch.device(
@@ -167,7 +198,7 @@ def run_screen(model, train_ids, val_ids, run_dir, *, variant='baseline',
     summary_path = os.path.join(run_dir, 'screen.json')
 
     fingerprint = _fingerprint(variant, lr, batch_size, backward_chunk_size,
-                               val_every, seed, batched_eval)
+                               seed, batched_eval)
 
     if edge_index is None:
         edge_index = torch.load(cfg.EDGE_INDEX_PATH, weights_only=False)
@@ -189,10 +220,13 @@ def run_screen(model, train_ids, val_ids, run_dir, *, variant='baseline',
                 f"{latest_path} exists and resume=False. Refusing to overwrite "
                 f"an existing screen. Delete {run_dir} to start fresh.")
         ckpt = torch.load(latest_path, map_location='cpu', weights_only=False)
-        if ckpt['fingerprint'] != fingerprint:
-            diffs = {k: (ckpt['fingerprint'].get(k), fingerprint.get(k))
-                     for k in set(ckpt['fingerprint']) | set(fingerprint)
-                     if ckpt['fingerprint'].get(k) != fingerprint.get(k)}
+        # only keys the current fingerprint defines are compared -- a
+        # checkpoint from an earlier version may carry extra keys (val_every)
+        # that are no longer part of the contract
+        diffs = {k: (ckpt['fingerprint'].get(k), v)
+                 for k, v in fingerprint.items()
+                 if ckpt['fingerprint'].get(k) != v}
+        if diffs:
             raise RuntimeError(
                 f"Cannot resume: settings differ from the saved screen in "
                 f"{run_dir}.\n  (saved, current): {diffs}\n"
@@ -211,17 +245,23 @@ def run_screen(model, train_ids, val_ids, run_dir, *, variant='baseline',
         if verbose:
             print(f"RESUMING '{variant}' from epoch {ckpt['epoch']} "
                   f"(best so far: epoch {best_epoch}, val {best_val:.4f})")
+            if patience is not None:
+                print(f"  patience counter recomputed from history: "
+                      f"{patience_counter_from_history(history, best_epoch)}/{patience}")
 
+    stop_rule = (f"early stopping, patience {patience} validations"
+                 if patience is not None else "no early stopping")
     eval_name = 'batched GPU' if batched_eval else 'locked CPU'
     if verbose:
         print("=" * 70)
-        print(f"SCREEN '{variant}'   {epochs} epochs, no early stopping")
+        print(f"SCREEN '{variant}'   up to {epochs} epochs, {stop_rule}")
         print(f"  device={device}  lr={lr}  batch_size={batch_size}  seed={seed}")
         print(f"  validating every {val_every} epoch(s) with the {eval_name} evaluator")
         print(f"  run_dir={run_dir}")
         print("=" * 70)
 
     run_start = time.time()
+    stopped_reason = 'reached epoch budget'
 
     for epoch in range(start_epoch, epochs + 1):
         t0 = time.time()
@@ -284,6 +324,15 @@ def run_screen(model, train_ids, val_ids, run_dir, *, variant='baseline',
             print(f"epoch {epoch:>3}/{epochs}  loss={train_loss:.4f}  {val_str}  "
                   f"train={train_seconds:.0f}s val={val_seconds:.0f}s{mark}")
 
+        if patience is not None and do_val:
+            without = patience_counter_from_history(history, best_epoch)
+            if without >= patience:
+                stopped_reason = (f"early stopping ({patience} validations without "
+                                  f"improvement; best epoch {best_epoch})")
+                if verbose:
+                    print(f"\n{stopped_reason}")
+                break
+
     assert best_state is not None, (
         "BUG: no epoch was ever validated -- check epochs/val_every.")
 
@@ -296,6 +345,8 @@ def run_screen(model, train_ids, val_ids, run_dir, *, variant='baseline',
         'seed': seed,
         'epochs': epochs,
         'val_every': val_every,
+        'patience': patience,
+        'stopped_reason': stopped_reason,
         'lr': lr,
         'batch_size': batch_size,
         'backward_chunk_size': backward_chunk_size,
