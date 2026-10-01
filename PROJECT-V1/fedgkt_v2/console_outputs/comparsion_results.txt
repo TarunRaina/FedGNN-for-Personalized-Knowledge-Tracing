@@ -1,0 +1,98 @@
+model	    macro	pooled
+DKVMN	    0.7575	0.7897
+DKT	        0.7519	0.7886
+AKT	        0.7400	0.7977
+GKT	        0.7395	0.7434
+SAKT	    0.7278	0.7560
+FedGKT v2	0.7270	0.7854
+FedGKT v1	0.6820	0.7554
+
+
+
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt_v2> python analyse_v2.py --run-dir model_training
+========================================================================
+1. TEST MACRO AUC BY SEQUENCE LENGTH
+========================================================================
+
+                      30-100     100-500        500+
+  students                48          34          18
+
+  FedGKT v2           0.7151      0.7402      0.7327
+  FedGKT v1           0.6663      0.6996      0.6892
+  DKT                 0.7411      0.7605      0.7634
+  DKVMN               0.7600      0.7551      0.7557
+  AKT                 0.7225      0.7550      0.7566
+  GKT                 0.7422      0.7427      0.7265
+  SAKT                0.7181      0.7419      0.7259
+
+  v2 - v1            +0.0488     +0.0406     +0.0435
+
+  overall test macro AUC (no-first): 0.7270
+
+  If the v2 - v1 row is roughly flat, the gain is uniform across
+  student lengths. If it is larger in one band, say which and why --
+  the learned prior should in principle help SHORT sequences most,
+  since that is where untouched concepts dominate.
+
+========================================================================
+2. LEARNED PER-CONCEPT COLD-START PRIORS
+========================================================================
+
+  835 values, all initialised at 0.5 (sigmoid(0)) before training.
+  range 0.1305 to 0.9561   mean 0.4608   std 0.1713
+  moved more than 0.01 from 0.5: 693 of 835 concepts
+
+  reading 800 training students for empirical difficulty...
+  654 of 835 concepts appear in training data
+
+  --- Does the prior match real difficulty? ---
+  concepts with >= 30 training attempts: 471
+  Pearson  correlation (prior vs actual accuracy): +0.567
+  Spearman correlation (rank agreement)          : +0.614
+
+  POSITIVE and meaningful: the model learned which concepts are
+  genuinely hard. This is a real interpretability result and a
+  figure for the paper.
+
+  --- 15 LOWEST priors (model considers hardest) ---
+    idx    prior  actual acc  attempts  concept
+    202   0.1305       0.280        25  degrees_to_radians
+     26   0.1324           -         0  adding_subtracting_dicimals_fractions_and_pe
+    140   0.1434       0.455        33  completing_the_square_2
+    359   0.1484           -         0  interpreting_absolute_value
+    530   0.1500       0.335       164  percentage_word_problems_1
+    783   0.1510           -         0  trigonometry_2
+    455   0.1514           -         0  multiplication_with_carrying
+    245   0.1525       0.880       393  division_word_problems_2
+    593   0.1551       0.255        47  rate_problems_1
+    782   0.1576           -         0  trigonometry_1.5
+    155   0.1577       0.668       660  congruency_postulates
+    168   0.1579       0.773       899  converting_decimals_to_percents
+    269   0.1601       0.482       197  exploring_mean_and_median
+    515   0.1615       0.418        67  ordering_fractions
+     46   0.1630       0.000        15  altitude_and_hypotenuse
+
+  --- 15 HIGHEST priors (model considers easiest) ---
+    idx    prior  actual acc  attempts  concept
+    443   0.9561       0.963      4376  multiplication_1
+     32   0.9528       0.950      2767  addition_2
+     31   0.9366       0.963     10487  addition_1
+    692   0.9324           -         0  skip_counting_by_10s
+    693   0.9153           -         0  skip_counting_by_5s
+    419   0.9076           -         0  meaning_of_equal_sign
+    177   0.9046       0.987      1261  count_number_to_100
+    180   0.9042           -         0  count_number_to_50
+    181   0.9020       0.956      1194  count_numbers
+    458   0.8953       0.906       276  multiply_by_tens
+    506   0.8732       0.960      1207  one_more_one_less
+    374   0.8672       0.955       352  l_ml_transform
+    236   0.8553       0.956      2212  division_0.9
+    673   0.8510       0.958       981  sides_and_angles_of_simple_shapes
+     93   0.8496       0.880      1662  axis_of_symmetry
+
+Written: model_training\learned_priors.csv
+(plot learned_prior against empirical_accuracy for the paper figure)
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt_v2> 
+ *  History restored 
+
+PS E:\FINAL YEAR PROJECT\Federated GNN for Knowledge Tracing\PROJECT-V1\fedgkt_v2> 
