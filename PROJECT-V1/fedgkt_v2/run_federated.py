@@ -15,11 +15,23 @@ Round after round:
 
 Step 3 scope (deliberately simple)
 ----------------------------------
-- Students train ONE AT A TIME. Training several at once on the GPU,
-  grouped by length, is step 4; it replaces only the train_round() function
-  below and must give the same updates as this version.
+- By default students train ONE AT A TIME (train_round below).
+  --batched switches to the step 4a fast round (src/federated/batched_round.py):
+  students grouped by length and computed side by side on the GPU, with the
+  equal vote preserved. Only for --local-steps 1. Tested against this
+  one-at-a-time version (tests/test_step4a_fast_vs_slow.py).
 - Everything is shared, head included. Personal heads are step 6.
-- No validation yet; it is added when the step 7 screens need it.
+- Validation (added for the step 7 learning-speed tests): every
+  --val-every-passes STUDENT-PASSES (default 800 = each student trained on
+  once, on average), NOT every N rounds -- a round of 100 students costs
+  ~12x a round of 8, so rounds are not comparable across settings.
+  Scored exactly like the centralised screens: evaluate_batched(...)
+  ['macro_auc'] on the 100 validation students (screen.py line 282).
+  Training seconds and validation seconds are logged SEPARATELY, so
+  learning curves can be compared against pure training GPU time.
+  The best-validated shared weights are saved as best_model.pt.
+  Validation runs in eval mode under no_grad and every client re-seeds
+  itself, so validating does not change training (tested).
 
 Resume -- exact, by construction
 --------------------------------
@@ -60,8 +72,11 @@ if _THIS_DIR not in sys.path:
 from src.utils import config as cfg
 from src.federated.client import run_client
 from src.federated.server import Server
+from src.federated.batched_round import train_round_batched
+from src.training.evaluator_batched import evaluate_batched
 
 STATE_FILE = 'state.pt'
+BEST_FILE = 'best_model.pt'
 HISTORY_FILE = 'history.json'
 
 
@@ -98,6 +113,7 @@ def make_fingerprint(settings, train_ids):
     code = {name: _sha(os.path.join(_THIS_DIR, rel)) for name, rel in [
         ('client.py', 'src/federated/client.py'),
         ('server.py', 'src/federated/server.py'),
+        ('batched_round.py', 'src/federated/batched_round.py'),
         ('run_federated.py', 'run_federated.py')]}
     return {**settings,
             'train_ids_sha': hashlib.sha256(
@@ -128,20 +144,24 @@ def train_round(work_model, global_state, student_ids, edge_index, device,
 # ── the loop ───────────────────────────────────────────────────────────────
 def federated_training(run_dir, train_ids, rounds, clients_per_round, local_steps,
                        local_lr, server_lr, seed, dropout, model_kind, device,
-                       max_rounds_this_session=None, verbose=True):
+                       max_rounds_this_session=None, verbose=True,
+                       batched=False, group_size=8,
+                       val_ids=None, val_every_passes=800, eval_batch_size=16):
     """Runs (or resumes) until `rounds` rounds are done, or until
     `max_rounds_this_session` rounds have run in this call (used by the
     resume test to simulate a disconnect). Returns (server, history)."""
     os.makedirs(run_dir, exist_ok=True)
     settings = {'clients_per_round': int(clients_per_round), 'local_steps': int(local_steps),
                 'local_lr': float(local_lr), 'server_lr': float(server_lr), 'seed': int(seed),
-                'dropout': float(dropout), 'model_kind': model_kind}
+                'dropout': float(dropout), 'model_kind': model_kind,
+                'batched': bool(batched), 'group_size': int(group_size)}
     fp = make_fingerprint(settings, train_ids)
 
     edge_index = torch.load(cfg.EDGE_INDEX_PATH, weights_only=False)
     server = Server(build_model(model_kind, dropout, seed).to(device), lr=server_lr)
     work_model = build_model(model_kind, dropout, seed).to(device)   # reused by every client
     history = []
+    best = {'val_macro_auc': None, 'round': None}
 
     state_path = os.path.join(run_dir, STATE_FILE)
     if os.path.exists(state_path):
@@ -156,6 +176,7 @@ def federated_training(run_dir, train_ids, rounds, clients_per_round, local_step
                 f"Use a new --run-dir for different settings.")
         server.load_state(saved['server'])
         history = saved['history']
+        best = saved.get('best', best)
         if verbose:
             print(f"resumed {run_dir} after round {server.rounds_done}")
 
@@ -164,21 +185,48 @@ def federated_training(run_dir, train_ids, rounds, clients_per_round, local_step
         if max_rounds_this_session is not None and ran >= max_rounds_this_session:
             break
         r = server.rounds_done
+        passes_before = history[-1]['passes'] if history else 0
         t0 = time.time()
         chosen = choose_students(train_ids, clients_per_round, seed, r)
-        outs = train_round(work_model, server.global_state(), chosen, edge_index, device,
-                           local_steps, local_lr, r, seed)
+        if batched:
+            outs = train_round_batched(work_model, server.global_state(), chosen, edge_index,
+                                       device, local_steps, local_lr, r, seed, group_size)
+        else:
+            outs = train_round(work_model, server.global_state(), chosen, edge_index, device,
+                               local_steps, local_lr, r, seed)
         server.apply_round([o['update'] for o in outs])
         losses = [o['losses'][0] for o in outs]           # loss before local training moved the weights
-        history.append({'round': r, 'students': chosen,
-                        'mean_loss': sum(losses) / len(losses),
-                        'seconds': time.time() - t0})
-        _atomic_save({'server': server.state(), 'history': history, 'fingerprint': fp}, state_path)
+        train_s = time.time() - t0
+        passes = passes_before + len(chosen) * local_steps
+        entry = {'round': r, 'students': chosen,
+                 'mean_loss': sum(losses) / len(losses),
+                 'seconds': train_s,
+                 'passes': passes,
+                 'train_seconds_total': (history[-1]['train_seconds_total'] if history else 0.0) + train_s,
+                 'val_macro_auc': None, 'val_seconds': None}
+
+        last_round = server.rounds_done >= rounds
+        crossed = val_every_passes and (passes // val_every_passes) > (passes_before // val_every_passes)
+        if val_ids and (crossed or last_round):
+            tv = time.time()
+            work_model.load_state_dict(server.global_state(), strict=True)
+            val = evaluate_batched(work_model, val_ids, edge_index=edge_index,
+                                   batch_size=eval_batch_size, device=device)
+            entry['val_macro_auc'] = float(val['macro_auc'])
+            entry['val_seconds'] = time.time() - tv
+            if best['val_macro_auc'] is None or entry['val_macro_auc'] > best['val_macro_auc']:
+                best = {'val_macro_auc': entry['val_macro_auc'], 'round': r}
+                _atomic_save(server.global_state(), os.path.join(run_dir, BEST_FILE))
+        history.append(entry)
+        _atomic_save({'server': server.state(), 'history': history, 'fingerprint': fp,
+                      'best': best}, state_path)
         _atomic_save(history, os.path.join(run_dir, HISTORY_FILE), use_json=True)
         ran += 1
         if verbose:
-            print(f"round {r:4d}  students {len(chosen):3d}  mean loss {history[-1]['mean_loss']:.4f}  "
-                  f"{history[-1]['seconds']:.1f}s", flush=True)
+            v = (f"  val macro AUC {entry['val_macro_auc']:.4f} ({entry['val_seconds']:.0f}s)"
+                 if entry['val_macro_auc'] is not None else "")
+            print(f"round {r:4d}  students {len(chosen):3d}  passes {passes:6d}  mean loss "
+                  f"{entry['mean_loss']:.4f}  {train_s:.1f}s{v}", flush=True)
     return server, history
 
 
@@ -195,17 +243,28 @@ def main():
     p.add_argument('--dropout', type=float, default=cfg.DROPOUT)
     p.add_argument('--model', default='v2', choices=['v1', 'v2', 'v2-prior', 'v2-skip'])
     p.add_argument('--device', default='cuda' if torch.cuda.is_available() else 'cpu')
+    p.add_argument('--batched', action='store_true',
+                   help="step 4a fast round: students grouped by length, side by side (needs --local-steps 1)")
+    p.add_argument('--group-size', type=int, default=8,
+                   help="students per GPU group when --batched (recorded in the resume check)")
+    p.add_argument('--val-every-passes', type=int, default=800,
+                   help="validate every N student-passes (800 = one epoch-equivalent); 0 = only at the end")
+    p.add_argument('--eval-batch-size', type=int, default=16)
     args = p.parse_args()
     if args.local_steps > 1 and args.local_lr <= 0:
         raise SystemExit("--local-steps > 1 needs a positive --local-lr")
 
     with open(cfg.SPLITS_PATH) as f:
-        train_ids = json.load(f)['train']
+        splits = json.load(f)
+    train_ids, val_ids = splits['train'], splits['val']
     assert len(train_ids) == cfg.TRAIN_SIZE, f"expected {cfg.TRAIN_SIZE} training students"
 
     federated_training(args.run_dir, train_ids, args.rounds, args.clients_per_round,
                        args.local_steps, args.local_lr, args.server_lr, args.seed,
-                       args.dropout, args.model, torch.device(args.device))
+                       args.dropout, args.model, torch.device(args.device),
+                       batched=args.batched, group_size=args.group_size,
+                       val_ids=val_ids, val_every_passes=args.val_every_passes,
+                       eval_batch_size=args.eval_batch_size)
 
 
 if __name__ == '__main__':

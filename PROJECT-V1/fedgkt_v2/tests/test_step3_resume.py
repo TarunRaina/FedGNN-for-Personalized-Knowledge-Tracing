@@ -21,6 +21,10 @@ from run_federated import federated_training
 IDS = [233536, 45224, 111852, 224825, 138435, 187058, 105754]
 KW = dict(train_ids=IDS, rounds=4, clients_per_round=3, local_steps=2, local_lr=0.05,
           server_lr=1e-3, dropout=0.2, model_kind='v2', device=torch.device('cpu'), verbose=False)
+BATCHED = '--batched' in sys.argv     # step 4a: same test on the fast round
+if BATCHED:
+    KW.update(local_steps=1, local_lr=0.0, batched=True, group_size=2)   # 3 students -> groups of 2 + 1
+print(f"mode: {'BATCHED (step 4a)' if BATCHED else 'one at a time (step 3)'}")
 tmp = tempfile.mkdtemp()
 
 def max_diff(s1, s2):
